@@ -1,0 +1,48 @@
+\documentclass[main_brownies.tex]{subfiles}
+\begin{document}
+
+\begin{titlepage}
+
+	\includepdf[pages=-]{Firstpage/firstpage.pdf} %% include firstpage here as .pdf, which was generated from its separate file (firstpage.tex)
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Book information page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\newpage\thispagestyle{empty}
+	\vspace*{3.9cm}
+
+	
+	\noindent{\small 
+		Het werk in dit proefschrift is uitgevoerd in de onderzoeksgroep A van het Stratingh Instituut voor Scheikunde aan de Rijksuniversiteit Groningen, Nederland.\\
+		\\
+}
+	\begin{figure}[!h]
+		\includegraphics[width=\textwidth]{Titlepage/Stratingh logo red}
+	\end{figure}
+	
+%	\vfill %% can use \vfill too
+	
+	\medskip
+		
+	\noindent{\small 
+		Dit werk is mogelijk gemaakt door financiering van A.\\
+		\\
+	}
+	\begin{figure}[!h]
+%		\includegraphics[width=\textwidth]{Titlepage/} %% add image of funding agency
+	\end{figure}
+			
+	\medskip
+
+	
+	\noindent{\small 
+		Omslag ontworpen door: Voornaam Achternaam \\
+		Proefschrift gedrukt door: Drukkerij, Stad, Land \\
+} 	
+	
+	\clearpage
+	
+	\includepdf[pages={-}]{Titelblad_example/Titelblad_example.pdf} % make separately using template, then generate .pdf to insert here
+	
+\end{titlepage}
+
+\end{document}

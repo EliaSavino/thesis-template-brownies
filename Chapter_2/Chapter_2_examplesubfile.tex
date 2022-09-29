@@ -1,0 +1,186 @@
+\documentclass[main_brownies.tex]{subfiles}
+\begin{document}
+\graphicspath{ {Figures/}{Schemes/} } %% graphics path for two folders: \Figures and \Schemes
+\newrefsection[Chapter_2/References_Chapter_2] %% begin new reference section with the .bib file for this chapter
+
+%% an if-else statement for inserting an empty page when necessary
+	%% to make sure chapter image page is to the left of the chapter title page
+\checkoddpage
+\ifoddpage
+	\newpage\thispagestyle{empty}
+	\mbox{}
+	\newpage
+	\includepdf[pages={-}]{chapterimagepage_2.pdf}
+\else
+	\includepdf[pages={-}]{chapterimagepage_2.pdf}
+\fi
+
+%%%TITLE AND ABSTRACT%%%
+
+\chapter[Example Experimental Chapter]{Example of an Experimental Chapter}\blfootnote{Footnote used for if chapter has been published (or is in the process of).} %% the [short title] will end up in the TOC as well
+
+%% image on chapter title page if desired
+\begin{center}
+	\begin{minipage}[htb]{.75\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{titlepageimage/Chapter_2_titlepageimage} % need to have example image
+	\end{minipage}
+\end{center}
+%%
+
+\begin{abstract}
+	\Blindtext[1][3]
+\end{abstract}
+
+%%%END OF TITLE, AUTHORS AND ABSTRACT%%%
+%\clearpage
+%\newpage
+%%%MAIN TEXT%%%%
+%===================== INTRODUCTION %%%%%%%%%%%
+\section{Introduction}
+\Blindtext[2][2]
+
+\section[Short R\&D]{Results \& Discussion}  %% the [short title] will end up in the TOC as well
+\subsection{R\&D 1}
+\Blindtext[5][1]
+
+\begin{itemize}
+	\item Refer to a figure in Appendix/Supporting Information: 
+	\begin{itemize}
+		\item Figure~\ref{fgr:Figure_S1}
+		\item Table~\ref{tbl:Table_S1}
+	\end{itemize}
+\end{itemize}
+
+\subsection{R\&D 2}
+
+\section{Conclusions}
+\Blindtext[1][2]
+
+\section*{Acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements} % to add section* to TOC
+\markright{\MakeUppercase{Acknowledgements}} % to add section* to fancyheader
+
+Someone is acknowledged.
+
+%%% END OF MAIN TEXT %%%
+
+%\FloatBarrier % to put next paragraph after latest figure
+%\clearpage % use this to print all floats before this point
+%\newpage
+
+%%%==================== REFERENCES
+
+{\raggedright
+\printbibliography} %% use to loosen restrictions on justification for References section. 
+	% If \raggedright is not used, there will be many warnings for overfull hboxes 
+
+%%%END OF REFERENCES%%%
+
+%%% START OF EXPERIMENTAL DETAILS %%%
+\section*{Experimental Details}
+\addcontentsline{toc}{section}{Experimental Details}
+\markright{\MakeUppercase{Experimental Details}}
+\subsection*{Methods}
+
+\subsection*{Synthetic Procedures}
+\subsubsection*{Compound 1}
+
+\clearpage
+\newpage
+
+\section*{Appendix}
+\addcontentsline{toc}{section}{Appendix}
+\markright{\MakeUppercase{Appendix}}
+\vspace*{-\baselineskip} % to remove space between header and figure (float)
+
+\begin{figureSI}[H] % use H to place the float exactly here
+	\centering
+	\includegraphics[width=.65\textwidth]{Figure_S1/Chapter_2_Figure_S1} % need example image
+	\caption{Caption figure SI/Appendix.}
+	\label{fgr:Figure_S1}
+\end{figureSI}
+
+\renewcommand{\arraystretch}{2.0} % adjust cell height for tables
+\begin{tableSI}[ht]
+	\centering
+	%	\small
+	\caption{Caption for Table using packages \textsc{adjustbox}, \textsc{multirow} and \textsc{makecell}. For example for the tabulation of vibrational modes and frequencies. $^a$note.}
+	\begin{adjustbox}{width=1\textwidth}
+		\begin{tabular}{|lV{2.5}c|cV{2.5}c|cV{2.5}c|c|}\hline%
+			\multirow{2}{*}{\makecell[lc]{Vibrational\\ Mode}} & \multirow{2}{*}{\textbf{1}} & \multirow{2}{*}{\makecell[cc]{\textbf{1} with base\\ (deprotonation)}} & \multirow{2}{*}{\textbf{2}} & \multirow{2}{*}{\makecell[cc]{\textbf{2}\\ at low pH}} & \multicolumn{2}{c|}{\textbf{3}} \\\cline{6-7}
+			& & & & & \makecell[cc]{Before\\ heating} & \makecell[cc]{After\\ heating} \\\hline\hline
+			\makecell[lc]{1\cite{Einstein1905,Einstein1906}} & - & - & \# & \# & \# & \# \\\hline
+			\makecell[lc]{2\cite{Einstein1905}} & \makecell[cc]{under solvent \\ band; \#\cite{Einstein1906}} & \makecell[cc]{under solvent \\ band} & - & \makecell[cc]{\#\\ (Calc.)\cite{Einstein1905}} & - & - \\\hline
+			\makecell[lc]{3- \\ 3- \\ 3 \& 4} & \# & \# & \#$^a$ & \# & \# & \# \\\hline
+			\makecell[lc]{4- \\ 4 \\ \& 5} & \# & \# & \#$^a$ & \# & \# & \# \\\hline
+			\makecell[lc]{5 \\ and 6} & \# & \# & \#$^a$ & \# & \# & \# \\\hline
+			\makecell[lc]{7- \\ 7} & \# & \# & \#$^a$ & \# & \# & \# \\\hline
+			\makecell[lc]{8} & \# & \# & - & \# & - & - \\\hline
+		\end{tabular}
+	\end{adjustbox}
+	\label{tbl:Table_S1}
+\end{tableSI}
+
+\FloatBarrier % to put next paragraph after latest figure
+
+\subsection*{Computational Details}
+\subsubsection*{Frequency Calculations}
+
+\renewcommand{\arraystretch}{1.5} % adjust cell height for tables
+
+\begin{center}
+%	\centering
+	\footnotesize %% can change font size (e.g., scriptsize, small, etcetera)
+	\captionsetup{type=tableSI}
+	\caption{Caption of a long table that can extend over multiple pages. For example for calculated frequencies.}
+	\begin{longtable}{|l|l|l|}
+		\hline
+		Frequency (\cm{}) & Raman activity & Raman intensity \\\hline\hline
+		1 & 20 & 55000\\\hline
+		2 & 30 & 213\\\hline
+		3 & 50 & 8555995\\\hline
+		4 & 80 & 213\\\hline
+		5 & 100 & 54598444.4\\\hline
+		6 & 200 & 234.51\\\hline
+		7 & 2 & 2315849.98\\\hline
+		8 & 680 & 8759\\\hline
+		9 & 35 & 123.4\\\hline
+		10 & 87 & 92\\\hline
+	\end{longtable}
+%	\label{tbl:Table_S2}
+\end{center}
+
+\renewcommand{\arraystretch}{1.0} % set table row spacing back to default 1.0
+
+\clearpage % 
+
+\subsubsection*{Cartesian Coordinates}
+Below are listed the Cartesian XYZ coordinates (\AA) \textsc{in a non-labelled and non-captioned table}.
+
+\medskip
+
+\begin{center}
+	%	\centering
+	\footnotesize
+	\begin{tabular}{@{}llll}
+		\textbf{Molecule~1} & & & \\		
+		12 & & &\\
+		 & & & \\
+		H & -1.242909 & -2.152782 & 0.000000\\
+		C & -0.695566 & -1.204756 & 0.000000\\
+		C &  0.695566 & -1.204756 & 0.000000\\
+		H &  1.242909 & -2.152782 & 0.000000\\
+		C &  1.391133 & 0.000000 & 0.000000\\
+		H &  2.485819 & 0.000000 & 0.000000\\
+		C &  0.695566 & 1.204756 & 0.000000\\
+		H &  1.242909 & 2.152782 & 0.000000\\
+		C & -0.695566 & 1.204756 & 0.000000\\
+		H & -1.242909 & 2.152782 & 0.000000\\
+		C & -1.391133 & 0.000000 & 0.000000\\
+		H & -2.485819 & 0.000000 & 0.000000\\
+	\end{tabular}
+\end{center}
+
+%===
+\end{document}

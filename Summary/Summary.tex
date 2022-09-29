@@ -1,0 +1,65 @@
+\documentclass[main_brownies.tex]{subfiles}
+\begin{document}
+%\graphicspath{ {Figures/}{Schemes/} } %% graphics path for two folders: \Figures and \Schemes
+\newrefsection %% begin new reference section for each chapter
+%\newrefsection[Summary/] %% begin new reference section with the .bib file for this chapter
+
+%% an if-else statement for inserting an empty page when necessary
+	%% to make sure Samenvatting/Summary does not start immediately to the right of the final page of the previous chapter
+	%% if desired of course
+	%% Can add the same command before Summary, Acknowledgements, etcetera, if desired
+\checkoddpage
+\ifoddpage
+	\newpage\thispagestyle{empty}
+	\mbox{}
+	\newpage
+\fi
+%%
+
+	%%%%% START Samenvatting %%%%%%
+
+%% Look into the use of \setheader for these unnumbered chapters (\chapter*)
+
+\chapter*{Samenvatting}
+\addcontentsline{toc}{chapter}{Samenvatting}
+\markboth{Samenvatting}{}
+
+\addtocounter{chapter}{1} %% increment chapter counter value for this starred chapter (chapter*) to make thumb indices move
+\renewcommand{\myacronym}{Sv} %% Define acronym for chapter name to use in \ifthumbback command for thumb indices
+
+\thispagestyle{backmattertitle} %% to get a different style on the title page only (e.g., no headrule)
+\pagestyle{backmatter} %% to have the subsequent pages again in backmatter style
+
+%%%
+
+{\selectlanguage{french}
+\noindent{\Blindtext[5][3]}
+
+%% Blindtext does not know dutch (only english, german, american, catalan, latin, french), so it will give a warning in this case
+
+}
+
+	%%%%% EINDE Samenvatting %%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%
+
+	%%%%% START SUMMARY %%%%
+
+\chapter*{Summary}
+\addcontentsline{toc}{chapter}{Summary}
+\markboth{Summary}{}
+
+%\addtocounter{chapter}{1} %% increment chapter counter value for this starred chapter (chapter*) to make thumb indices move
+\renewcommand{\myacronym}{Sm} %% Define acronym for chapter name to use in \ifthumbback command for thumb indices
+
+\thispagestyle{backmattertitle}
+
+%%%
+
+\Blindtext[5][3]
+
+	%%%%% END SUMMARY %%%%
+
+%%%%%%%
+
+\end{document}

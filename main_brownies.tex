@@ -1,0 +1,221 @@
+%\documentclass[print]{dissertation_brownies} %% use option print to add cropmarks and other things (see .cls)
+\documentclass{dissertation_brownies} %% use option print to add cropmarks and other things (see .cls)
+
+%% these packages are used in this template 
+	%% but can be removed when writing your thesis
+\usepackage{lipsum} %% to use lorem ipsum for example texts
+\usepackage{blindtext} %% to use blindtext for more document-like fake text, as well as lists, etc.
+\usepackage{showexpl} %% need for Instructions chapter; an environment to show examples
+\usepackage{fancyvrb} %% for verbatim environment that allows line breaks
+\usepackage{fvextra} %% extras for verbatim environment
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%% START BIBLIOGRAPHY SOURCES %%%
+
+\addbibresource{Chapter_1/References_Chapter_1.bib} %% a separate .bib file for each chapter
+
+\addbibresource{Chapter_2/References_Chapter_2.bib} %% a separate .bib file for each chapter
+
+\addbibresource{Instructions/References_Instructions.bib} %% a .bib file for the Instructions Chapter
+
+\addbibresource{Publications/My_publications.bib} %% for final page Publications
+
+	%%% END BIBLIOGRAPHY SOURCES %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%% START SUBFILES %%%
+\usepackage{subfiles} % Best loaded last in the preamble
+%% could also use the package standalone instead of subfiles -- importantly, with standalone, all subfiles need to have their own preambles, which means you'd need to be really sure that the formatting and everything of all chapters are the same.
+
+%% can comment out \subfile{"chapter"} to not include it -- for if you want to see how just one chapter (or a few) look(s)
+%% https://tex.stackexchange.com/questions/513490/chapter-bibliography-using-subfiles
+
+	%%% END SUBFILES %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%% START commands and such to fix typesetting issues %%%
+
+%%%%%%%%%%% to fix overfull \hbox in TOC due to 3-digit pagenumber:
+%% https://tex.stackexchange.com/questions/49887/overfull-hbox-warning-for-toc-entries-when-using-memoir-documentclass
+
+%\makeatletter
+%\renewcommand{\@pnumwidth}{2em}  % width for pagenumber; useful in case of 3-digit pagenumbers; default is 1.55em
+%\renewcommand{\@tocrmarg}{4em} % width between righthandmargin and start of title text; default is 2.55em 
+%\makeatother
+
+%%%%%%%%%%% 
+
+\raggedbottom %% remove unwanted spaces between paragraphs: recommended!
+
+	%%% END commands and such to fix typesetting issues %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%% START possible (re)definitions %%%
+
+%%%%%%
+%% The regular square root symbol does not have the vertical bar at the end -- this changes the sqrt symbol:
+\let\oldsqrt\sqrt
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+		\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+		\advance\dimen0-0.2\ht0
+		\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+		{\box0\lower0.4pt\box2}}
+%%%%%%
+
+\hyphenation{spi-ro-py-rans} %% allow hyphenation only at the assigned locations
+\hyphenation{nohyphenation} %% if no "-" are inserted in the {"word"}, hyphenation will not be allowed
+\hyphenation{hyphenation}
+
+\newcommand{\vs}{\emph{vs}} %% define command vs (versus) in italics % when using: type \vs{}
+\newcommand{\cm}{\unit{cm^{-1}}} %% define command cm-1 superscript % when using: type \cm{}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}} %% use \fnsymbol for the footnote symbols
+
+%%%%%%
+%% make command to enable \chapter to start on the left page:
+%% used for final page Publications to make it appear as last left page
+\makeatletter
+\newcommand{\enableopenany}{\@openrightfalse} 
+\newcommand{\disableopenany}{\@openrighttrue} 
+\makeatother
+%%%%%%
+
+%%%%%% Possible redefinition of \chapter that changes the default pagestyle of its titlepage:
+%% Change pagestyle of \chapter titlepage from default plain to self-defined chaptertitlepage (see .cls)
+%% Will change it for both \chapter and \tableofcontents
+%% Do not use in combination with the redefinitions of ps@plain (see below) that are used to distinguish between titlepages of \tableofcontents and \chapter
+
+%\makeatletter
+%\renewcommand\chapter{
+	%	\if@openright
+	%		\cleardoublepage
+	%	\else
+	%		\clearpage
+	%	\fi
+	%	\thispagestyle{chaptertitlepage}%% original style: plain
+	%	\global\@topnum\z@
+	%	\@afterindentfalse
+	%	\secdef\@chapter\@schapter}
+%\makeatother
+%%%%%%
+
+%%%%%% 
+%% Let pagestyle plain (used for titlepages of chapters and TOC) be the self-defined chaptertitlepage (see .cls)
+\makeatletter
+\let\ps@plain\ps@chaptertitlepage
+\makeatother
+%%%%%%
+
+	%%% END possible (re)definitions %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%% DEFINE THE COLOURS USED %%%
+	
+\definecolor{mycyan}{cmyk}{0.85,0.05,0.15,0.25}
+\definecolor{mygreen}{cmyk}{0.93,0.00,1.00,0.00}
+\definecolor{mypink}{cmyk}{0.02,0.80,0.45,0.05}
+\definecolor{mypurple}{cmyk}{0.50,0.85,0.00,0.00}
+\definecolor{myblue}{cmyk}{0.85,0.72,0.06,0.0}
+\definecolor{mygold}{cmyk}{0.02,0.13,0.91,0.00}
+\definecolor{myorange}{cmyk}{0.00,0.54,0.95,0.00}
+\definecolor{myskyblue}{cmyk}{0.67,0.04,0.00,0.00}
+%\definecolor{myblack}{cmyk}{0.00,0.00,0.00,1.00} %% defined myblack in .cls already
+
+	%%% END COLOURS %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%% START DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%% Specify the title and author of the thesis. This information will be used on the title page (in title/title.tex) and in the metadata of the final PDF.
+\title[Subtitle]{Title}
+\author{First Second}{Last}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%% START frontmatter: titlepage, table of contents %%%
+
+\frontmatter %% sets pages numbered to lowercase roman; makes chapters not numbered
+\subfileinclude{Titlepage/titlepage}
+
+\dedication{To all the wonderful Brownies using this template}
+
+%% Titlepage of \tableofcontents uses the pagestyle plain by default! The same goes for chapter titlepages.
+	%% Let pagestyle plain be the self-defined pagestyle frontmatterTOCfirstpage (see .cls)
+	%% This will only make the titlepage of the TOC in the style of frontmatterTOCfirstpage (see .cls)
+	%% The rest of the TOC will be in the style frontmatter
+\makeatletter
+\let\ps@plain\ps@frontmatterTOCfirstpage
+\makeatother
+
+%% Insert table of contents
+\tableofcontents
+
+%% Reset pagestyle plain to style of chaptertitlepage (see .cls)
+\makeatletter
+\let\ps@plain\ps@chaptertitlepage
+\makeatother
+
+	%%% END frontmatter %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+	%%% START mainmatter: chapters %%%
+
+\mainmatter % numbers chapters and sets pagenumber to normal numbers
+
+\thumbtrue % turn on thumb indices
+
+\renewcommand{\thumbcolor}{mycyan} % set chaptercolor for every chapter specifically. % can just add name of colour here as well
+\subfileinclude{Chapter_1/Chapter_1_examplesubfile}
+
+\renewcommand{\thumbcolor}{mygreen} % set chaptercolor for every chapter specifically. % can just add name of colour here as well
+\subfileinclude{Chapter_2/Chapter_2_examplesubfile}
+
+\renewcommand{\thumbcolor}{myblack} % set chaptercolor for every chapter specifically. % can just add name of colour here as well
+\subfileinclude{Instructions/Style and printing considerations}
+
+\thumbfalse % turn off thumb indices
+
+	%%% END mainmatter %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%% START backmatter: summaries, acknowledgments, etc. %%%
+
+\backmatter %% pagestyle different from mainmatter. Can adjust it: see .cls file
+
+\thumbbacktrue %% turn on thumbback indices
+%% defined a new thumb command (thumbback): see .cls file; added new ifthumbback to the commands lthumb and rthumb
+	%% can do either without chapter number, 
+	%% or with self-defined acronym/abbreviation using \myacronym{}
+
+\renewcommand{\thumbcolor}{myorange} %% same colour for all summaries. %% Can change it in the Summary.tex file if desired
+\subfileinclude{Summary/Summary}
+
+\renewcommand{\thumbcolor}{myskyblue}
+\subfileinclude{Acknowledgements/Acknowledgements}
+
+\thumbbackfalse % turn off thumbback indices
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%% START Publications %%%
+\renewcommand{\thumbcolor}{myblack}
+\subfileinclude{Publications/Publications}
+
+	%%% END Publications %%%
+
+	%%% END backmatter %%%
+
+%%%%%%%%%%%%%%%%%% END DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

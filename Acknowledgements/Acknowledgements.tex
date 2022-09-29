@@ -1,0 +1,26 @@
+\documentclass[main_brownies.tex]{subfiles}
+\begin{document}
+%\graphicspath{ {Figures/}{Schemes/} } %% graphics path for two folders: \Figures and \Schemes
+\newrefsection %% begin new reference section for each chapter
+%\newrefsection[Acknowledgements/] %% begin new reference section with the .bib file for this chapter
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\markboth{Acknowledgements}{}
+
+\addtocounter{chapter}{1} % increment chapter counter value for this starred chapter (chapter*) to make thumb indices move
+\renewcommand{\myacronym}{Ack} % Define acronym for chapter name to use in ifthumbback command for thumb indices
+
+\thispagestyle{backmattertitle}
+\pagestyle{backmatter}
+
+	%%%%% START Acknowledgements %%%%%%
+\setlength{\parindent}{0pt}{
+
+\Blindtext[15][1]
+
+}
+
+	%%%%% END Acknowledgements %%%%%%
+
+\end{document}

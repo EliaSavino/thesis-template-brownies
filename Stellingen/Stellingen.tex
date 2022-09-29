@@ -1,0 +1,57 @@
+\documentclass[../main_brownies.tex]{subfiles}
+
+%\makeatletter
+%\renewcommand{@twoside}{false}
+%\makeatother
+
+%\newgeometry{
+%	papersize = {176mm,246mm}, % size of paper. Related to layoutsize+layoutoffset
+%	layoutsize = {170mm,240mm}, % total width and height including header and footer
+%	layoutoffset = {3mm,3mm}, % offset from paper size to center the layoutbox
+%	top = 27mm, bottom = 27mm, inner = 14mm, outer=14mm
+%}
+
+\begin{document}
+%\newgeometry{oneside}
+\pagestyle{empty}
+
+		%% MAKE THE PAGE GEOMETRY SINGLE-PAGED (not book) AND CENTERED
+
+
+\setlength{\parindent}{0pt}{
+
+\begin{titlepage}
+\begin{center}
+%	\sffamily
+	\large
+	{\MakeUppercase{\bfseries{Stellingen}}}\\
+	\rmfamily
+	\normalsize
+	Behorende bij het proefschrift
+	
+	\vspace{0.25cm}
+	
+	\sffamily
+	\large
+	\textsc{\bfseries{Title Title Title}}\\
+	\normalsize
+	Subtitle non-capitalised\\
+	\rmfamily	
+	\vspace{0.25cm}
+	van\\
+	\textbf{Firstnames Lastname}
+	\vspace{0.25cm}
+\end{center}
+
+\blindenumerate
+
+%\begin{enumerate}[leftmargin=*] * adjust leftmargin to remove indent
+%	\item 
+%\end{enumerate}
+
+\end{titlepage}
+}
+
+\pagestyle{fancy}
+
+\end{document}
