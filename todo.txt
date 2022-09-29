@@ -9,3 +9,4 @@ add these things:
 - work in progress; I'm still improving the instructions and comments; still adding more useful things
 - I'm open to questions and requests
 - link to my and Linda's theses for finished products
+- improve .tex file for generating the Stellingen (Propositions)
