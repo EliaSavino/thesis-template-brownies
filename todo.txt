@@ -1,6 +1,3 @@
-# thesis-template-brownies
-LaTeX template for (PhD) thesis
-
 add these things:
 - an introduction to this project
 - based on template of vcaldas (add link)
