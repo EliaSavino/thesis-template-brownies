@@ -2,7 +2,7 @@ add these things:
 - an introduction to this project
 - based on template of vcaldas (add link)
 - with Linda's help
-- license (in separate file)
+- license (in separate file). CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/) ???
 - I used MikTex and TexStudio (with links)
 - maybe: the additional packages that are needed. Or just say that they should be installed automatically (by MikTex) upon compiling
 - how to run: compile-bibliography-compile-compile
