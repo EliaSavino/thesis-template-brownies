@@ -10,3 +10,4 @@ add these things:
 - I'm open to questions and requests
 - link to my and Linda's theses for finished products
 - improve .tex file for generating the Stellingen (Propositions)
+- add the code for making nice synthetic procedures
