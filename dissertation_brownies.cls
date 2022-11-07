@@ -275,23 +275,28 @@
 \RequirePackage{xcolor} %% colour package; [cmyk] means: use target color model cmyk %% https://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/xcolor/xcolor.pdf
 \RequirePackage{tikz} %% TikZ is probably the most complex and powerful tool to create graphic elements in LaTeX. %% required here to make the thumb indices
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%% END importing packages %%%%
 
-%% Define the style for titles and headers:
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%%%%% START defining style, formatting, commands, etcetera %%%%
+
+%% Define the style for titles: for Chapter, Section, etcetera
 \def\titlefont{\sffamily} 
-	%% \sffamily for sans serif; \ttfamily for monospaced font family;
-	%% Not all fonts contain small caps so depending on settings it might resolve to serif/small caps or sans serif/regular
 \def\titleshape{\scshape} %%\scshape is small caps; % \upshape is upright (regular)
-\def\titlestyle{\titlefont\titleshape\bfseries}
+\def\titlestyle{\titlefont\titleshape\bfseries} %% 
 
-%% Can include an if--else--fi statement in case a difference between print and non-print is desired
-%\if@print
-\def\headerstyle{\titlefont\titleshape\bfseries} %
-%\else
-%	\def\headerstyle{\titlefont\titleshape}
-%\fi
+%% Define the style for headers: for fancyheader and fancyfooter
+\def\headerfont{\sffamily} 
+\def\headershape{\upshape} %%\scshape is small caps; % \upshape is upright (regular)
+\def\headerstyle{\headerfont\headershape\bfseries} 
 
-%% define command used in main.tex to define colour of thumb indices per chapter (subfile); also used for colour of chaptertitle and headers (if desired, see below)
+	%% \rmfamily for serif; \sffamily for sans serif; \ttfamily for monospaced font family;
+	%% Not all fonts contain small caps so depending on settings it might resolve to serif/small caps or sans serif/regular (see error messages)
+
+%% Define command used in main.tex to define colour of thumb indices per chapter (subfile); also used for colour of chaptertitle and fancyheaders (if desired, see below)
 \definecolor{myblack}{cmyk}{0.00,0.00,0.00,1.00}
 \newcommand{\thumbcolor}{myblack}
 
@@ -519,7 +524,7 @@
 %	\renewcommand*\headrulewidth{0pt}
 %	\renewcommand*\footrulewidth{0pt}
 %	\fancyhead{\cropmarks}
-%%	\fancyfoot[C]{\titlefont\thepage} % turn on/off pagenumber on title page
+%%	\fancyfoot[C]{\headerfont\thepage} % turn on/off pagenumber on title page
 %}
 
 %% Pagestyle used for titlepages instead of the default pagestyle plain.
@@ -529,14 +534,14 @@
 	\renewcommand*\headrulewidth{0pt}
 	\renewcommand*\footrulewidth{0pt}
 	\fancyhead{\cropmarks}
-	%	\fancyfoot[C]{\titlefont\thepage} % turn on/off pagenumber on titlepage
+	%	\fancyfoot[C]{\headerfont\thepage} % turn on/off pagenumber on titlepage
 }
 
 %% Pagestyle for the firstpage of the TOC, used in combination with pagestyle chaptertitlepage to have distinct chapter and TOC titlepages: see main_brownies.tex for implementation
 \fancypagestyle{frontmatterTOCfirstpage}{%
 	\fancyhf{}
 	%% Page numbers on the bottom left (even) and bottom right (odd).
-	\fancyfoot[RO]{\cropmarks\rthumb\titlefont\thepage}
+	\fancyfoot[RO]{\cropmarks\rthumb\headerfont\thepage}
 	\renewcommand{\footrulewidth}{0.4pt} % to add footrule. headrulewidth is defined in the package fancyhdr: default is 0.4pt
 	\renewcommand{\headrulewidth}{0pt}
 }
@@ -546,38 +551,38 @@
 \fancypagestyle{frontmatter}{%
 	\fancyhf{}
 	%% Page numbers on the bottom left (even) and bottom right (odd).
-	\fancyfoot[LE]{\cropmarks\lthumb\titlefont\thepage}
-	\fancyfoot[RO]{\cropmarks\rthumb\titlefont\thepage}
+	\fancyfoot[LE]{\cropmarks\lthumb\headerfont\thepage}
+	\fancyfoot[RO]{\cropmarks\rthumb\headerfont\thepage}
 	\renewcommand{\footrulewidth}{\headrulewidth} %% to add footrule; headrulewidth is defined in the package fancyhdr: default is 0.4pt
 %	\renewcommand{\headrulewidth}{0pt}
 	%% Chapter name top left on the even page.
-	\fancyhead[LE]{\titlefont\titleshape\nouppercase{\leftmark}} %% leftmark = chapternumber+chapter by default 
+	\fancyhead[LE]{\headerfont\headershape\nouppercase{\leftmark}} %% leftmark = chapternumber+chapter by default 
 	%% Chapter name top right on the odd page.
-	\fancyhead[RO]{\titlefont\titleshape\nouppercase{\leftmark}} %% on odd pages on the right [RO]
+	\fancyhead[RO]{\headerfont\headershape\nouppercase{\leftmark}} %% on odd pages on the right [RO]
 }
 
 %% Fancy style for the main matter.
 \fancypagestyle{mainmatter}{%
 	\fancyhf{}
 	%% Page numbers on the bottom left (even) and bottom right (odd).
-	\fancyfoot[LE]{\cropmarks\lthumb\titlefont\thepage}
-	\fancyfoot[RO]{\cropmarks\rthumb\titlefont\thepage}
+	\fancyfoot[LE]{\cropmarks\lthumb\headerfont\thepage}
+	\fancyfoot[RO]{\cropmarks\rthumb\headerfont\thepage}
 	\renewcommand{\footrulewidth}{\headrulewidth} % to add footrule in mainmatter. headrulewidth is defined in the package fancyhdr: default is 0.4pt
 	%% Chapter name top left on the even page.
-	\fancyhead[LE]{\titlefont\titleshape\nouppercase{\leftmark}} %% leftmark = chapternumber+chapter by default. Redefined it below (\renewcommand*\chaptermark{}) to have it add the word Chapter
+	\fancyhead[LE]{\headerfont\headershape\nouppercase{\leftmark}} %% leftmark = chapternumber+chapter by default. Redefined it below (\renewcommand*\chaptermark{}) to have it add the word Chapter
 	%% Section name top right on the odd page.
-	\fancyhead[RO]{\titlefont\titleshape\nouppercase{\rightmark}} %% \rightmark is defined below with the command \markright (to be \thesubsection but it can be \thesection too if preferred)
+	\fancyhead[RO]{\headerfont\headershape\nouppercase{\rightmark}} %% \rightmark is defined below with the command \markright (to be \thesubsection but it can be \thesection too if preferred)
 }
 
 %% Fancy style for the backmatter.
 \fancypagestyle{backmatter}{%
 	\fancyhf{}
 	%% Page numbers on the bottom left (even) and bottom right (odd).
-	\fancyfoot[LE]{\cropmarks\lthumb\titlefont\thepage}
-	\fancyfoot[RO]{\cropmarks\rthumb\titlefont\thepage}
+	\fancyfoot[LE]{\cropmarks\lthumb\headerfont\thepage}
+	\fancyfoot[RO]{\cropmarks\rthumb\headerfont\thepage}
 	\renewcommand{\footrulewidth}{\headrulewidth} %% to add footrule in mainmatter. headrulewidth is defined in the package fancyhdr: default is 0.4pt
 	%% Chapter name top left on the even page.
-	\fancyhead[LE,RO]{\titlefont\titleshape\nouppercase{\leftmark}} %% leftmark = chapternumber+chapter by default %% set to both left even and right odd
+	\fancyhead[LE,RO]{\headerfont\headershape\nouppercase{\leftmark}} %% leftmark = chapternumber+chapter by default %% set to both left even and right odd
 }
 
 %% Pagestyle of the backmatter titlepages that excludes fancyhead and headrule.
@@ -585,8 +590,8 @@
 \fancypagestyle{backmattertitle}{%
 	\fancyhf{}
 	%% Page numbers on the bottom left (even) and bottom right (odd).
-	\fancyfoot[LE]{\cropmarks\lthumb\titlefont\thepage}
-	\fancyfoot[RO]{\cropmarks\rthumb\titlefont\thepage}
+	\fancyfoot[LE]{\cropmarks\lthumb\headerfont\thepage}
+	\fancyfoot[RO]{\cropmarks\rthumb\headerfont\thepage}
 	\renewcommand{\footrulewidth}{0.4pt} %% to add footrule in mainmatter. headrulewidth is defined in the package fancyhdr: default is 0.4pt
 	\renewcommand*\headrulewidth{0pt} %% headrulewidth set to 0pt to remove it
 }
@@ -614,16 +619,13 @@
 %% Possible: use \color{title}#1}{} to change the colour of fancyheader.
 %\renewcommand*\chaptermark[1]{\markboth{\thechapter.\ \color{title}#1}{}} 
 
-%% color{title} is defined above to equal \thumbcolor, but it doesn't seem to follow the \thumbcolor re-defined in main_brownies.tex, so something is not working yet...
-%%
-
 %% The setheader command can be used to print the title of unnumbered chapters
 	%% in the page header.
 %% Haven't used it, but seems like it could be handy for use in backmatter (where unnumbered chapters are inserted using \chapter*)
 \newcommand*\setheader[1]{\markboth{\color{title}#1}{\color{title}#1}}
 
 %% Change the headrule command (from fancyhdr.sty) to draw the line below the
-%% header in the title color.		
+	%% header in the title color.
 %\renewcommand*\headrule{%
 %	\if@fancyplain%
 %		\let\headrulewidth\plainheadrulewidth%
@@ -636,7 +638,7 @@
 	%% and can adjust width and height here
 \renewcommand*\footnoterule{%
 	\vspace*{-3pt}%
-	{\color{title}\hrule width \textwidth height 0.4pt}% % it was 0.5\textwidth
+	{\color{title}\hrule width \textwidth height 0.4pt} %% it was 0.5\textwidth
 	\vspace*{2.6pt}%
 }
 
@@ -672,7 +674,7 @@
 %% Section titles start with the number in bold, followed by the name printed
 	%% in the title color.
 \titleformat{\section}
-{\Large\headerstyle}
+{\Large\titlestyle}
 {\bfseries\thesection.\ }
 {0pt}
 {\color{title}} %% print title in color "title" defined above
@@ -686,7 +688,7 @@
 %% Subsection titles have the same layout as section titles, except in a smaller
 	%% font.
 \titleformat{\subsection}
-{\large\headerstyle}
+{\large\titlestyle}
 {\bfseries\thesubsection.\ }
 {0pt}
 {\color{title}} %% print title in color "title" defined above
@@ -697,7 +699,7 @@
 %% Subsubsections have the same font and color as sections and subsections
 %% Can adjust here whether they are numbered or not
 \titleformat{\subsubsection}
-{\headerstyle}
+{\titlestyle}
 {\thesubsubsection.\ } %% leave out \thesubsubsection to have it unnumbered
 {0pt}
 {\color{title}} %% print title in color "title" defined above
@@ -708,7 +710,7 @@
 
 %% Paragraphs (subsubsubsections)
 \titleformat{\paragraph}
-{\small\headerstyle}
+{\small\titlestyle}
 {\theparagraph.\ } %% leave out \theparagraph to have it unnumbered
 {0pt}
 {\color{title}} %% print title in color "title" defined above
@@ -771,7 +773,7 @@
 	\clearpage
 %	\vspace*{24pt} %% This creates a space before the start of the text, for example, when placing the abstract on the titlepage under an image or title (in this case: remove \clearpage)
 	\begin{flushleft}% %was center
-		{\Large\titleshape\bfseries\titlefont{Abstract}}
+		{\Large\titlestyle{Abstract}}
 	\end{flushleft}%was center
 	\vspace*{0pt} %original 10pt
 	\list{}{\leftmargin\rightmargin}%

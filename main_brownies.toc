@@ -31,12 +31,12 @@
 \contentsline {subsection}{\numberline {3.5.3}Align figures}{24}{subsection.3.5.3}%
 \contentsline {subsubsection}{\numberline {3.5.3.1}Location on page}{24}{subsubsection.3.5.3.1}%
 \contentsline {subsubsection}{\numberline {3.5.3.2}Minipage}{25}{subsubsection.3.5.3.2}%
-\contentsline {subsubsection}{\numberline {3.5.3.3}Subfigures}{25}{subsubsection.3.5.3.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.3}Subfigures}{26}{subsubsection.3.5.3.3}%
 \contentsline {section}{\numberline {3.6}Tables}{26}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Captions}{27}{section.3.7}%
 \contentsline {subsection}{\numberline {3.7.1}Layout of captions}{27}{subsection.3.7.1}%
 \contentsline {section}{\numberline {3.8}Indentation of text}{27}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Paragraph spacing}{27}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.1}Paragraph spacing}{28}{subsection.3.8.1}%
 \contentsline {section}{\numberline {3.9}Referencing}{28}{section.3.9}%
 \contentsline {section}{Bibliography}{28}{section.3.9}%
 \contentsline {chapter}{Samenvatting}{31}{chapter*.11}%
