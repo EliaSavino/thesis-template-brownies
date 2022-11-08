@@ -181,10 +181,12 @@
 \RequirePackage{notoccite} %% to prevent issues with \cite in headers of TOC
 \RequirePackage{csquotes} %% needed to make sure biblatex uses correct typesetting %% and it fixes some punctuation marks, for example, the apostrophe
 
+%% The bibliography is managed using BibLaTeX
+%% Use the optional arguments to define style, backend (default biber recommended), etcetera
 \RequirePackage[sorting=none,style=chem-acs,articletitle=true,natbib=true,backend=biber,date=long]{biblatex}
-	%% see documentation for all options
-		%% can use style=numeric-comp as well; or ieee; or chem-angew;
-		%% https://www.overleaf.com/learn/latex/Biblatex_citation_styles
+	%% See package documentation of biblatex for all options (there also is more info in Instructions chapter)
+	%% Can use style=numeric-comp as well; or ieee; or chem-angew;
+	%% See https://www.overleaf.com/learn/latex/Biblatex_citation_styles
 	
 	%%%%% instructions for using backend=biber : 
 		%% set Default Bibliography Tool to biber in TeXstudio (go to Options/Configure/Build)
@@ -192,9 +194,39 @@
 		%% it seems that you don't need to do this all the time -- I think it is only needed when the .bib has been changed, then biber needs to be run again (F8) in order to update the .bbl file.
 	%%%%%
 
-\DeclarePrintbibliographyDefaults{heading=subbibintoc,title=Bibliography} %% use {heading=...} to set the level of the bibliography
-	%% title="" changes title from default "References" to "Bibliography".
-	%% to include as well in table of contents: use heading=subbibintoc (unnumbered section) or subbibnumbered (numbered section)
+%%%%
+%% This will use the abbreviated journal title, if available from the field "shortjournal"; else, it will use the full title from the field "journal"
+	%% Comment out to turn off and just use full journal titles as default
+	%% N.B. The field "shortjournal" is added automatically by the reference manager Zotero, but not by Mendeley
+\DeclareSourcemap{%
+	\maps[datatype=bibtex]{%
+		\map[overwrite]{%
+			\step[fieldsource=shortjournal]
+			\step[fieldset=journal,origfieldval]
+		}%
+	}%
+}
+
+%% If the field "shortjournal" is not available, you can use the following code (per journal) in order to print its abbreviated title
+%\DeclareSourcemap{%
+%	\maps[datatype=bibtex]{%
+%		% Journal abbreviations
+%		\map{%
+%			\step[fieldsource=journaltitle, match={Physics Letters A},%
+%			replace={Phys. Lett. A}]%
+%		}
+%	}
+%}
+
+%% See: https://tex.stackexchange.com/questions/66549/short-titles-journal-abbreviations-etc-in-biblatex
+
+%%%%
+
+%% Change the style of the bibliography here
+\DeclarePrintbibliographyDefaults{heading=subbibintoc,title=Bibliography} %%
+	%% use {heading=...} to set the level of the bibliography
+	%% title="" changes title from default "References" to, e.g., "Bibliography".
+	%% to include the bibliography in table of contents: use heading=subbibintoc (unnumbered section) or subbibnumbered (numbered section)
 
 \let\cite=\supercite %% With this, when using the command \cite, it uses \supercite, which gives superscripted references in text.
 
