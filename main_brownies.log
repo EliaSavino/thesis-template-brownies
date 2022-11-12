@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.6)  8 NOV 2022 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.6)  12 NOV 2022 23:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -74,9 +74,6 @@ Package babel Info: Making ? an active character on input line 433.
 Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
 Package babel Info: Making " an active character on input line 127.
 )
-(C:\Program Files\MiKTeX\tex/latex/babel-english\british.ldf
-Language: british 2017/06/06 v3.3r English support from the babel system
-
 (C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
@@ -85,10 +82,10 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language73). Reported on input line 108.
-)))
-(C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-british.tex
-Package babel Info: Importing font and identification data for british
-(babel)             from babel-en-GB.ini. Reported on input line 11.
+))
+(C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
 )
 (C:\Program Files\MiKTeX\tex/generic/babel/locale/nl\babel-dutch.tex
 Package babel Info: Importing font and identification data for dutch
@@ -1444,38 +1441,47 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 
 ))
+(C:\Program Files\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen187
+\WF@size=\dimen188
+\c@WF@wrappedlines=\count457
+\WF@box=\box64
+\WF@everypar=\toks30
+Package: wrapfig 2003/01/31  v 3.6
+)
 (C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen187
-\captionmargin=\dimen188
-\caption@leftmargin=\dimen189
-\caption@rightmargin=\dimen190
-\caption@width=\dimen191
-\caption@indent=\dimen192
-\caption@parindent=\dimen193
-\caption@hangindent=\dimen194
+\caption@tempdima=\dimen189
+\captionmargin=\dimen190
+\caption@leftmargin=\dimen191
+\caption@rightmargin=\dimen192
+\caption@width=\dimen193
+\caption@indent=\dimen194
+\caption@parindent=\dimen195
+\caption@hangindent=\dimen196
 Package caption Info: Standard document class detected.
 Package caption Info: french babel package is loaded.
 )
-\c@caption@flags=\count457
-\c@continuedfloat=\count458
+\c@caption@flags=\count458
+\c@continuedfloat=\count459
 Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
 )
 (C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
-\c@subfigure=\count459
-\c@subtable=\count460
+\c@subfigure=\count460
+\c@subtable=\count461
 )
 (C:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count461
-\float@exts=\toks30
-\float@box=\box64
-\@float@everytoks=\toks31
-\@floatcapt=\box65
+\c@float@type=\count462
+\float@exts=\toks31
+\float@box=\box65
+\@float@everytoks=\toks32
+\@floatcapt=\box66
 )
 (C:\Program Files\MiKTeX\tex/latex/newfloat\newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
@@ -1488,30 +1494,31 @@ horend }}\ifnum \c@secnumdepth >\m@ne \ltx@IfUndefined {if@mainmatter}\iftrue {
 chapter .
 Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
 pter [{#1}]{#2}.
+Package newfloat Info: `wrapfig' package detected.
 )
 Package newfloat Info: New float `scheme' with options `fileext=los, name=Schem
-e, placement=htbp' on input line 250.
-\c@scheme=\count462
-Package newfloat Info: float type `scheme'=4 on input line 250.
-\c@subscheme=\count463
-Package newfloat Info: New float `figureSI' with options `fileext=los, name=Fig
-ure, placement=htbp' on input line 251.
-\c@figureSI=\count464
-Package newfloat Info: float type `figureSI'=8 on input line 251.
-Package newfloat Info: \newfloat@ext@los is already defined on input line 251.
-\c@subfigureSI=\count465
-Package newfloat Info: New float `schemeSI' with options `fileext=los, name=Sch
-eme, placement=htbp' on input line 252.
-\c@schemeSI=\count466
-Package newfloat Info: float type `schemeSI'=16 on input line 252.
-Package newfloat Info: \newfloat@ext@los is already defined on input line 252.
-\c@subschemeSI=\count467
-Package newfloat Info: New float `tableSI' with options `fileext=los, name=Tabl
 e, placement=htbp' on input line 253.
-\c@tableSI=\count468
-Package newfloat Info: float type `tableSI'=32 on input line 253.
-Package newfloat Info: \newfloat@ext@los is already defined on input line 253.
-\c@subtableSI=\count469
+\c@scheme=\count463
+Package newfloat Info: float type `scheme'=4 on input line 253.
+\c@subscheme=\count464
+Package newfloat Info: New float `figureSI' with options `fileext=los, name=Fig
+ure, placement=htbp' on input line 254.
+\c@figureSI=\count465
+Package newfloat Info: float type `figureSI'=8 on input line 254.
+Package newfloat Info: \newfloat@ext@los is already defined on input line 254.
+\c@subfigureSI=\count466
+Package newfloat Info: New float `schemeSI' with options `fileext=los, name=Sch
+eme, placement=htbp' on input line 255.
+\c@schemeSI=\count467
+Package newfloat Info: float type `schemeSI'=16 on input line 255.
+Package newfloat Info: \newfloat@ext@los is already defined on input line 255.
+\c@subschemeSI=\count468
+Package newfloat Info: New float `tableSI' with options `fileext=los, name=Tabl
+e, placement=htbp' on input line 256.
+\c@tableSI=\count469
+Package newfloat Info: float type `tableSI'=32 on input line 256.
+Package newfloat Info: \newfloat@ext@los is already defined on input line 256.
+\c@subtableSI=\count470
 
 (C:\Program Files\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
@@ -1519,15 +1526,15 @@ Package: placeins 2005/04/18  v 2.2
 (C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip91
-\multirow@cntb=\count470
+\multirow@cntb=\count471
 \multirow@dima=\skip92
-\bigstrutjot=\dimen195
+\bigstrutjot=\dimen197
 )
 (C:\Program Files\MiKTeX\tex/latex/makecell\makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen196
-\c@nlinenum=\count471
-\TeXr@lab=\toks32
+\rotheadsize=\dimen198
+\c@nlinenum=\count472
+\TeXr@lab=\toks33
 )
 (C:\Program Files\MiKTeX\tex/latex/adjustbox\adjustbox.sty
 Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
@@ -1537,10 +1544,10 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks33
-\XKV@tempa@toks=\toks34
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
 )
-\XKV@depth=\count472
+\XKV@depth=\count473
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Program Files\MiKTeX\tex/latex/adjustbox\adjcalc.sty
@@ -1552,46 +1559,46 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
 (C:\Program Files\MiKTeX\tex/latex/collectbox\collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box66
+\collectedbox=\box67
 )
-\tc@llx=\dimen197
-\tc@lly=\dimen198
-\tc@urx=\dimen199
-\tc@ury=\dimen256
+\tc@llx=\dimen199
+\tc@lly=\dimen256
+\tc@urx=\dimen257
+\tc@ury=\dimen258
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (C:\Program Files\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen257
-\adjbox@Height=\dimen258
-\adjbox@Depth=\dimen259
-\adjbox@Totalheight=\dimen260
-\adjbox@pwidth=\dimen261
-\adjbox@pheight=\dimen262
-\adjbox@pdepth=\dimen263
-\adjbox@ptotalheight=\dimen264
+\adjbox@Width=\dimen259
+\adjbox@Height=\dimen260
+\adjbox@Depth=\dimen261
+\adjbox@Totalheight=\dimen262
+\adjbox@pwidth=\dimen263
+\adjbox@pheight=\dimen264
+\adjbox@pdepth=\dimen265
+\adjbox@ptotalheight=\dimen266
 
 (C:\Program Files\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count473
+\c@checkoddpage=\count474
 )
 (C:\Program Files\MiKTeX\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box67
-\sift@deathcycles=\count474
-\@vwid@loff=\dimen265
-\@vwid@roff=\dimen266
+\@vwid@box=\box68
+\sift@deathcycles=\count475
+\@vwid@loff=\dimen267
+\@vwid@roff=\dimen268
 ))
 (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen267
-\TX@old@table=\dimen268
-\TX@old@col=\dimen269
-\TX@target=\dimen270
-\TX@delta=\dimen271
-\TX@cols=\count475
-\TX@ftn=\toks35
+\TX@col@width=\dimen269
+\TX@old@table=\dimen270
+\TX@old@col=\dimen271
+\TX@target=\dimen272
+\TX@delta=\dimen273
+\TX@cols=\count476
+\TX@ftn=\toks36
 )
 (C:\Program Files\MiKTeX\tex/latex/shipunov\boldline.sty
 Package: boldline 2008/02/04 v0.2 Adjust line width in tables
@@ -1611,35 +1618,35 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
 
 (C:\Program Files\MiKTeX\tex/latex-dev/graphics\mathcolor.ltx))
-\everycr=\toks36
+\everycr=\toks37
 \minrowclearance=\skip93
-\rownum=\count476
+\rownum=\count477
 )
 (C:\Program Files\MiKTeX\tex/latex/graphics\rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count477
+\c@r@tfl@t=\count478
 \rotFPtop=\skip94
 \rotFPbot=\skip95
-\rot@float@box=\box68
-\rot@mess@toks=\toks37
+\rot@float@box=\box69
+\rot@mess@toks=\toks38
 )
 (C:\Program Files\MiKTeX\tex/latex/supertabular\supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count478
-\ST@wd=\dimen272
+\c@tracingst=\count479
+\ST@wd=\dimen274
 \ST@rightskip=\skip96
 \ST@leftskip=\skip97
 \ST@parfillskip=\skip98
-\ST@pageleft=\dimen273
-\ST@headht=\dimen274
-\ST@tailht=\dimen275
-\ST@pagesofar=\dimen276
-\ST@pboxht=\dimen277
-\ST@lineht=\dimen278
-\ST@prevht=\dimen279
-\ST@toadd=\dimen280
-\ST@dimen=\dimen281
-\ST@pbox=\box69
+\ST@pageleft=\dimen275
+\ST@headht=\dimen276
+\ST@tailht=\dimen277
+\ST@pagesofar=\dimen278
+\ST@pboxht=\dimen279
+\ST@lineht=\dimen280
+\ST@prevht=\dimen281
+\ST@toadd=\dimen282
+\ST@dimen=\dimen283
+\ST@pbox=\box70
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
@@ -1647,18 +1654,18 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip100
 \LTpre=\skip101
 \LTpost=\skip102
-\LTchunksize=\count479
-\LTcapwidth=\dimen282
-\LT@head=\box70
-\LT@firsthead=\box71
-\LT@foot=\box72
-\LT@lastfoot=\box73
-\LT@gbox=\box74
-\LT@cols=\count480
-\LT@rows=\count481
-\c@LT@tables=\count482
-\c@LT@chunks=\count483
-\LT@p@ftn=\toks38
+\LTchunksize=\count480
+\LTcapwidth=\dimen284
+\LT@head=\box71
+\LT@firsthead=\box72
+\LT@foot=\box73
+\LT@lastfoot=\box74
+\LT@gbox=\box75
+\LT@cols=\count481
+\LT@rows=\count482
+\c@LT@tables=\count483
+\c@LT@chunks=\count484
+\LT@p@ftn=\toks39
 )
 (C:\Program Files\MiKTeX\tex/latex/csvsimple\csvsimple.sty
 Package: csvsimple 2022/09/20 v2.3.2 LaTeX CSV file processing
@@ -1668,13 +1675,13 @@ Package: csvsimple-legacy 2022/09/20 version 2.3.2 LaTeX2e CSV file processing
 
 (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks39
-\pgfutil@tempdima=\dimen283
-\pgfutil@tempdimb=\dimen284
+\pgfutil@everybye=\toks40
+\pgfutil@tempdima=\dimen285
+\pgfutil@tempdimb=\dimen286
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex))
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
-\pgfutil@abb=\box75
+\pgfutil@abb=\box76
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
 (C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
@@ -1682,20 +1689,20 @@ Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks40
-\pgfkeys@temptoks=\toks41
+\pgfkeys@pathtoks=\toks41
+\pgfkeys@temptoks=\toks42
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks42
+\pgfkeys@tmptoks=\toks43
 )))
 (C:\Program Files\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \csv@file=\read4
-\c@csvinputline=\count484
-\c@csvrow=\count485
-\c@csvcol=\count486
+\c@csvinputline=\count485
+\c@csvrow=\count486
+\c@csvcol=\count487
 \csv@out=\write4
 )
 (C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
@@ -1713,19 +1720,19 @@ rs
 )
 (C:\Program Files\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box76
+\ttl@box=\box77
 \beforetitleunit=\skip112
 \aftertitleunit=\skip113
-\ttl@plus=\dimen285
-\ttl@minus=\dimen286
-\ttl@toksa=\toks43
-\titlewidth=\dimen287
-\titlewidthlast=\dimen288
-\titlewidthfirst=\dimen289
+\ttl@plus=\dimen287
+\ttl@minus=\dimen288
+\ttl@toksa=\toks44
+\titlewidth=\dimen289
+\titlewidthlast=\dimen290
+\titlewidthfirst=\dimen291
 )
 (C:\Program Files\MiKTeX\tex/latex/titlesec\titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
-\ttl@leftsep=\dimen290
+\ttl@leftsep=\dimen292
 )
 (C:\Program Files\MiKTeX\tex/latex/tocbibind\tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -1736,9 +1743,9 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (C:\Program Files\MiKTeX\tex/latex/footmisc\footmisc.sty
 Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
-\FN@temptoken=\toks44
-\footnotemargin=\dimen291
-\@outputbox@depth=\dimen292
+\FN@temptoken=\toks45
+\footnotemargin=\dimen293
+\@outputbox@depth=\dimen294
 Package footmisc Info: Declaring symbol style bringhurst on input line 695.
 Package footmisc Info: Declaring symbol style chicago on input line 703.
 Package footmisc Info: Declaring symbol style wiley on input line 712.
@@ -1754,34 +1761,34 @@ File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
 (C:\Program Files\MiKTeX\tex/generic/minifp\minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 -based programing language.
-\MFP@loopctr=\count487
+\MFP@loopctr=\count488
 )
-\c@DefaultLines=\count488
-\c@DefaultDepth=\count489
-\DefaultFindent=\dimen293
-\DefaultNindent=\dimen294
-\DefaultSlope=\dimen295
-\DiscardVskip=\dimen296
-\L@lbox=\box77
-\L@tbox=\box78
-\c@L@lines=\count490
-\c@L@depth=\count491
-\L@Pindent=\dimen297
-\L@Findent=\dimen298
-\L@Nindent=\dimen299
-\L@lraise=\dimen300
-\L@first=\dimen301
-\L@next=\dimen302
-\L@slope=\dimen303
-\L@height=\dimen304
-\L@novskip=\dimen305
-\L@target@ht=\dimen306
-\L@target@dp=\dimen307
-\L@target@tht=\dimen308
-\LettrineWidth=\dimen309
-\LettrineHeight=\dimen310
-\LettrineDepth=\dimen311
-\Llist@everypar=\toks45
+\c@DefaultLines=\count489
+\c@DefaultDepth=\count490
+\DefaultFindent=\dimen295
+\DefaultNindent=\dimen296
+\DefaultSlope=\dimen297
+\DiscardVskip=\dimen298
+\L@lbox=\box78
+\L@tbox=\box79
+\c@L@lines=\count491
+\c@L@depth=\count492
+\L@Pindent=\dimen299
+\L@Findent=\dimen300
+\L@Nindent=\dimen301
+\L@lraise=\dimen302
+\L@first=\dimen303
+\L@next=\dimen304
+\L@slope=\dimen305
+\L@height=\dimen306
+\L@novskip=\dimen307
+\L@target@ht=\dimen308
+\L@target@dp=\dimen309
+\L@target@tht=\dimen310
+\LettrineWidth=\dimen311
+\LettrineHeight=\dimen312
+\LettrineDepth=\dimen313
+\Llist@everypar=\toks46
 
 Loading lettrine.cfg
 (C:\Program Files\MiKTeX\tex/latex/lettrine\lettrine.cfg))
@@ -1790,51 +1797,51 @@ Package: extdash 2018/06/24 v1.3 Extended Dash Package (NCC)
 )
 (C:\Program Files\MiKTeX\tex/latex/etaremune\etaremune.sty
 Package: etaremune 2005/06/01 v1.2 Reversed enumerate (HA)
-\c@EM@itemctr=\count492
-\c@EM@etaremunectr=\count493
+\c@EM@itemctr=\count493
+\c@EM@etaremunectr=\count494
 )
 (C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip114
-\enit@outerparindent=\dimen312
-\enit@toks=\toks46
-\enit@inbox=\box79
-\enit@count@id=\count494
-\enitdp@description=\count495
+\enit@outerparindent=\dimen314
+\enit@toks=\toks47
+\enit@inbox=\box80
+\enit@count@id=\count495
+\enitdp@description=\count496
 )
 (C:\Program Files\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2022/05/22 v0.5v Insert pages of external PDF documents (AM)
 
 (C:\Program Files\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen313
-\ESO@tempdimb=\dimen314
+\ESO@tempdima=\dimen315
+\ESO@tempdimb=\dimen316
 )
-\AM@pagewidth=\dimen315
-\AM@pageheight=\dimen316
-\AM@fboxrule=\dimen317
+\AM@pagewidth=\dimen317
+\AM@pageheight=\dimen318
+\AM@fboxrule=\dimen319
 
 (C:\Program Files\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2022/05/22 v0.5v Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count496
-\AM@pagebox=\box80
-\AM@global@opts=\toks47
-\AM@pagecnt=\count497
-\AM@toc@title=\toks48
-\c@AM@survey=\count498
-\AM@templatesizebox=\box81
+\pdfpages@includegraphics@status=\count497
+\AM@pagebox=\box81
+\AM@global@opts=\toks48
+\AM@pagecnt=\count498
+\AM@toc@title=\toks49
+\c@AM@survey=\count499
+\AM@templatesizebox=\box82
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks49
-\AP@partial=\box82
-\AP@footins=\box83
+\AP@output=\toks50
+\AP@partial=\box83
+\AP@footins=\box84
 )
 (C:\Program Files\MiKTeX\tex/latex/changepage\changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count499
-\cp@tempcnt=\count500
+\c@cp@cntr=\count500
+\cp@tempcnt=\count501
 LaTeX Info: Redefining \checkoddpage on input line 59.
 )
 (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
@@ -1867,26 +1874,26 @@ Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)
-\pgf@x=\dimen318
-\pgf@y=\dimen319
-\pgf@xa=\dimen320
-\pgf@ya=\dimen321
-\pgf@xb=\dimen322
-\pgf@yb=\dimen323
-\pgf@xc=\dimen324
-\pgf@yc=\dimen325
-\pgf@xd=\dimen326
-\pgf@yd=\dimen327
+\pgf@x=\dimen320
+\pgf@y=\dimen321
+\pgf@xa=\dimen322
+\pgf@ya=\dimen323
+\pgf@xb=\dimen324
+\pgf@yb=\dimen325
+\pgf@xc=\dimen326
+\pgf@yc=\dimen327
+\pgf@xd=\dimen328
+\pgf@yd=\dimen329
 \w@pgf@writea=\write5
 \r@pgf@reada=\read5
-\c@pgf@counta=\count501
-\c@pgf@countb=\count502
-\c@pgf@countc=\count503
-\c@pgf@countd=\count504
-\t@pgf@toka=\toks50
-\t@pgf@tokb=\toks51
-\t@pgf@tokc=\toks52
-\pgf@sys@id@count=\count505
+\c@pgf@counta=\count502
+\c@pgf@countb=\count503
+\c@pgf@countc=\count504
+\c@pgf@countd=\count505
+\t@pgf@toka=\toks51
+\t@pgf@tokb=\toks52
+\t@pgf@tokc=\toks53
+\pgf@sys@id@count=\count506
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
@@ -1901,8 +1908,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count506
-\pgfsyssoftpath@bigbuffer@items=\count507
+\pgfsyssoftpath@smallbuffer@items=\count507
+\pgfsyssoftpath@bigbuffer@items=\count508
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -1914,12 +1921,12 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen328
-\pgfmath@count=\count508
-\pgfmath@box=\box84
-\pgfmath@toks=\toks53
-\pgfmath@stack@operand=\toks54
-\pgfmath@stack@operation=\toks55
+\pgfmath@dimen=\dimen330
+\pgfmath@count=\count509
+\pgfmath@box=\box85
+\pgfmath@toks=\toks54
+\pgfmath@stack@operand=\toks55
+\pgfmath@stack@operation=\toks56
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
@@ -1935,55 +1942,55 @@ tex)
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
 cs.code.tex)))
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count509
+\c@pgfmathroundto@lastzeros=\count510
 ))
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen329
-\pgf@picmaxx=\dimen330
-\pgf@picminy=\dimen331
-\pgf@picmaxy=\dimen332
-\pgf@pathminx=\dimen333
-\pgf@pathmaxx=\dimen334
-\pgf@pathminy=\dimen335
-\pgf@pathmaxy=\dimen336
-\pgf@xx=\dimen337
-\pgf@xy=\dimen338
-\pgf@yx=\dimen339
-\pgf@yy=\dimen340
-\pgf@zx=\dimen341
-\pgf@zy=\dimen342
+\pgf@picminx=\dimen331
+\pgf@picmaxx=\dimen332
+\pgf@picminy=\dimen333
+\pgf@picmaxy=\dimen334
+\pgf@pathminx=\dimen335
+\pgf@pathmaxx=\dimen336
+\pgf@pathminy=\dimen337
+\pgf@pathmaxy=\dimen338
+\pgf@xx=\dimen339
+\pgf@xy=\dimen340
+\pgf@yx=\dimen341
+\pgf@yy=\dimen342
+\pgf@zx=\dimen343
+\pgf@zy=\dimen344
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.t
 ex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen343
-\pgf@path@lasty=\dimen344
+\pgf@path@lastx=\dimen345
+\pgf@path@lasty=\dimen346
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen345
-\pgf@shorten@start@additional=\dimen346
+\pgf@shorten@end@additional=\dimen347
+\pgf@shorten@start@additional=\dimen348
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box85
-\pgf@hbox=\box86
-\pgf@layerbox@main=\box87
-\pgf@picture@serial@count=\count510
+\pgfpic=\box86
+\pgf@hbox=\box87
+\pgf@layerbox@main=\box88
+\pgf@picture@serial@count=\count511
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
 x
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen347
+\pgflinewidth=\dimen349
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code
 .tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen348
-\pgf@pt@y=\dimen349
-\pgf@pt@temp=\dimen350
+\pgf@pt@x=\dimen350
+\pgf@pt@y=\dimen351
+\pgf@pt@temp=\dimen352
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
@@ -1994,19 +2001,19 @@ tex
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen351
+\pgfarrowsep=\dimen353
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen352
-\pgf@sys@shading@range@num=\count511
-\pgf@shadingcount=\count512
+\pgf@max=\dimen354
+\pgf@sys@shading@range@num=\count512
+\pgf@shadingcount=\count513
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box88
+\pgfexternal@startupbox=\box89
 ))
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -2021,15 +2028,15 @@ File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box89
+\pgfnodeparttextbox=\box90
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen353
-\pgf@nodesepend=\dimen354
+\pgf@nodesepstart=\dimen355
+\pgf@nodesepend=\dimen356
 )
 (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
@@ -2040,10 +2047,10 @@ Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
-\pgffor@iter=\dimen355
-\pgffor@skip=\dimen356
-\pgffor@stack=\toks56
-\pgffor@toks=\toks57
+\pgffor@iter=\dimen357
+\pgffor@skip=\dimen358
+\pgffor@stack=\toks57
+\pgffor@toks=\toks58
 ))
 (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
@@ -2051,32 +2058,32 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
 tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count513
-\pgfplotmarksize=\dimen357
+\pgf@plot@mark@count=\count514
+\pgfplotmarksize=\dimen359
 )
-\tikz@lastx=\dimen358
-\tikz@lasty=\dimen359
-\tikz@lastxsaved=\dimen360
-\tikz@lastysaved=\dimen361
-\tikz@lastmovetox=\dimen362
-\tikz@lastmovetoy=\dimen363
-\tikzleveldistance=\dimen364
-\tikzsiblingdistance=\dimen365
-\tikz@figbox=\box90
-\tikz@figbox@bg=\box91
-\tikz@tempbox=\box92
-\tikz@tempbox@bg=\box93
-\tikztreelevel=\count514
-\tikznumberofchildren=\count515
-\tikznumberofcurrentchild=\count516
-\tikz@fig@count=\count517
+\tikz@lastx=\dimen360
+\tikz@lasty=\dimen361
+\tikz@lastxsaved=\dimen362
+\tikz@lastysaved=\dimen363
+\tikz@lastmovetox=\dimen364
+\tikz@lastmovetoy=\dimen365
+\tikzleveldistance=\dimen366
+\tikzsiblingdistance=\dimen367
+\tikz@figbox=\box91
+\tikz@figbox@bg=\box92
+\tikz@tempbox=\box93
+\tikz@tempbox@bg=\box94
+\tikztreelevel=\count515
+\tikznumberofchildren=\count516
+\tikznumberofcurrentchild=\count517
+\tikz@fig@count=\count518
  (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count518
-\pgfmatrixcurrentcolumn=\count519
-\pgf@matrix@numberofcolumns=\count520
+\pgfmatrixcurrentrow=\count519
+\pgfmatrixcurrentcolumn=\count520
+\pgf@matrix@numberofcolumns=\count521
 )
-\tikz@expandcount=\count521
+\tikz@expandcount=\count522
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
 rytopaths.code.tex
@@ -2093,12 +2100,12 @@ File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 rycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 838.
+Package hyperref Info: Option `colorlinks' set `true' on input line 861.
 ) (C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count522
-\l__lipsum_a_int=\count523
-\l__lipsum_b_int=\count524
+\g__lipsum_par_int=\count523
+\l__lipsum_a_int=\count524
+\l__lipsum_b_int=\count525
 
 (C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
 (C:\Program Files\MiKTeX\tex/latex/blindtext\blindtext.sty
@@ -2107,47 +2114,47 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count525
-\c@Blindtext=\count526
-\c@blind@countparstart=\count527
-\blind@countxx=\count528
-\blindtext@numBlindtext=\count529
-\blind@countyy=\count530
-\c@blindlist=\count531
-\c@blindlistlevel=\count532
-\c@blindlist@level=\count533
-\blind@listitem=\count534
-\c@blind@listcount=\count535
-\c@blind@levelcount=\count536
-\blind@mathformula=\count537
-\blind@Mathformula=\count538
-\c@blind@randomcount=\count539
-\c@blind@randommax=\count540
-\c@blind@pangramcount=\count541
-\c@blind@pangrammax=\count542
+\c@blindtext=\count526
+\c@Blindtext=\count527
+\c@blind@countparstart=\count528
+\blind@countxx=\count529
+\blindtext@numBlindtext=\count530
+\blind@countyy=\count531
+\c@blindlist=\count532
+\c@blindlistlevel=\count533
+\c@blindlist@level=\count534
+\blind@listitem=\count535
+\c@blind@listcount=\count536
+\c@blind@levelcount=\count537
+\blind@mathformula=\count538
+\blind@Mathformula=\count539
+\c@blind@randomcount=\count540
+\c@blind@randommax=\count541
+\c@blind@pangramcount=\count542
+\c@blind@pangrammax=\count543
 )
 (C:\Program Files\MiKTeX\tex/latex/showexpl\showexpl.sty
 Package: showexpl 2021/01/06 v0.3s Typesetting example code (RN)
 
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count543
-\lst@gtempboxa=\box94
-\lst@token=\toks58
-\lst@length=\count544
-\lst@currlwidth=\dimen366
-\lst@column=\count545
-\lst@pos=\count546
-\lst@lostspace=\dimen367
-\lst@width=\dimen368
-\lst@newlines=\count547
-\lst@lineno=\count548
-\lst@maxwidth=\dimen369
+\lst@mode=\count544
+\lst@gtempboxa=\box95
+\lst@token=\toks59
+\lst@length=\count545
+\lst@currlwidth=\dimen368
+\lst@column=\count546
+\lst@pos=\count547
+\lst@lostspace=\dimen369
+\lst@width=\dimen370
+\lst@newlines=\count548
+\lst@lineno=\count549
+\lst@maxwidth=\dimen371
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count549
-\lst@skipnumbers=\count550
-\lst@framebox=\box95
+\c@lstnumber=\count550
+\lst@skipnumbers=\count551
+\lst@framebox=\box96
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -2156,21 +2163,21 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\lst@WFtoken=\toks59
+\lst@WFtoken=\toks60
 \lst@WF=\write6
 )
-\SX@ResBox=\box96
-\ResultBoxSep=\dimen370
-\ResultBoxRule=\dimen371
-\c@ltxexample=\count551
+\SX@ResBox=\box97
+\ResultBoxSep=\dimen372
+\ResultBoxRule=\dimen373
+\c@ltxexample=\count552
 )
 (C:\Program Files\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
 Package: fancyvrb 2022/06/06 4.5 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count552
+\FV@CodeLineNo=\count553
 \FV@InFile=\read6
-\FV@TabBox=\box97
-\c@FancyVerbLine=\count553
-\FV@StepNumber=\count554
+\FV@TabBox=\box98
+\c@FancyVerbLine=\count554
+\FV@StepNumber=\count555
 \FV@OutFile=\write7
 )
 (C:\Program Files\MiKTeX\tex/latex/fvextra\fvextra.sty
@@ -2185,20 +2192,20 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 (C:\Program Files\MiKTeX\tex/latex/lineno\lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count555
-\output=\toks60
-\linenoprevgraf=\count556
-\linenumbersep=\dimen372
-\linenumberwidth=\dimen373
-\c@linenumber=\count557
-\c@pagewiselinenumber=\count558
-\c@LN@truepage=\count559
-\c@internallinenumber=\count560
-\c@internallinenumbers=\count561
-\quotelinenumbersep=\dimen374
-\bframerule=\dimen375
-\bframesep=\dimen376
-\bframebox=\box98
+\linenopenalty=\count556
+\output=\toks61
+\linenoprevgraf=\count557
+\linenumbersep=\dimen374
+\linenumberwidth=\dimen375
+\c@linenumber=\count558
+\c@pagewiselinenumber=\count559
+\c@LN@truepage=\count560
+\c@internallinenumber=\count561
+\c@internallinenumbers=\count562
+\quotelinenumbersep=\dimen376
+\bframerule=\dimen377
+\bframesep=\dimen378
+\bframebox=\box99
 
 
 LaTeX Warning: Command \@parboxrestore  has changed.
@@ -2210,28 +2217,28 @@ LaTeX Info: Redefining \\ on input line 3056.
 Package fvextra Warning: csquotes should be loaded after fvextra, to avoid a wa
 rning from the lineno package on input line 37.
 
-\c@FV@TrueTabGroupLevel=\count562
-\c@FV@TrueTabCounter=\count563
-\FV@TabBox@Group=\box99
+\c@FV@TrueTabGroupLevel=\count563
+\c@FV@TrueTabCounter=\count564
+\FV@TabBox@Group=\box100
 \FV@TmpLength=\skip121
-\c@FV@HighlightLinesStart=\count564
-\c@FV@HighlightLinesStop=\count565
-\FV@LoopCount=\count566
-\FV@NCharsBox=\box100
-\FV@BreakIndent=\dimen377
-\FV@BreakIndentNChars=\count567
-\FV@BreakSymbolSepLeft=\dimen378
-\FV@BreakSymbolSepLeftNChars=\count568
-\FV@BreakSymbolSepRight=\dimen379
-\FV@BreakSymbolSepRightNChars=\count569
-\FV@BreakSymbolIndentLeft=\dimen380
-\FV@BreakSymbolIndentLeftNChars=\count570
-\FV@BreakSymbolIndentRight=\dimen381
-\FV@BreakSymbolIndentRightNChars=\count571
-\c@FancyVerbLineBreakLast=\count572
-\FV@LineBox=\box101
-\FV@LineIndentBox=\box102
-\FV@LineWidth=\dimen382
+\c@FV@HighlightLinesStart=\count565
+\c@FV@HighlightLinesStop=\count566
+\FV@LoopCount=\count567
+\FV@NCharsBox=\box101
+\FV@BreakIndent=\dimen379
+\FV@BreakIndentNChars=\count568
+\FV@BreakSymbolSepLeft=\dimen380
+\FV@BreakSymbolSepLeftNChars=\count569
+\FV@BreakSymbolSepRight=\dimen381
+\FV@BreakSymbolSepRightNChars=\count570
+\FV@BreakSymbolIndentLeft=\dimen382
+\FV@BreakSymbolIndentLeftNChars=\count571
+\FV@BreakSymbolIndentRight=\dimen383
+\FV@BreakSymbolIndentRightNChars=\count572
+\c@FancyVerbLineBreakLast=\count573
+\FV@LineBox=\box102
+\FV@LineIndentBox=\box103
+\FV@LineWidth=\dimen384
 ) (C:\Program Files\MiKTeX\tex/latex/subfiles\subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 
@@ -2241,7 +2248,7 @@ Package: import 2020/04/01  v 6.2
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
-Package csquotes Info: Redefining alias 'default' -> 'british'.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+jkp on input line 13
 7.
 
@@ -2342,17 +2349,17 @@ LaTeX Info: Redefining \up on input line 137.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count573
-\scratchdimen=\dimen383
-\scratchbox=\box103
-\nofMPsegments=\count574
-\nofMParguments=\count575
-\everyMPshowfont=\toks61
-\MPscratchCnt=\count576
-\MPscratchDim=\dimen384
-\MPnumerator=\count577
-\makeMPintoPDFobject=\count578
-\everyMPtoPDFconversion=\toks62
+\scratchcounter=\count574
+\scratchdimen=\dimen385
+\scratchbox=\box104
+\nofMPsegments=\count575
+\nofMParguments=\count576
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count577
+\MPscratchDim=\dimen386
+\MPnumerator=\count578
+\makeMPintoPDFobject=\count579
+\everyMPtoPDFconversion=\toks63
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -2376,6 +2383,9 @@ nary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 137.
+
 (C:\Program Files\MiKTeX\tex/latex/translations/dicts\translations-basic-dictio
 nary-dutch.trsl
 File: translations-basic-dictionary-dutch.trsl (dutch translation file `transla
@@ -2422,16 +2432,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `jkp' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package biblatex Info: Trying to load language 'british'...
-Package biblatex Info: ... file 'british.lbx' found.
- (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\british.lbx
-File: british.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
-(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+ (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
-))
+)
 Package biblatex Info: Trying to load language 'dutch'...
 Package biblatex Info: ... file 'dutch.lbx' found.
 
@@ -2456,8 +2461,8 @@ Package biblatex Info: Reference section=0 on input line 137.
 Package biblatex Info: Reference segment=0 on input line 137.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen385
-\caption@adjustwidth@linewidth=\dimen386
+\caption@adjustwidth@hsize=\dimen387
+\caption@adjustwidth@linewidth=\dimen388
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -2479,12 +2484,12 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count579
+\c@lstlisting=\count580
 \openout2 = `Titlepage/titlepage.aux'.
 
 
 (Titlepage/titlepage.tex
-<Firstpage/firstpage.pdf, id=162, 483.6971pt x 682.86618pt>
+<Firstpage/firstpage.pdf, id=171, 483.6971pt x 682.86618pt>
 File: Firstpage/firstpage.pdf Graphic file (type pdf)
 <use Firstpage/firstpage.pdf>
 Package pdftex.def Info: Firstpage/firstpage.pdf  used on input line 6.
@@ -2493,7 +2498,7 @@ File: Firstpage/firstpage.pdf Graphic file (type pdf)
 <use Firstpage/firstpage.pdf>
 Package pdftex.def Info: Firstpage/firstpage.pdf  used on input line 6.
 (pdftex.def)             Requested size: 483.69592pt x 682.8645pt.
-<Firstpage/firstpage.pdf, id=165, page=1, 483.6971pt x 682.86618pt>
+<Firstpage/firstpage.pdf, id=174, page=1, 483.6971pt x 682.86618pt>
 File: Firstpage/firstpage.pdf Graphic file (type pdf)
 <use Firstpage/firstpage.pdf, page 1>
 Package pdftex.def Info: Firstpage/firstpage.pdf , page1 used on input line 6.
@@ -2521,7 +2526,7 @@ Package pdftex.def Info: Firstpage/firstpage.pdf , page1 used on input line 6.
 
  <./Firstpage/firstpage.pdf{C:/Users/Jorn_/AppData/Local/MiKTeX/fonts/map/pdfte
 x/pdftex.map}>]
-<Titlepage/Stratingh logo red.png, id=190, 1056.94875pt x 104.39pt>
+<Titlepage/Stratingh logo red.png, id=199, 1056.94875pt x 104.39pt>
 File: Titlepage/Stratingh logo red.png Graphic file (type png)
 <use Titlepage/Stratingh logo red.png>
 Package pdftex.def Info: Titlepage/Stratingh logo red.png  used on input line 1
@@ -2547,7 +2552,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 pdfTeX warning: pdflatex.exe (file ./Titlepage//Titelblad_example/Titelblad_exa
 mple.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<Titlepage//Titelblad_example/Titelblad_example.pdf, id=200, 597.55246pt x 845.
+<Titlepage//Titelblad_example/Titelblad_example.pdf, id=209, 597.55246pt x 845.
 07718pt>
 File: Titlepage//Titelblad_example/Titelblad_example.pdf Graphic file (type pdf
 )
@@ -2576,7 +2581,7 @@ lowed
 pdfTeX warning: pdflatex.exe (file ./Titlepage//Titelblad_example/Titelblad_exa
 mple.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<Titlepage//Titelblad_example/Titelblad_example.pdf, id=203, page=1, 597.55246p
+<Titlepage//Titelblad_example/Titelblad_example.pdf, id=212, page=1, 597.55246p
 t x 845.07718pt>
 File: Titlepage//Titelblad_example/Titelblad_example.pdf Graphic file (type pdf
 )
@@ -2615,7 +2620,7 @@ age1 used on input line 44.
 pdfTeX warning: pdflatex.exe (file ./Titlepage//Titelblad_example/Titelblad_exa
 mple.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<Titlepage//Titelblad_example/Titelblad_example.pdf, id=235, page=2, 597.55246p
+<Titlepage//Titelblad_example/Titelblad_example.pdf, id=244, page=2, 597.55246p
 t x 845.07718pt>
 File: Titlepage//Titelblad_example/Titelblad_example.pdf Graphic file (type pdf
 )
@@ -2671,15 +2676,15 @@ Package microtype Info: Character `029' is missing
 \openout2 = `Chapter_1/Chapter_1_examplesubfile.aux'.
 
  (Chapter_1/Chapter_1_examplesubfile.tex
-\blx@maxsegment@1=\count580
-\blx@sectionciteorder@1=\count581
+\blx@maxsegment@1=\count581
+\blx@sectionciteorder@1=\count582
 Package biblatex Info: Reference section=1 on input line 4.
 Package biblatex Info: Setting label 'refsection:1' on input line 4.
  [1
 
 
 ]
-<Chapter_1//chapterimagepage_1.pdf, id=348, 398.65135pt x 303.9606pt>
+<Chapter_1//chapterimagepage_1.pdf, id=361, 398.65135pt x 303.9606pt>
 File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
 <use Chapter_1//chapterimagepage_1.pdf>
 Package pdftex.def Info: Chapter_1//chapterimagepage_1.pdf  used on input line 
@@ -2690,7 +2695,7 @@ File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
 Package pdftex.def Info: Chapter_1//chapterimagepage_1.pdf  used on input line 
 13.
 (pdftex.def)             Requested size: 398.65038pt x 303.95985pt.
-<Chapter_1//chapterimagepage_1.pdf, id=351, page=1, 398.65135pt x 303.9606pt>
+<Chapter_1//chapterimagepage_1.pdf, id=364, page=1, 398.65135pt x 303.9606pt>
 File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
 <use Chapter_1//chapterimagepage_1.pdf, page 1>
 Package pdftex.def Info: Chapter_1//chapterimagepage_1.pdf , page1 used on inpu
@@ -2779,52 +2784,28 @@ Package microtype Info: Character `029' is missing
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/b/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 25.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 25.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 34.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 34.
-
 Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
  line 39.
-[4
-
-]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
+ [4
 
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 48.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 48.
-
-<Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf, id=413, 398.65135pt x 303.96
+]
+<Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf, id=429, 398.65135pt x 303.96
 06pt>
 File: Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf Graphic file (type pdf)
 <use Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf>
 Package pdftex.def Info: Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf  used
  on input line 54.
 (pdftex.def)             Requested size: 340.57718pt x 259.69421pt.
+ [5 <./Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf>]
 LaTeX Font Info:    Trying to load font information for OT1+jkpss on input line
  66.
+
 (C:\Program Files\MiKTeX\tex/latex/kpfonts\ot1jkpss.fd
 File: ot1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for OT1/jkpss.
 )
@@ -2843,86 +2824,63 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkp/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 79.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 79.
-
-[5]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 81.
-
-[6 <./Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf>]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 95.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 95.
-
-[7]) [8]
+ [6]) [7]
 \openout2 = `Chapter_2/Chapter_2_examplesubfile.aux'.
 
- (Chapter_2/Chapter_2_examplesubfile.tex
+
+(Chapter_2/Chapter_2_examplesubfile.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@2=\count582
-\blx@sectionciteorder@2=\count583
+\blx@maxsegment@2=\count583
+\blx@sectionciteorder@2=\count584
 Package biblatex Info: Reference section=2 on input line 4.
 Package biblatex Info: Setting label 'refsection:2' on input line 4.
- [9
-
-
-
-]
-<Chapter_2//chapterimagepage_2.pdf, id=494, 398.65135pt x 303.9606pt>
+<Chapter_2//chapterimagepage_2.pdf, id=501, 398.65135pt x 303.9606pt>
 File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf>
 Package pdftex.def Info: Chapter_2//chapterimagepage_2.pdf  used on input line 
-13.
+15.
 (pdftex.def)             Requested size: 398.65038pt x 303.95985pt.
 File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf>
 Package pdftex.def Info: Chapter_2//chapterimagepage_2.pdf  used on input line 
-13.
+15.
 (pdftex.def)             Requested size: 398.65038pt x 303.95985pt.
-<Chapter_2//chapterimagepage_2.pdf, id=497, page=1, 398.65135pt x 303.9606pt>
+<Chapter_2//chapterimagepage_2.pdf, id=504, page=1, 398.65135pt x 303.9606pt>
 File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf, page 1>
 Package pdftex.def Info: Chapter_2//chapterimagepage_2.pdf , page1 used on inpu
-t line 13.
+t line 15.
 (pdftex.def)             Requested size: 398.65038pt x 303.95985pt.
 File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf, page 1>
 Package pdftex.def Info: Chapter_2//chapterimagepage_2.pdf , page1 used on inpu
-t line 13.
+t line 15.
 (pdftex.def)             Requested size: 484.48648pt x 369.4075pt.
 File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf, page 1>
 Package pdftex.def Info: Chapter_2//chapterimagepage_2.pdf , page1 used on inpu
-t line 13.
+t line 15.
 (pdftex.def)             Requested size: 484.48648pt x 369.4075pt.
 File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf, page 1>
 Package pdftex.def Info: Chapter_2//chapterimagepage_2.pdf , page1 used on inpu
-t line 13.
+t line 15.
 (pdftex.def)             Requested size: 484.48648pt x 369.4075pt.
 File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf, page 1>
 Package pdftex.def Info: Chapter_2//chapterimagepage_2.pdf , page1 used on inpu
-t line 13.
+t line 15.
 (pdftex.def)             Requested size: 484.48648pt x 369.4075pt.
- [10 <./Chapter_2//chapterimagepage_2.pdf>]
+ [8
+
+
+
+ <./Chapter_2//chapterimagepage_2.pdf>]
 Chapter 2.
 
 Package hyperref Warning: Ignoring empty anchor on input line 20.
 
-<Chapter_2/Figures//titlepageimage/Chapter_2_titlepageimage.pdf, id=549, 398.65
+<Chapter_2/Figures//titlepageimage/Chapter_2_titlepageimage.pdf, id=556, 398.65
 135pt x 303.9606pt>
 File: Chapter_2/Figures//titlepageimage/Chapter_2_titlepageimage.pdf Graphic fi
 le (type pdf)
@@ -2930,137 +2888,133 @@ le (type pdf)
 Package pdftex.def Info: Chapter_2/Figures//titlepageimage/Chapter_2_titlepagei
 mage.pdf  used on input line 26.
 (pdftex.def)             Requested size: 283.81624pt x 216.41183pt.
-[11
+[9
 
- <./Chapter_2/Figures//titlepageimage/Chapter_2_titlepageimage.pdf>]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 32.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 32.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 41.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 41.
-
-[12
+ <./Chapter_2/Figures//titlepageimage/Chapter_2_titlepageimage.pdf>] [10
 
 ]
+[11] [12]
+<Chapter_2/Figures//Molecules/Spiropyran-1.png, id=625, 913.91437pt x 347.79938
+pt>
+File: Chapter_2/Figures//Molecules/Spiropyran-1.png Graphic file (type png)
+<use Chapter_2/Figures//Molecules/Spiropyran-1.png>
+Package pdftex.def Info: Chapter_2/Figures//Molecules/Spiropyran-1.png  used on
+ input line 93.
+(pdftex.def)             Requested size: 100.53088pt x 38.25804pt.
 
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 41.
+Overfull \hbox (5.92548pt too wide) in paragraph at lines 93--93
+ [][] 
+ []
 
 
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 45.
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
+
+ []
+
+LaTeX Font Info:    Trying to load font information for LGR+jkp on input line 9
+3.
+LaTeX Font Info:    No file LGRjkp.fd. on input line 93.
+
+LaTeX Font Warning: Font shape `LGR/jkp/m/n' undefined
+(Font)              using `LGR/cmr/m/n' instead on input line 93.
 
 
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 45.
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
 
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 45.
+ []
 
 [13]
+<Chapter_2/Figures//Molecules/Merocyanine-1.png, id=632, 860.46469pt x 452.4403
+pt>
+File: Chapter_2/Figures//Molecules/Merocyanine-1.png Graphic file (type png)
+<use Chapter_2/Figures//Molecules/Merocyanine-1.png>
+Package pdftex.def Info: Chapter_2/Figures//Molecules/Merocyanine-1.png  used o
+n input line 100.
+(pdftex.def)             Requested size: 94.6514pt x 49.76859pt.
 
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 45.
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
 
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 45.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 45.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 58.
+ []
 
 
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 58.
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
 
-[14] [15]
-<Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf, id=625, 398.65135pt x 30
+ []
+
+[14 <./Chapter_2/Figures//Molecules/Spiropyran-1.png> <./Chapter_2/Figures//Mol
+ecules/Merocyanine-1.png>]
+<Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf, id=641, 398.65135pt x 30
 3.9606pt>
 File: Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf Graphic file (type p
 df)
 <use Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf>
 Package pdftex.def Info: Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf  
-used on input line 99.
+used on input line 112.
 (pdftex.def)             Requested size: 245.97176pt x 187.5492pt.
 Package hyperref Info: bookmark level for unknown figureSI defaults to 0 on inp
-ut line 100.
+ut line 113.
 Package hyperref Info: bookmark level for unknown tableSI defaults to 0 on inpu
-t line 108.
+t line 121.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpss/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
- [16
+ [15
 
- <./Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf>]
-[17] [18]) [19
+ <./Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf>] [16] [17]) [18
 
 ]
 \openout2 = `"Instructions/Style and printing considerations.aux"'.
 
  (Instructions/Style and printing considerations.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@3=\count584
-\blx@sectionciteorder@3=\count585
+\blx@maxsegment@3=\count585
+\blx@sectionciteorder@3=\count586
 Package biblatex Info: Reference section=3 on input line 4.
 Package biblatex Info: Setting label 'refsection:3' on input line 4.
-<Instructions//Image_notepad.pdf, id=698, 787.94376pt x 722.7pt>
+
+[19
+
+
+
+]
+<Instructions//Image_notepad.pdf, id=718, 787.94376pt x 722.7pt>
 File: Instructions//Image_notepad.pdf Graphic file (type pdf)
 <use Instructions//Image_notepad.pdf>
-Package pdftex.def Info: Instructions//Image_notepad.pdf  used on input line 15
+Package pdftex.def Info: Instructions//Image_notepad.pdf  used on input line 13
 .
 (pdftex.def)             Requested size: 787.94183pt x 722.69823pt.
 File: Instructions//Image_notepad.pdf Graphic file (type pdf)
 <use Instructions//Image_notepad.pdf>
-Package pdftex.def Info: Instructions//Image_notepad.pdf  used on input line 15
+Package pdftex.def Info: Instructions//Image_notepad.pdf  used on input line 13
 .
 (pdftex.def)             Requested size: 787.94183pt x 722.69823pt.
-<Instructions//Image_notepad.pdf, id=701, page=1, 787.94376pt x 722.7pt>
+<Instructions//Image_notepad.pdf, id=721, page=1, 787.94376pt x 722.7pt>
 File: Instructions//Image_notepad.pdf Graphic file (type pdf)
 <use Instructions//Image_notepad.pdf, page 1>
 Package pdftex.def Info: Instructions//Image_notepad.pdf , page1 used on input 
-line 15.
+line 13.
 (pdftex.def)             Requested size: 787.94183pt x 722.69823pt.
 File: Instructions//Image_notepad.pdf Graphic file (type pdf)
 <use Instructions//Image_notepad.pdf, page 1>
 Package pdftex.def Info: Instructions//Image_notepad.pdf , page1 used on input 
-line 15.
+line 13.
 (pdftex.def)             Requested size: 484.26393pt x 444.16563pt.
 File: Instructions//Image_notepad.pdf Graphic file (type pdf)
 <use Instructions//Image_notepad.pdf, page 1>
 Package pdftex.def Info: Instructions//Image_notepad.pdf , page1 used on input 
-line 15.
+line 13.
 (pdftex.def)             Requested size: 484.26393pt x 444.16563pt.
 File: Instructions//Image_notepad.pdf Graphic file (type pdf)
 <use Instructions//Image_notepad.pdf, page 1>
 Package pdftex.def Info: Instructions//Image_notepad.pdf , page1 used on input 
-line 15.
+line 13.
 (pdftex.def)             Requested size: 484.26393pt x 444.16563pt.
 File: Instructions//Image_notepad.pdf Graphic file (type pdf)
 <use Instructions//Image_notepad.pdf, page 1>
 Package pdftex.def Info: Instructions//Image_notepad.pdf , page1 used on input 
-line 15.
+line 13.
 (pdftex.def)             Requested size: 484.26393pt x 444.16563pt.
- [20
-
-
-
- <./Instructions//Image_notepad.pdf>]
+ [20 <./Instructions//Image_notepad.pdf>]
 Chapter 3.
 [21
 
@@ -3124,18 +3078,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (10.07207pt too wide) in paragraph at lines 47--49
-\T1/jkp/m/n/10 (-20) same com-mand can be used to in-dic-ate where to al-low hy
-phenation, e.g., [][]\T1/jkptt/m/n/10 hyphenation{so-
- []
-
-
-Overfull \hbox (94.55486pt too wide) in paragraph at lines 47--49
-\T1/jkptt/m/n/10 called}[]\T1/jkp/m/n/10 (-20) . It is re-com-men-ded to add th
-e op-tion for use of short-cuts: [][]\T1/jkptt/m/n/10 \RequirePackage[shortcuts
-]{extdash}[]\T1/jkp/m/n/10 (-20) .
- []
-
 [22
 
 ] [23]
@@ -3148,27 +3090,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-<Instructions/Figures//6colors.pdf, id=744, 336.05548pt x 218.2554pt>
+<Instructions/Figures//6colors.pdf, id=764, 336.05548pt x 218.2554pt>
 File: Instructions/Figures//6colors.pdf Graphic file (type pdf)
 <use Instructions/Figures//6colors.pdf>
 Package pdftex.def Info: Instructions/Figures//6colors.pdf  used on input line 
 152.
 (pdftex.def)             Requested size: 189.21083pt x 122.8849pt.
-<Instructions/Figures//test3.pdf, id=745, 370.67862pt x 249.44379pt>
+<Instructions/Figures//test3.pdf, id=765, 370.67862pt x 249.44379pt>
 File: Instructions/Figures//test3.pdf Graphic file (type pdf)
 <use Instructions/Figures//test3.pdf>
 Package pdftex.def Info: Instructions/Figures//test3.pdf  used on input line 16
 0.
 (pdftex.def)             Requested size: 189.21083pt x 127.32883pt.
 [25]
-<Instructions/Figures//Subfigures/Subfigure_a.pdf, id=754, 398.65135pt x 303.96
+<Instructions/Figures//Subfigures/Subfigure_a.pdf, id=774, 398.65135pt x 303.96
 06pt>
 File: Instructions/Figures//Subfigures/Subfigure_a.pdf Graphic file (type pdf)
 <use Instructions/Figures//Subfigures/Subfigure_a.pdf>
 Package pdftex.def Info: Instructions/Figures//Subfigures/Subfigure_a.pdf  used
  on input line 175.
 (pdftex.def)             Requested size: 170.28859pt x 129.84247pt.
-<Instructions/Figures//Subfigures/Subfigure_b.pdf, id=755, 398.65135pt x 303.96
+<Instructions/Figures//Subfigures/Subfigure_b.pdf, id=775, 398.65135pt x 303.96
 06pt>
 File: Instructions/Figures//Subfigures/Subfigure_b.pdf Graphic file (type pdf)
 <use Instructions/Figures//Subfigures/Subfigure_b.pdf>
@@ -3177,186 +3119,109 @@ Package pdftex.def Info: Instructions/Figures//Subfigures/Subfigure_b.pdf  used
 (pdftex.def)             Requested size: 170.28859pt x 129.84247pt.
  [26 <./Instructions/Figures//6colors.pdf> <./Instructions/Figures//test3.pdf> 
 <./Instructions/Figures//Subfigures/Subfigure_a.pdf> <./Instructions/Figures//S
-ubfigures/Subfigure_b.pdf>] [27]) [28]
+ubfigures/Subfigure_b.pdf>] [27]
+Overfull \hbox (33.20985pt too wide) in paragraph at lines 251--252
+[]\T1/jkp/m/n/10 (-20) The scal-ing fac-tor of the im-age that is in-cluded wit
+h [][]\T1/jkptt/m/n/10 \includegraphics[scale=<value>] 
+ []
+
+
+Overfull \hbox (50.40034pt too wide) in paragraph at lines 265--265
+[]\T1/jkptt/m/n/9 \begin{wrapfigure}{l}{0.20\textwidth}% -- Change the value of
+ the number before \textwidth[] 
+ []
+
+[28]) [29] [30
+
+
+
+]
 \openout2 = `Summary/Summary.aux'.
 
  (Summary/Summary.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@4=\count586
-\blx@sectionciteorder@4=\count587
+\blx@maxsegment@4=\count587
+\blx@sectionciteorder@4=\count588
 Package biblatex Info: Reference section=4 on input line 4.
 Package biblatex Info: Setting label 'refsection:4' on input line 4.
- [29
+ [31
 
+] [32
 
-
-
-] [30
-
-]
-[31] [32] [33] [34]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 59.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 59.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 59.
-
-[35
+] [33] [34] [35] [36] [37
 
 ]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 59.
-
-[36]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 59.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 59.
-
-[37]) [38]
+[38]) [39]
 \openout2 = `Acknowledgements/Acknowledgements.aux'.
 
  (Acknowledgements/Acknowledgements.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@5=\count588
-\blx@sectionciteorder@5=\count589
+\blx@maxsegment@5=\count589
+\blx@sectionciteorder@5=\count590
 Package biblatex Info: Reference section=5 on input line 4.
 Package biblatex Info: Setting label 'refsection:5' on input line 4.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-[39
+ [40
 
 
 
 
-]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-[40]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-[41]
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-
-Package blindtext Warning: british not defined, using English instead.
-(blindtext)                 on input line 20.
-
-) [42]
+] [41] [42]) [43]
 \openout2 = `Publications/Publications.aux'.
 
- (Publications/Publications.tex
+
+(Publications/Publications.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@6=\count590
-\blx@sectionciteorder@6=\count591
+\blx@maxsegment@6=\count591
+\blx@sectionciteorder@6=\count592
 Package biblatex Info: Reference section=6 on input line 4.
 Package biblatex Info: Setting label 'refsection:6' on input line 4.
- [43
+) [44
 
 
 
-]) [44
 
 ] (main_brownies.aux
 (Titlepage/titlepage.aux) (Chapter_1/Chapter_1_examplesubfile.aux)
 (Chapter_2/Chapter_2_examplesubfile.aux)
 (Instructions/Style and printing considerations.aux) (Summary/Summary.aux)
 (Acknowledgements/Acknowledgements.aux) (Publications/Publications.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `main_brownies.out' has not changed.
-(rerunfilecheck)             Checksum: A6DE1998B8447F11D5C07C9EED4867B3;5095.
+(rerunfilecheck)             Checksum: 07FB55590E4C5F9055DA20AEBBA5C000;5671.
 Package logreq Info: Writing requests to 'main_brownies.run.xml'.
 \openout1 = `main_brownies.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53507 strings out of 475389
- 1047806 string characters out of 2786815
- 1932934 words of memory out of 3000000
- 73073 multiletter control sequences out of 15000+600000
- 746843 words of font info for 571 fonts, out of 8000000 for 9000
+ 53707 strings out of 475389
+ 1051062 string characters out of 2786815
+ 1919208 words of memory out of 3000000
+ 73174 multiletter control sequences out of 15000+600000
+ 758576 words of font info for 640 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 94i,21n,156p,1140b,3060s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Program Files/MiKTeX
-/fonts/enc/dvips/kpfonts/kpfonts-expert.enc} <C:\Users\Jorn_\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Program Files/MiKTeX/font
-s/type1/public/kpfonts/jkpbn8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
-kpfonts/jkpbn8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpex.p
-fb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/public/kpfonts/jkpmn8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public
-/kpfonts/jkpmn8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpmne
-.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpmsc8a.pfb><C:/Progr
-am Files/MiKTeX/fonts/type1/public/kpfonts/jkpssbn8a.pfb><C:/Program Files/MiKT
-eX/fonts/type1/public/kpfonts/jkpssbsc8a.pfb><C:/Program Files/MiKTeX/fonts/typ
-e1/public/kpfonts/jkpssmn8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpf
-onts/jkpssmsc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpsy.p
-fb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on main_brownies.pdf (52 pages, 5114803 bytes).
+ 94i,21n,156p,1140b,3064s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\Jorn_\AppData
+\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk>{C:/Program Files/
+MiKTeX/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<C:/Program Files/MiKTeX/font
+s/type1/public/cbgreek/grmn0900.pfb><C:/Program Files/MiKTeX/fonts/type1/public
+/kpfonts/jkpbn8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpbn8
+a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpex.pfb><C:/Program
+ Files/MiKTeX/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Program Files/MiKTeX/fon
+ts/type1/public/kpfonts/jkpmit8a.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+c/kpfonts/jkpmn8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpmn
+8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/public/kpfonts/jkpmne.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/kpfonts/jkpmsc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/kpfonts/jkpssbn8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/
+jkpssbsc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpssmn8a.pf
+b><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpssmsc8a.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/kpfonts/jkpttmn8a.pfb>
+Output written on main_brownies.pdf (52 pages, 5197576 bytes).
 PDF statistics:
- 1052 PDF objects out of 1200 (max. 8388607)
- 111 named destinations out of 1000 (max. 500000)
- 234470 words of extra memory for PDF output out of 266212 (max. 10000000)
+ 1081 PDF objects out of 1200 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 235008 words of extra memory for PDF output out of 266212 (max. 10000000)
 

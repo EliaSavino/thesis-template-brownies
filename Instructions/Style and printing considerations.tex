@@ -239,6 +239,32 @@ The package \verb|parskip| can be used to adjust the paragraph spacing:  The oth
 	\item \verb|\tocskip| can be set via the \texttt{tocskip} option. This should set the paragraph spacing in the TOC, but I have not been able to get it to work (the TOC spacing just uses the normal \verb|\parskip|...)
 \end{itemize}
 
+\section{Miscellaneous Environments and Commands}
+\subsection{A Command for an Experimental Procedure: synth}
+Defined a command \verb*|\synth| with 5 (optional) arguments all inside a minipage (such that no experimental procedure spreads over two pages). The input fields are: title; image; text; NMR; HRMS (but these are optional and can be adjusted/appended as well).
+The code for \verb*|\includegraphics| is simplified: it is now only necessary to input the name of the image file -- the rest of the code is included in \verb*|\synth|.
+
+And another important feature: using the argument \verb*|scale=| instead of setting the width (with \verb*|width=|) for \verb*|\includegraphics| makes sure that the images of the molecules retain their relative dimensions -- the molecules share the same ratio but have various heights and widths depending on their substitution pattern.
+Parameters in \verb*|\synth| that can be adjusted to achieve the desired result are:
+\begin{itemize}
+	\item The size of the \verb*|wrapfigure| and hereby the amount of whitespace around the molecules
+	\item The scaling factor of the image that is included with \verb*|\includegraphics[scale=<value>]|
+	\item The vertical whitespace between the molecule and the title by the command \verb*|\vspace*{-<value>\baselineskip}| which removes a certain amount of vertical space (note the \textit{minus} sign)
+\end{itemize}
+These parameters are in this part of the code for \verb*|\synth| which can be found above:
+{\small
+\begin{verbatim}
+	-----------------------------------
+	\begin{wrapfigure}{l}{0.20\textwidth}% -- Change the value of the number before \textwidth
+		\centering
+		\vspace*{-0.75\baselineskip} -- Change the magnitude of \baselineskip
+		\includegraphics[scale=0.15]{#2} -- The scaling factor of the image
+		%			\vspace*{-\baselineskip}%
+	\end{wrapfigure}\small{#3} %
+	-----------------------------------
+\end{verbatim}
+}
+
 \section{Referencing}
 This Biblatex cheat sheet is handy.\cite{BiblatexCheatSheet}
 

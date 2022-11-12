@@ -33,7 +33,7 @@
 
 \LoadClass[10pt, twoside]{book}
 
-\RequirePackage[french,dutch,british]{babel} %%% the last is the default language; other languages before that can be used for some sections
+\RequirePackage[french,dutch,english]{babel} %%% the last is the default language; other languages before that can be used for some sections
 %% british (instead of english) changes, for example, month/day to day/month
 
 %\RequirePackage{ifpdf} %% not necessary anymore since it's included in iftex
@@ -183,7 +183,7 @@
 
 %% The bibliography is managed using BibLaTeX
 %% Use the optional arguments to define style, backend (default biber recommended), etcetera
-\RequirePackage[sorting=none,style=chem-acs,articletitle=true,natbib=true,backend=biber,date=long]{biblatex}
+\RequirePackage[sorting=none,style=chem-acs,articletitle=true,natbib=true,backend=biber,urldate=long]{biblatex}
 	%% See package documentation of biblatex for all options (there also is more info in Instructions chapter)
 	%% Can use style=numeric-comp as well; or ieee; or chem-angew;
 	%% See https://www.overleaf.com/learn/latex/Biblatex_citation_styles
@@ -240,6 +240,9 @@
 	%% like so: \graphicspath{ {Figures/}{Schemes/} } 
 	%% see also https://latex.org/forum/viewtopic.php?t=13267
 %%
+
+\usepackage{wrapfig} %% to wrap text around figure (used in newcommand \synth for experimental procedures). See: https://mirror.lyrahosting.com/CTAN/macros/latex/contrib/wrapfig/wrapfig-doc.pdf
+%% these wrapped figures are not regular floats, so they may not be numbered correctly in sequence with other floats
 
 \RequirePackage{caption} %% Changing the caption is done using \captionsetup of the caption package
 \RequirePackage{subcaption} %% to use subcaptions, for example, for subfigure
@@ -816,6 +819,26 @@
 }{%
 	\endlist%
 }
+
+%% Define a new command \synth that is used to write experimental procedures
+	%% Adjust the size of the wrapfigure (with {#\textwidth}) and the scale of the inserted image (with includegraphics[scale=#]) to find nice proportions
+	%% It may be necessary to use multiple versions of this \synth command in case your molecules vary greatly in width and, therefore, a single set of values for wrapfigure and includegraphics cannot be found
+\newcommand{\synth}[5]{%
+	\noindent%
+	\begin{minipage}{\textwidth}%
+		{\vspace*{\baselineskip}\noindent\normalsize{#1}\\\vspace*{-.75\baselineskip}}%
+		\begin{wrapfigure}{l}{0.25\textwidth}%% adjust size of box here
+			\centering
+%			\vspace*{-0.75\baselineskip}
+			\vspace*{-\baselineskip}
+			\includegraphics[scale=0.11]{#2} %% adjust scale here
+%			\vspace*{-\baselineskip}%
+		\end{wrapfigure}\small{#3} %
+		{#4} {#5}%
+		\\%
+\end{minipage}}%
+%%
+
 
 %% Define a drop command which can be used to generate drop caps at the
 	%% beginning of a section.

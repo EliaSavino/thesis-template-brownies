@@ -62,7 +62,6 @@
       <file>chem-acs.cbx</file>
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
-      <file>british.lbx</file>
       <file>dutch.lbx</file>
       <file>french.lbx</file>
     </requires>
