@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.6)  12 NOV 2022 23:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.6)  16 NOV 2022 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1441,47 +1441,38 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 
 ))
-(C:\Program Files\MiKTeX\tex/latex/wrapfig\wrapfig.sty
-\wrapoverhang=\dimen187
-\WF@size=\dimen188
-\c@WF@wrappedlines=\count457
-\WF@box=\box64
-\WF@everypar=\toks30
-Package: wrapfig 2003/01/31  v 3.6
-)
 (C:\Program Files\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (C:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen189
-\captionmargin=\dimen190
-\caption@leftmargin=\dimen191
-\caption@rightmargin=\dimen192
-\caption@width=\dimen193
-\caption@indent=\dimen194
-\caption@parindent=\dimen195
-\caption@hangindent=\dimen196
+\caption@tempdima=\dimen187
+\captionmargin=\dimen188
+\caption@leftmargin=\dimen189
+\caption@rightmargin=\dimen190
+\caption@width=\dimen191
+\caption@indent=\dimen192
+\caption@parindent=\dimen193
+\caption@hangindent=\dimen194
 Package caption Info: Standard document class detected.
 Package caption Info: french babel package is loaded.
 )
-\c@caption@flags=\count458
-\c@continuedfloat=\count459
+\c@caption@flags=\count457
+\c@continuedfloat=\count458
 Package caption Info: hyperref package is loaded.
-Package caption Info: wrapfig package is loaded.
 )
 (C:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
-\c@subfigure=\count460
-\c@subtable=\count461
+\c@subfigure=\count459
+\c@subtable=\count460
 )
 (C:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count462
-\float@exts=\toks31
-\float@box=\box65
-\@float@everytoks=\toks32
-\@floatcapt=\box66
+\c@float@type=\count461
+\float@exts=\toks30
+\float@box=\box64
+\@float@everytoks=\toks31
+\@floatcapt=\box65
 )
 (C:\Program Files\MiKTeX\tex/latex/newfloat\newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
@@ -1494,30 +1485,37 @@ horend }}\ifnum \c@secnumdepth >\m@ne \ltx@IfUndefined {if@mainmatter}\iftrue {
 chapter .
 Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
 pter [{#1}]{#2}.
-Package newfloat Info: `wrapfig' package detected.
+)
+(C:\Program Files\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen195
+\WF@size=\dimen196
+\c@WF@wrappedlines=\count462
+\WF@box=\box66
+\WF@everypar=\toks32
+Package: wrapfig 2003/01/31  v 3.6
 )
 Package newfloat Info: New float `scheme' with options `fileext=los, name=Schem
-e, placement=htbp' on input line 253.
+e, placement=htbp' on input line 254.
 \c@scheme=\count463
-Package newfloat Info: float type `scheme'=4 on input line 253.
+Package newfloat Info: float type `scheme'=4 on input line 254.
 \c@subscheme=\count464
 Package newfloat Info: New float `figureSI' with options `fileext=los, name=Fig
-ure, placement=htbp' on input line 254.
+ure, placement=htbp' on input line 255.
 \c@figureSI=\count465
-Package newfloat Info: float type `figureSI'=8 on input line 254.
-Package newfloat Info: \newfloat@ext@los is already defined on input line 254.
+Package newfloat Info: float type `figureSI'=8 on input line 255.
+Package newfloat Info: \newfloat@ext@los is already defined on input line 255.
 \c@subfigureSI=\count466
 Package newfloat Info: New float `schemeSI' with options `fileext=los, name=Sch
-eme, placement=htbp' on input line 255.
+eme, placement=htbp' on input line 256.
 \c@schemeSI=\count467
-Package newfloat Info: float type `schemeSI'=16 on input line 255.
-Package newfloat Info: \newfloat@ext@los is already defined on input line 255.
+Package newfloat Info: float type `schemeSI'=16 on input line 256.
+Package newfloat Info: \newfloat@ext@los is already defined on input line 256.
 \c@subschemeSI=\count468
 Package newfloat Info: New float `tableSI' with options `fileext=los, name=Tabl
-e, placement=htbp' on input line 256.
+e, placement=htbp' on input line 257.
 \c@tableSI=\count469
-Package newfloat Info: float type `tableSI'=32 on input line 256.
-Package newfloat Info: \newfloat@ext@los is already defined on input line 256.
+Package newfloat Info: float type `tableSI'=32 on input line 257.
+Package newfloat Info: \newfloat@ext@los is already defined on input line 257.
 \c@subtableSI=\count470
 
 (C:\Program Files\MiKTeX\tex/latex/placeins\placeins.sty
@@ -1705,6 +1703,23 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 \c@csvcol=\count487
 \csv@out=\write4
 )
+(C:\Program Files\MiKTeX\tex/latex/chemnum\chemnum.sty
+Package: chemnum 2021/01/21 v1.3a a comprehensive approach for the numbering of
+ chemical compounds (CN)
+
+(C:\Program Files\MiKTeX\tex/latex/psfrag\psfrag.sty
+Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
+\pfg@pcount=\count488
+\pfg@scount=\count489
+\pfg@temp=\write5
+)
+\l__chemnum_tmpa_int=\count490
+\l__chemnum_tmpb_int=\count491
+\l__chemnum_tmpc_int=\count492
+\c@cmpdmain=\count493
+\g__chemnum_main_int=\count494
+\l__chemnum_compound_replace_int=\count495
+)
 (C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and foote
 rs
@@ -1761,18 +1776,18 @@ File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
 (C:\Program Files\MiKTeX\tex/generic/minifp\minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 -based programing language.
-\MFP@loopctr=\count488
+\MFP@loopctr=\count496
 )
-\c@DefaultLines=\count489
-\c@DefaultDepth=\count490
+\c@DefaultLines=\count497
+\c@DefaultDepth=\count498
 \DefaultFindent=\dimen295
 \DefaultNindent=\dimen296
 \DefaultSlope=\dimen297
 \DiscardVskip=\dimen298
 \L@lbox=\box78
 \L@tbox=\box79
-\c@L@lines=\count491
-\c@L@depth=\count492
+\c@L@lines=\count499
+\c@L@depth=\count500
 \L@Pindent=\dimen299
 \L@Findent=\dimen300
 \L@Nindent=\dimen301
@@ -1797,8 +1812,8 @@ Package: extdash 2018/06/24 v1.3 Extended Dash Package (NCC)
 )
 (C:\Program Files\MiKTeX\tex/latex/etaremune\etaremune.sty
 Package: etaremune 2005/06/01 v1.2 Reversed enumerate (HA)
-\c@EM@itemctr=\count493
-\c@EM@etaremunectr=\count494
+\c@EM@itemctr=\count501
+\c@EM@etaremunectr=\count502
 )
 (C:\Program Files\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -1806,8 +1821,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen314
 \enit@toks=\toks47
 \enit@inbox=\box80
-\enit@count@id=\count495
-\enitdp@description=\count496
+\enit@count@id=\count503
+\enitdp@description=\count504
 )
 (C:\Program Files\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2022/05/22 v0.5v Insert pages of external PDF documents (AM)
@@ -1824,12 +1839,12 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 (C:\Program Files\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2022/05/22 v0.5v Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count497
+\pdfpages@includegraphics@status=\count505
 \AM@pagebox=\box81
 \AM@global@opts=\toks48
-\AM@pagecnt=\count498
+\AM@pagecnt=\count506
 \AM@toc@title=\toks49
-\c@AM@survey=\count499
+\c@AM@survey=\count507
 \AM@templatesizebox=\box82
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\afterpage.sty
@@ -1840,8 +1855,8 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 )
 (C:\Program Files\MiKTeX\tex/latex/changepage\changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count500
-\cp@tempcnt=\count501
+\c@cp@cntr=\count508
+\cp@tempcnt=\count509
 LaTeX Info: Redefining \checkoddpage on input line 59.
 )
 (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
@@ -1884,16 +1899,16 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@yc=\dimen327
 \pgf@xd=\dimen328
 \pgf@yd=\dimen329
-\w@pgf@writea=\write5
+\w@pgf@writea=\write6
 \r@pgf@reada=\read5
-\c@pgf@counta=\count502
-\c@pgf@countb=\count503
-\c@pgf@countc=\count504
-\c@pgf@countd=\count505
+\c@pgf@counta=\count510
+\c@pgf@countb=\count511
+\c@pgf@countc=\count512
+\c@pgf@countd=\count513
 \t@pgf@toka=\toks51
 \t@pgf@tokb=\toks52
 \t@pgf@tokc=\toks53
-\pgf@sys@id@count=\count506
+\pgf@sys@id@count=\count514
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
@@ -1908,8 +1923,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count507
-\pgfsyssoftpath@bigbuffer@items=\count508
+\pgfsyssoftpath@smallbuffer@items=\count515
+\pgfsyssoftpath@bigbuffer@items=\count516
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -1922,7 +1937,7 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen330
-\pgfmath@count=\count509
+\pgfmath@count=\count517
 \pgfmath@box=\box85
 \pgfmath@toks=\toks54
 \pgfmath@stack@operand=\toks55
@@ -1942,7 +1957,7 @@ tex)
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
 cs.code.tex)))
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count510
+\c@pgfmathroundto@lastzeros=\count518
 ))
 (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
@@ -1978,7 +1993,7 @@ File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box86
 \pgf@hbox=\box87
 \pgf@layerbox@main=\box88
-\pgf@picture@serial@count=\count511
+\pgf@picture@serial@count=\count519
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
 x
@@ -2005,8 +2020,8 @@ File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen354
-\pgf@sys@shading@range@num=\count512
-\pgf@shadingcount=\count513
+\pgf@sys@shading@range@num=\count520
+\pgf@shadingcount=\count521
 )
 (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -2058,7 +2073,7 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
 tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count514
+\pgf@plot@mark@count=\count522
 \pgfplotmarksize=\dimen359
 )
 \tikz@lastx=\dimen360
@@ -2073,17 +2088,17 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@figbox@bg=\box92
 \tikz@tempbox=\box93
 \tikz@tempbox@bg=\box94
-\tikztreelevel=\count515
-\tikznumberofchildren=\count516
-\tikznumberofcurrentchild=\count517
-\tikz@fig@count=\count518
+\tikztreelevel=\count523
+\tikznumberofchildren=\count524
+\tikznumberofcurrentchild=\count525
+\tikz@fig@count=\count526
  (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count519
-\pgfmatrixcurrentcolumn=\count520
-\pgf@matrix@numberofcolumns=\count521
+\pgfmatrixcurrentrow=\count527
+\pgfmatrixcurrentcolumn=\count528
+\pgf@matrix@numberofcolumns=\count529
 )
-\tikz@expandcount=\count522
+\tikz@expandcount=\count530
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
 rytopaths.code.tex
@@ -2100,12 +2115,12 @@ File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 rycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 861.
+Package hyperref Info: Option `colorlinks' set `true' on input line 868.
 ) (C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count523
-\l__lipsum_a_int=\count524
-\l__lipsum_b_int=\count525
+\g__lipsum_par_int=\count531
+\l__lipsum_a_int=\count532
+\l__lipsum_b_int=\count533
 
 (C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
 (C:\Program Files\MiKTeX\tex/latex/blindtext\blindtext.sty
@@ -2114,46 +2129,46 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 (C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count526
-\c@Blindtext=\count527
-\c@blind@countparstart=\count528
-\blind@countxx=\count529
-\blindtext@numBlindtext=\count530
-\blind@countyy=\count531
-\c@blindlist=\count532
-\c@blindlistlevel=\count533
-\c@blindlist@level=\count534
-\blind@listitem=\count535
-\c@blind@listcount=\count536
-\c@blind@levelcount=\count537
-\blind@mathformula=\count538
-\blind@Mathformula=\count539
-\c@blind@randomcount=\count540
-\c@blind@randommax=\count541
-\c@blind@pangramcount=\count542
-\c@blind@pangrammax=\count543
+\c@blindtext=\count534
+\c@Blindtext=\count535
+\c@blind@countparstart=\count536
+\blind@countxx=\count537
+\blindtext@numBlindtext=\count538
+\blind@countyy=\count539
+\c@blindlist=\count540
+\c@blindlistlevel=\count541
+\c@blindlist@level=\count542
+\blind@listitem=\count543
+\c@blind@listcount=\count544
+\c@blind@levelcount=\count545
+\blind@mathformula=\count546
+\blind@Mathformula=\count547
+\c@blind@randomcount=\count548
+\c@blind@randommax=\count549
+\c@blind@pangramcount=\count550
+\c@blind@pangrammax=\count551
 )
 (C:\Program Files\MiKTeX\tex/latex/showexpl\showexpl.sty
 Package: showexpl 2021/01/06 v0.3s Typesetting example code (RN)
 
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count544
+\lst@mode=\count552
 \lst@gtempboxa=\box95
 \lst@token=\toks59
-\lst@length=\count545
+\lst@length=\count553
 \lst@currlwidth=\dimen368
-\lst@column=\count546
-\lst@pos=\count547
+\lst@column=\count554
+\lst@pos=\count555
 \lst@lostspace=\dimen369
 \lst@width=\dimen370
-\lst@newlines=\count548
-\lst@lineno=\count549
+\lst@newlines=\count556
+\lst@lineno=\count557
 \lst@maxwidth=\dimen371
 
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count550
-\lst@skipnumbers=\count551
+\c@lstnumber=\count558
+\lst@skipnumbers=\count559
 \lst@framebox=\box96
 )
 (C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
@@ -2164,21 +2179,21 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \lst@WFtoken=\toks60
-\lst@WF=\write6
+\lst@WF=\write7
 )
 \SX@ResBox=\box97
 \ResultBoxSep=\dimen372
 \ResultBoxRule=\dimen373
-\c@ltxexample=\count552
+\c@ltxexample=\count560
 )
 (C:\Program Files\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
 Package: fancyvrb 2022/06/06 4.5 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count553
+\FV@CodeLineNo=\count561
 \FV@InFile=\read6
 \FV@TabBox=\box98
-\c@FancyVerbLine=\count554
-\FV@StepNumber=\count555
-\FV@OutFile=\write7
+\c@FancyVerbLine=\count562
+\FV@StepNumber=\count563
+\FV@OutFile=\write8
 )
 (C:\Program Files\MiKTeX\tex/latex/fvextra\fvextra.sty
 Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
@@ -2192,16 +2207,16 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 (C:\Program Files\MiKTeX\tex/latex/lineno\lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count556
+\linenopenalty=\count564
 \output=\toks61
-\linenoprevgraf=\count557
+\linenoprevgraf=\count565
 \linenumbersep=\dimen374
 \linenumberwidth=\dimen375
-\c@linenumber=\count558
-\c@pagewiselinenumber=\count559
-\c@LN@truepage=\count560
-\c@internallinenumber=\count561
-\c@internallinenumbers=\count562
+\c@linenumber=\count566
+\c@pagewiselinenumber=\count567
+\c@LN@truepage=\count568
+\c@internallinenumber=\count569
+\c@internallinenumbers=\count570
 \quotelinenumbersep=\dimen376
 \bframerule=\dimen377
 \bframesep=\dimen378
@@ -2217,25 +2232,25 @@ LaTeX Info: Redefining \\ on input line 3056.
 Package fvextra Warning: csquotes should be loaded after fvextra, to avoid a wa
 rning from the lineno package on input line 37.
 
-\c@FV@TrueTabGroupLevel=\count563
-\c@FV@TrueTabCounter=\count564
+\c@FV@TrueTabGroupLevel=\count571
+\c@FV@TrueTabCounter=\count572
 \FV@TabBox@Group=\box100
 \FV@TmpLength=\skip121
-\c@FV@HighlightLinesStart=\count565
-\c@FV@HighlightLinesStop=\count566
-\FV@LoopCount=\count567
+\c@FV@HighlightLinesStart=\count573
+\c@FV@HighlightLinesStop=\count574
+\FV@LoopCount=\count575
 \FV@NCharsBox=\box101
 \FV@BreakIndent=\dimen379
-\FV@BreakIndentNChars=\count568
+\FV@BreakIndentNChars=\count576
 \FV@BreakSymbolSepLeft=\dimen380
-\FV@BreakSymbolSepLeftNChars=\count569
+\FV@BreakSymbolSepLeftNChars=\count577
 \FV@BreakSymbolSepRight=\dimen381
-\FV@BreakSymbolSepRightNChars=\count570
+\FV@BreakSymbolSepRightNChars=\count578
 \FV@BreakSymbolIndentLeft=\dimen382
-\FV@BreakSymbolIndentLeftNChars=\count571
+\FV@BreakSymbolIndentLeftNChars=\count579
 \FV@BreakSymbolIndentRight=\dimen383
-\FV@BreakSymbolIndentRightNChars=\count572
-\c@FancyVerbLineBreakLast=\count573
+\FV@BreakSymbolIndentRightNChars=\count580
+\c@FancyVerbLineBreakLast=\count581
 \FV@LineBox=\box102
 \FV@LineIndentBox=\box103
 \FV@LineWidth=\dimen384
@@ -2349,16 +2364,16 @@ LaTeX Info: Redefining \up on input line 137.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count574
+\scratchcounter=\count582
 \scratchdimen=\dimen385
 \scratchbox=\box104
-\nofMPsegments=\count575
-\nofMParguments=\count576
+\nofMPsegments=\count583
+\nofMParguments=\count584
 \everyMPshowfont=\toks62
-\MPscratchCnt=\count577
+\MPscratchCnt=\count585
 \MPscratchDim=\dimen386
-\MPnumerator=\count578
-\makeMPintoPDFobject=\count579
+\MPnumerator=\count586
+\makeMPintoPDFobject=\count587
 \everyMPtoPDFconversion=\toks63
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2371,8 +2386,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package hyperref Info: Link coloring ON on input line 137.
 
 (main_brownies.out) (main_brownies.out)
-\@outlinefile=\write8
-\openout8 = `main_brownies.out'.
+\@outlinefile=\write9
+\openout9 = `main_brownies.out'.
 
 
 Package chemgreek Info: Activating mapping `default' on line 137.
@@ -2471,10 +2486,12 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
 Package newfloat Info: `rotating' package detected.
+Package newfloat Info: `wrapfig' package detected.
 
 (C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -2484,7 +2501,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count580
+\c@lstlisting=\count588
 \openout2 = `Titlepage/titlepage.aux'.
 
 
@@ -2520,6 +2537,8 @@ File: Firstpage/firstpage.pdf Graphic file (type pdf)
 Package pdftex.def Info: Firstpage/firstpage.pdf , page1 used on input line 6.
 (pdftex.def)             Requested size: 484.3085pt x 683.72932pt.
  [1
+Non-PDF special ignored!
+<special> header=psfrag.pro
 
 
 
@@ -2669,15 +2688,15 @@ Package microtype Info: Character `029' is missing
 [7
 
 ])
-\tf@toc=\write9
-\openout9 = `main_brownies.toc'.
+\tf@toc=\write10
+\openout10 = `main_brownies.toc'.
 
  [8]
 \openout2 = `Chapter_1/Chapter_1_examplesubfile.aux'.
 
  (Chapter_1/Chapter_1_examplesubfile.tex
-\blx@maxsegment@1=\count581
-\blx@sectionciteorder@1=\count582
+\blx@maxsegment@1=\count589
+\blx@sectionciteorder@1=\count590
 Package biblatex Info: Reference section=1 on input line 4.
 Package biblatex Info: Setting label 'refsection:1' on input line 4.
  [1
@@ -2830,8 +2849,8 @@ Package microtype Info: Character `029' is missing
 
 (Chapter_2/Chapter_2_examplesubfile.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@2=\count583
-\blx@sectionciteorder@2=\count584
+\blx@maxsegment@2=\count591
+\blx@sectionciteorder@2=\count592
 Package biblatex Info: Reference section=2 on input line 4.
 Package biblatex Info: Setting label 'refsection:2' on input line 4.
 <Chapter_2//chapterimagepage_2.pdf, id=501, 398.65135pt x 303.9606pt>
@@ -2900,9 +2919,9 @@ File: Chapter_2/Figures//Molecules/Spiropyran-1.png Graphic file (type png)
 <use Chapter_2/Figures//Molecules/Spiropyran-1.png>
 Package pdftex.def Info: Chapter_2/Figures//Molecules/Spiropyran-1.png  used on
  input line 93.
-(pdftex.def)             Requested size: 100.53088pt x 38.25804pt.
+(pdftex.def)             Requested size: 137.08124pt x 52.16765pt.
 
-Overfull \hbox (5.92548pt too wide) in paragraph at lines 93--93
+Overfull \hbox (42.47583pt too wide) in paragraph at lines 93--93
  [][] 
  []
 
@@ -2930,7 +2949,12 @@ File: Chapter_2/Figures//Molecules/Merocyanine-1.png Graphic file (type png)
 <use Chapter_2/Figures//Molecules/Merocyanine-1.png>
 Package pdftex.def Info: Chapter_2/Figures//Molecules/Merocyanine-1.png  used o
 n input line 100.
-(pdftex.def)             Requested size: 94.6514pt x 49.76859pt.
+(pdftex.def)             Requested size: 129.06413pt x 67.86311pt.
+
+Overfull \hbox (34.45872pt too wide) in paragraph at lines 100--100
+ [][] 
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 100--100
 
@@ -2967,8 +2991,8 @@ Package microtype Info: Character `029' is missing
 
  (Instructions/Style and printing considerations.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@3=\count585
-\blx@sectionciteorder@3=\count586
+\blx@maxsegment@3=\count593
+\blx@sectionciteorder@3=\count594
 Package biblatex Info: Reference section=3 on input line 4.
 Package biblatex Info: Setting label 'refsection:3' on input line 4.
 
@@ -3048,7 +3072,7 @@ File: lstlang3.sty 2020/03/24 1.8d listings language file
 (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-\openout6 = `main_brownies.tmp'.
+\openout7 = `main_brownies.tmp'.
 
  (main_brownies.tmp)
 --------------------------------
@@ -3140,8 +3164,8 @@ Overfull \hbox (50.40034pt too wide) in paragraph at lines 265--265
 
  (Summary/Summary.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@4=\count587
-\blx@sectionciteorder@4=\count588
+\blx@maxsegment@4=\count595
+\blx@sectionciteorder@4=\count596
 Package biblatex Info: Reference section=4 on input line 4.
 Package biblatex Info: Setting label 'refsection:4' on input line 4.
  [31
@@ -3156,8 +3180,8 @@ Package biblatex Info: Setting label 'refsection:4' on input line 4.
 
  (Acknowledgements/Acknowledgements.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@5=\count589
-\blx@sectionciteorder@5=\count590
+\blx@maxsegment@5=\count597
+\blx@sectionciteorder@5=\count598
 Package biblatex Info: Reference section=5 on input line 4.
 Package biblatex Info: Setting label 'refsection:5' on input line 4.
  [40
@@ -3171,8 +3195,8 @@ Package biblatex Info: Setting label 'refsection:5' on input line 4.
 
 (Publications/Publications.tex
 Package biblatex Info: Reference section=0 on input line 4.
-\blx@maxsegment@6=\count591
-\blx@sectionciteorder@6=\count592
+\blx@maxsegment@6=\count599
+\blx@sectionciteorder@6=\count600
 Package biblatex Info: Reference section=6 on input line 4.
 Package biblatex Info: Setting label 'refsection:6' on input line 4.
 ) [44
@@ -3195,11 +3219,11 @@ Package logreq Info: Writing requests to 'main_brownies.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53707 strings out of 475389
- 1051062 string characters out of 2786815
- 1919208 words of memory out of 3000000
- 73174 multiletter control sequences out of 15000+600000
- 758576 words of font info for 640 fonts, out of 8000000 for 9000
+ 54307 strings out of 475389
+ 1066715 string characters out of 2786815
+ 1934846 words of memory out of 3000000
+ 73762 multiletter control sequences out of 15000+600000
+ 758939 words of font info for 644 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  94i,21n,156p,1140b,3064s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\Users\Jorn_\AppData
@@ -3219,7 +3243,7 @@ jkpssbsc8a.pfb><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpssmn8a.pf
 b><C:/Program Files/MiKTeX/fonts/type1/public/kpfonts/jkpssmsc8a.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/kpfonts/jkpsy.pfb><C:/Program Files/MiKTeX/fo
 nts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on main_brownies.pdf (52 pages, 5197576 bytes).
+Output written on main_brownies.pdf (52 pages, 5197824 bytes).
 PDF statistics:
  1081 PDF objects out of 1200 (max. 8388607)
  115 named destinations out of 1000 (max. 500000)

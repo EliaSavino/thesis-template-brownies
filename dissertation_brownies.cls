@@ -241,24 +241,25 @@
 	%% see also https://latex.org/forum/viewtopic.php?t=13267
 %%
 
-\usepackage{wrapfig} %% to wrap text around figure (used in newcommand \synth for experimental procedures). See: https://mirror.lyrahosting.com/CTAN/macros/latex/contrib/wrapfig/wrapfig-doc.pdf
-%% these wrapped figures are not regular floats, so they may not be numbered correctly in sequence with other floats
-
 \RequirePackage{caption} %% Changing the caption is done using \captionsetup of the caption package
 \RequirePackage{subcaption} %% to use subcaptions, for example, for subfigure
 \captionsetup{singlelinecheck=off,format=plain,indention=0.0cm,labelsep=colon,labelfont=bf,font={sf,small}}
+\renewcommand\thesubfigure{\Alph{subfigure}} %% change sub-caption format by redefining \thesub<type>, e.g. \thesubfigure
 
 \RequirePackage{float}
 \RequirePackage{newfloat}
+\RequirePackage{wrapfig} %% to wrap text around figure (used in newcommand \synth for experimental procedures). See: https://mirror.lyrahosting.com/CTAN/macros/latex/contrib/wrapfig/wrapfig-doc.pdf
+%% these wrapped figures are not regular floats, so they may not be numbered correctly in sequence with other floats
+
 \DeclareFloatingEnvironment[fileext=los, name=Scheme, placement=htbp]{scheme} %% new float scheme
 \DeclareFloatingEnvironment[fileext=los, name=Figure, placement=htbp]{figureSI} %% new float figure SI
 \DeclareFloatingEnvironment[fileext=los, name=Scheme, placement=htbp]{schemeSI} %% new float scheme SI
 \DeclareFloatingEnvironment[fileext=los, name=Table, placement=htbp]{tableSI} %% new float table SI
 
 %% Use here the main language you use with the package babel
-\addto{\captionsbritish}{\renewcommand{\thefigureSI}{S\thechapter.\arabic{figureSI}}} %% change label to "Figure S#"
-\addto{\captionsbritish}{\renewcommand{\theschemeSI}{S\thechapter.\arabic{schemeSI}}} %% change label to "Scheme S#"
-\addto{\captionsbritish}{\renewcommand{\thetableSI}{S\thechapter.\arabic{tableSI}}} %% change label to "Table S#"
+\addto{\captionsenglish}{\renewcommand{\thefigureSI}{S\thechapter.\arabic{figureSI}}} %% change label to "Figure S#"
+\addto{\captionsenglish}{\renewcommand{\theschemeSI}{S\thechapter.\arabic{schemeSI}}} %% change label to "Scheme S#"
+\addto{\captionsenglish}{\renewcommand{\thetableSI}{S\thechapter.\arabic{tableSI}}} %% change label to "Table S#"
 
 \RequirePackage{placeins} %% to use \FloatBarrier
 
@@ -279,6 +280,10 @@
 \RequirePackage{csvsimple} %% to make table from .csv (not needed for simple tables)
 %\RequirePackage{booktabs} %% this package is used for more professionally looking tables, which have some differences regarding line thickness and line spacing
 %%
+
+\RequirePackage{chemnum} %%  Defines a \label- and \ref-like commands for compound numbers. 
+\RequirePackage{xparse} %% Required by chemnum
+\RequirePackage{l3keys2e} %% Required by chemnum
 
 	%%%%% END figures/graphics/etcetera setup %%%%
 
@@ -641,7 +646,7 @@
 	%%% START HEADER STYLES AND CONTENT %%%
 
 %% Change name of TOC
-\addto\captionsbritish{%% Use here the main language you use with the package babel
+\addto\captionsenglish{%% Use here the main language you use with the package babel
 	\renewcommand{\contentsname}%
 	{Table of Contents}%
 }
@@ -822,16 +827,18 @@
 
 %% Define a new command \synth that is used to write experimental procedures
 	%% Adjust the size of the wrapfigure (with {#\textwidth}) and the scale of the inserted image (with includegraphics[scale=#]) to find nice proportions
+	%% When using a width of zero (0pt) for wrapfigure, the actual width of the figure will determine the wrapping width!
 	%% It may be necessary to use multiple versions of this \synth command in case your molecules vary greatly in width and, therefore, a single set of values for wrapfigure and includegraphics cannot be found
+\newcommand{\scaling}{0.15}
 \newcommand{\synth}[5]{%
 	\noindent%
 	\begin{minipage}{\textwidth}%
 		{\vspace*{\baselineskip}\noindent\normalsize{#1}\\\vspace*{-.75\baselineskip}}%
-		\begin{wrapfigure}{l}{0.25\textwidth}%% adjust size of box here
+		\begin{wrapfigure}{l}{0.25\textwidth}%% adjust size of box here; 0pt = actual width of figure
 			\centering
 %			\vspace*{-0.75\baselineskip}
 			\vspace*{-\baselineskip}
-			\includegraphics[scale=0.11]{#2} %% adjust scale here
+			\includegraphics[scale=\scaling]{#2} %% adjust scale here
 %			\vspace*{-\baselineskip}%
 		\end{wrapfigure}\small{#3} %
 		{#4} {#5}%
