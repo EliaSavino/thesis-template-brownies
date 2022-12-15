@@ -44,8 +44,6 @@
 	\RequirePackage[xetex]{geometry}
 	\RequirePackage[xetex]{graphicx}
 	\RequirePackage[xetex]{hyperref}
-	\RequirePackage{xltxtra}
-	\defaultfontfeatures{Ligatures=TeX}
 \else %% if compiler is not xelatex, but for example pdflatex
 	\ifpdf
 		\RequirePackage[pdftex]{geometry}
@@ -93,11 +91,11 @@
 \mhchemoptions{layout=stacked} %% this changes whether superscript and subscript are stacked or not in \ce notation
 
 %% other related packages
-\RequirePackage{siunitx} % handle units with proper spacing % http://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/siunitx/siunitx.pdf
-\RequirePackage{gensymb} %% for symbols, such as \degree
+\RequirePackage{gensymb} %% for some symbols, such as \degree
+\RequirePackage{siunitx} % handle units with proper spacing
 \RequirePackage{microtype} %% improves reading
 %\RequirePackage{textcomp} %% addition to gensymb %% now part of LaTeX distribution already, so no need to add
-\RequirePackage{textgreek} %% provides greek symbols for regular text mode 
+\RequirePackage[artemisia]{textgreek} %% provides greek symbols for regular text mode; Greek font options: cbgreek (default), euler, artemisia
 %%
 
 %%%%%%%%%%%%
@@ -148,21 +146,56 @@
 \else %% with xelatex: opentype (.otf) or truetype (.ttf) fonts
 	%% you need to have the fonts installed on your computer
 	%% Can define separately the fonts used for: main (serif), sans serif, monospace, and math.
+%	\RequirePackage{xltxtra} %% loads realscripts, fontspec, and more %% it causes problems, e.g., with superscript, and is probably not needed anyway
 	\RequirePackage{fontspec} %% fontspec required for opentype/truetype fonts
+	\defaultfontfeatures{Ligatures=TeX}
 	\RequirePackage{unicode-math} %% for all math characters; needs to be loaded after all other maths and font-related packages in case it needs to overwrite their definitions
-	\setmainfont[Mapping=tex-text]{texgyrebonum-regular.otf}[%
-		BoldFont = texgyrebonum-bold.otf ,
-		ItalicFont = texgyrebonum-italic.otf ,
-		BoldItalicFont = texgyrebonum-bolditalic.otf ]
-	\setsansfont[Mapping=tex-text]{texgyreadventor-regular.otf}[%
-		BoldFont = texgyreadventor-bold.otf ,
-		ItalicFont = texgyreadventor-italic.otf ,
-		BoldItalicFont = texgyreadventor-bolditalic.otf ]
-	\setmonofont[Mapping=tex-text]{texgyrecursor-regular.otf}[%
-		BoldFont = texgyrecursor-bold.otf ,
-		ItalicFont = texgyrecursor-italic.otf ,
-		BoldItalicFont = texgyrecursor-bolditalic.otf ]
-	\setmathfont[Mapping=tex-text]{texgyrebonum-math.otf} %% if none specified: Latin Modern Math will be loaded automatically
+%	\RequirePackage[math]{mathspec} %% can use this instead of unicode-math in some cases (see documentation); it loads fontspec as well
+	\setmainfont{texgyrebonum-regular.otf}[%
+		Mapping = tex-text,%
+%		Numbers = OldStyle,% %%OldStyle for lowercase; Lining for uppercase
+%		UprightFeatures = { SmallCapsFont = {<font>}% %% To add a font used only for SmallCaps Normal/Upright
+%			, SmallCapsFeatures = {Letters = SmallCaps}% %% If necessary: specify to use SmallCaps of the font
+%			},%
+		BoldFont = texgyrebonum-bold.otf,%
+%			BoldFeatures = { SmallCapsFont = {<font>}% %% To add a font used only for SmallCaps Bold
+%			, SmallCapsFeatures = {Letters = SmallCaps}% %% If necessary: specify to use SmallCaps of the font
+%				},%
+		ItalicFont = texgyrebonum-italic.otf,%
+%			ItalicFeatures = { SmallCapsFont = {<font>}% %% To add a font used only for SmallCaps Italic
+%				, SmallCapsFeatures = {Letters = SmallCaps}% %% If necessary: specify to use SmallCaps of the font
+%			},%
+		BoldItalicFont = texgyrebonum-bolditalic.otf]
+%			BoldItalicFeatures = { SmallCapsFont = {<font>}% %% To add a font used only for SmallCaps BoldItalic
+%				, SmallCapsFeatures = {Letters = SmallCaps}% %% If necessary: specify to use SmallCaps of the font
+%			},%
+	\setsansfont{texgyreadventor-regular.otf}[%
+		Mapping = tex-text,%
+		BoldFont = texgyreadventor-bold.otf,%
+		ItalicFont = texgyreadventor-italic.otf,%
+		BoldItalicFont = texgyreadventor-bolditalic.otf,%
+		SmallCapsFeatures = {Numbers = OldStyle}% %% optional
+		]
+%	\setsansfont{NewCMSans10-Regular.otf}[%
+%		Mapping = tex-text,%
+%		ItalicFont = NewCMSans10-Oblique.otf,%
+%		BoldFont = NewCMSans10-Bold.otf,%
+%		BoldItalicFont = NewCMSans10-BoldOblique.otf,%
+%		SmallCapsFeatures = {Numbers=OldStyle}]
+%	\setmonofont{texgyrecursor-regular.otf}[%
+%		Mapping = tex-text,%
+%		BoldFont = texgyrecursor-bold.otf,%
+%		ItalicFont = texgyrecursor-italic.otf,%
+%		BoldItalicFont = texgyrecursor-bolditalic.otf]
+	\setmathfont[Mapping = tex-text]{texgyrebonum-math.otf} %% if none specified: Latin Modern Math will be loaded automatically
+	% Define here also other fonts only used, for example, for titles, headers, etc.
+	\newfontfamily\yourfont{cour.ttf}[% %% call \yourfont anything you like (change its name at other points in this .cls file then as well)
+		Mapping = tex-text,%
+		BoldFont = courbd.ttf,%
+		ItalicFont = couri.ttf,%
+		BoldItalicFont = courbi.ttf] 
+	%% Make sure it has SmallCaps features (or add a SmallCapsFont specifically, see above), if you want to use it, for example, as headerfont with \scshape.
+		%% N.B. cour.ttf does not have SmallCaps, so LaTeX will give a warning and replace it with a different shape: "Font shape `TU/cour.ttf(0)/m/sc' undefined(Font) using `TU/cour.ttf(0)/m/n' instead"
 \fi
 %% 
 
@@ -185,7 +218,7 @@
 %% Use the optional arguments to define style, backend (default biber recommended), etcetera
 \RequirePackage[sorting=none,style=chem-acs,articletitle=true,natbib=true,backend=biber,urldate=long]{biblatex}
 	%% See package documentation of biblatex for all options (there also is more info in Instructions chapter)
-	%% Can use style=numeric-comp as well; or ieee; or chem-angew;
+	%% Other options for style: numeric-comp; ieee; chem-angew; chem-rsc
 	%% See https://www.overleaf.com/learn/latex/Biblatex_citation_styles
 	
 	%%%%% instructions for using backend=biber : 
@@ -193,6 +226,8 @@
 		%% need to run Bibliography/biber separately, so: pdflatex - biber - pdflatex (i.e. Build & View (F5) - Bibliography (F8) - Build & View (F5))
 		%% it seems that you don't need to do this all the time -- I think it is only needed when the .bib has been changed, then biber needs to be run again (F8) in order to update the .bbl file.
 	%%%%%
+
+\renewcommand*{\bibfont}{\normalfont\small} %% change font of bibliography, for example font size
 
 %%%%
 %% This will use the abbreviated journal title, if available from the field "shortjournal"; else, it will use the full title from the field "journal"
@@ -243,8 +278,16 @@
 
 \RequirePackage{caption} %% Changing the caption is done using \captionsetup of the caption package
 \RequirePackage{subcaption} %% to use subcaptions, for example, for subfigure
-\captionsetup{singlelinecheck=off,format=plain,indention=0.0cm,labelsep=colon,labelfont=bf,font={sf,small}}
-\renewcommand\thesubfigure{\Alph{subfigure}} %% change sub-caption format by redefining \thesub<type>, e.g. \thesubfigure
+
+%% If using xelatex: different font for captions
+\ifxetex
+	\def\captionsfont{\yourfont} %% To use different a font for text in captions
+	\DeclareCaptionFormat{caption-new}{\captionsfont \textbf{#1#2}#3}
+	\captionsetup{singlelinecheck=off,format=caption-new,indention=0.0cm,labelsep=colon,font={small}}
+\else
+	\captionsetup{singlelinecheck=off,format=plain,indention=0.0cm,labelsep=colon,labelfont=bf,font={sf,small}}
+\fi
+%%
 
 \RequirePackage{float}
 \RequirePackage{newfloat}
@@ -261,11 +304,22 @@
 \addto{\captionsenglish}{\renewcommand{\theschemeSI}{S\thechapter.\arabic{schemeSI}}} %% change label to "Scheme S#"
 \addto{\captionsenglish}{\renewcommand{\thetableSI}{S\thechapter.\arabic{tableSI}}} %% change label to "Table S#"
 
+\DeclareCaptionSubType[Alph]{figure} %% change sub-caption label format to use, for example, capital letters [Alph], small letters [alph], etc. -- see documentation of packages caption and subcaption
+\DeclareCaptionSubType[Alph]{figureSI}
+\DeclareCaptionSubType[Alph]{table}
+\DeclareCaptionSubType[Alph]{tableSI}
+\DeclareCaptionSubType[Alph]{scheme}
+\DeclareCaptionSubType[Alph]{schemeSI}
+
 \RequirePackage{placeins} %% to use \FloatBarrier
 
 \DeclareGraphicsExtensions{.pdf,.png} %% remove .png file or put .pdf as first argument to use high resolution .pdf image
 
-%% for tables
+\RequirePackage{chemnum} %%  Defines a \label- and \ref-like commands for compound numbers. 
+\RequirePackage{xparse} %% Required by chemnum
+\RequirePackage{l3keys2e} %% Required by chemnum
+
+%%%% for tables
 \RequirePackage{multirow} %% to merge cells in tables
 \RequirePackage{makecell} %% to insert linebreak in cells in tables
 \RequirePackage{array} %% extra options and for better working of tabular and array
@@ -281,9 +335,25 @@
 %\RequirePackage{booktabs} %% this package is used for more professionally looking tables, which have some differences regarding line thickness and line spacing
 %%
 
-\RequirePackage{chemnum} %%  Defines a \label- and \ref-like commands for compound numbers. 
-\RequirePackage{xparse} %% Required by chemnum
-\RequirePackage{l3keys2e} %% Required by chemnum
+%% Separate fontfamily for table contents %%
+\ifxetex %% If using xelatex: 
+	\def\tablefont{\yourfont\addfontfeatures{Numbers=Monospaced}}
+		%% Can use Numbers=Monospaced to give each digit the same horizontal space
+
+	%% The code below changes content of Table float into a different fontfamily
+	\makeatletter
+	\appto\@floatboxreset{%
+		\ifx\@captype\andy@table
+		\tablefont %% put fontfamily here (e.g., sffamily or tablefont)
+		\fi
+	}
+	\def\andy@table{table}
+	\makeatother
+\else
+\fi
+%% See https://tex.stackexchange.com/questions/286733/change-content-font-in-tabular-environments
+%% Before any text in the float is typeset, LaTeX calls \@xfloatreset, which normally does \reset@font\normalsize\@setminipage, but anything desired can be added. In this case we compare \@captype (which essentially holds the name of the called float) with a fixed string. Thus, if the float is a table, \sffamily or \tablefont is called.
+%%%%
 
 	%%%%% END figures/graphics/etcetera setup %%%%
 
@@ -324,14 +394,29 @@
 	%%%%% START defining style, formatting, commands, etcetera %%%%
 
 %% Define the style for titles: for Chapter, Section, etcetera
-\def\titlefont{\sffamily} 
-\def\titleshape{\scshape} %%\scshape is small caps; % \upshape is upright (regular)
-\def\titlestyle{\titlefont\titleshape\bfseries} %% 
+\ifxetex %% for xelatex
+	\def\titlefont{\yourfont}
+	\def\titleshape{\upshape} %%\scshape is small caps; % \upshape is upright (regular)
+	\def\titlestyle{\titlefont\titleshape\bfseries} %% 
+\else %% for pdflatex
+	\def\titlefont{\sffamily} 
+	\def\titleshape{\scshape} %%\scshape is small caps; % \upshape is upright (regular)
+	\def\titlestyle{\titlefont\titleshape\bfseries} %% 
+\fi
 
 %% Define the style for headers: for fancyheader and fancyfooter
-\def\headerfont{\sffamily} 
-\def\headershape{\upshape} %%\scshape is small caps; % \upshape is upright (regular)
-\def\headerstyle{\headerfont\headershape\bfseries} 
+\ifxetex %% for xelatex: can set yourfont or sans-serif font (defined above with \setsansfont), etc.
+	\def\headerfont{\yourfont}
+%	\def\headerfont{\sffamily} %% sans-serif font
+%	\def\headerfont{\rmfamily} %% serif (main) font
+%	\def\headershape{\upshape} %%\scshape is small caps; % \upshape is upright (regular)
+	\def\headershape{\scshape} %%\scshape is small caps; % \upshape is upright (regular)
+	\def\headerstyle{\headerfont\headershape\bfseries} 
+\else %% for pdflatex
+	\def\headerfont{\sffamily}
+	\def\headershape{\scshape} %%\scshape is small caps; % \upshape is upright (regular)
+	\def\headerstyle{\headerfont\headershape\bfseries} 
+\fi
 
 	%% \rmfamily for serif; \sffamily for sans serif; \ttfamily for monospaced font family;
 	%% Not all fonts contain small caps so depending on settings it might resolve to serif/small caps or sans serif/regular (see error messages)
@@ -785,7 +870,9 @@
 }
 
 %% Define an unnumbered footnote command.
+\makeatletter
 \def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
 
 %% The authors environment is used to display the authors of a chapter on the
 	%% title page. This is only necessary if multiple people contributed
@@ -819,7 +906,7 @@
 	\list{}{\leftmargin\rightmargin}%
 	\item%
 	\relax%
-	\rmfamily\slshape %itshape gives text in italic, \slshape in slanted which is slightly less italic. Not all font classes have a slanted font in which case italic is used.
+	\rmfamily\slshape %% \itshape gives text in italic; \slshape in slanted which is slightly less italic. Not all font classes have a slanted font in which case italic is used.
 	
 }{%
 	\endlist%
@@ -829,6 +916,7 @@
 	%% Adjust the size of the wrapfigure (with {#\textwidth}) and the scale of the inserted image (with includegraphics[scale=#]) to find nice proportions
 	%% When using a width of zero (0pt) for wrapfigure, the actual width of the figure will determine the wrapping width!
 	%% It may be necessary to use multiple versions of this \synth command in case your molecules vary greatly in width and, therefore, a single set of values for wrapfigure and includegraphics cannot be found
+%% If only a few experimental procedures need to be written, it may be less trouble to just use the command separately for each experimental procedure in the .tex file itself, so as to fine-tune the values individually
 \newcommand{\scaling}{0.15}
 \newcommand{\synth}[5]{%
 	\noindent%
@@ -867,6 +955,8 @@
 	urlcolor = title
 }
 
+\RequirePackage{soul} %% provides command \hl{} to highlight text (useful for comments)
+
 %\RequirePackage{comment} % necessary to use \comment{} environment
 %\RequirePackage[normalem]{ulem} % used for strikethrough
 %\RequirePackage{tabto} % used for list of abbreviations
@@ -874,12 +964,12 @@
 
 %\RequirePackage{metalogo} %This package exposes spacing parameters for various TeX logos to the end user, to optimise the logos for different fonts. Written especially for XeLaTeX users. 
 
-%%%%%% TO DO
-%% add an if-else--fi statement to include these unicode characters when xelatex is not used
-
-%\DeclareUnicodeCharacter{2212}{-}
-%\DeclareUnicodeCharacter{2032}{'}
-
+%% An if-else--fi statement to include these unicode characters only when xelatex is not used
+\ifxetex
+\else
+	\DeclareUnicodeCharacter{2212}{-}
+	\DeclareUnicodeCharacter{2032}{'}
+\fi
 %%
 
 	%%% END MISCELLANEOUS %%%
