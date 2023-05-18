@@ -1,22 +1,17 @@
 \documentclass[../main_brownies.tex]{subfiles}
 
-%\makeatletter
-%\renewcommand{@twoside}{false}
-%\makeatother
+%% ADJUST GEOMETRY HERE %%
+%% instead of "a5paper" you can set specific dimensions, e.g., 
+	%% papersize={170mm,240mm} %% 
+	%% !! size should be smaller than thesis pages
 
-%\newgeometry{
-%	papersize = {176mm,246mm}, % size of paper. Related to layoutsize+layoutoffset
-%	layoutsize = {170mm,240mm}, % total width and height including header and footer
-%	layoutoffset = {3mm,3mm}, % offset from paper size to center the layoutbox
-%	top = 27mm, bottom = 27mm, inner = 14mm, outer=14mm
-%}
+\geometry{a5paper,%
+%	layout=a5paper
+	vmargin = 27mm, hmargin = 23mm%
+}
 
 \begin{document}
-%\newgeometry{oneside}
 \pagestyle{empty}
-
-		%% MAKE THE PAGE GEOMETRY SINGLE-PAGED (not book) AND CENTERED
-
 
 \setlength{\parindent}{0pt}{
 
@@ -43,7 +38,23 @@
 	\vspace{0.25cm}
 \end{center}
 
-\blindenumerate
+%\blindenumerate
+
+\begin{enumerate}[leftmargin=*] %% * adjusts leftmargin to remove indent
+	\item Here is an insightful quote.
+	\item Here is a funny opinion.
+	\item Here is another insightful quote.
+	\item Here is a short anecdote.
+	\item Here is a good stelling related to a paper.\\
+	{\small A. Author, \textit{Journal}, \textbf{Year}, Volume, Page--Page}
+	\item "Here is a quote from a book (fiction or non-fiction)."
+	\vspace*{-0.3cm}
+	\begin{flushright}
+		\small -- B. Bauthor, \emph{Book Title}\\
+	\end{flushright}
+	\vspace*{-0.3cm}
+	\item Here is another funny stelling.
+\end{enumerate}
 
 %\begin{enumerate}[leftmargin=*] * adjust leftmargin to remove indent
 %	\item 

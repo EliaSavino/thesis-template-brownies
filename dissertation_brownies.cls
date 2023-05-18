@@ -62,14 +62,15 @@
 		papersize = {176mm,246mm}, %% size of paper. Related to layoutsize+layoutoffset
 		layoutsize = {170mm,240mm}, %% total width and height including header and footer
 		layoutoffset = {3mm,3mm}, %% offset from paper size to center the layoutbox
-		top = 27mm, bottom = 27mm, inner = 23mm, outer=14mm%
+		top = 27mm, bottom = 27mm, inner = 23mm, outer = 14mm%
 	}
 \else
 	\geometry{%
 		papersize={170mm,240mm},%
-		top = 27mm, bottom = 27mm, inner = 23mm, outer=14mm} %% 
+		top = 27mm, bottom = 27mm, inner = 23mm, outer = 14mm} %% 
 \fi
 %% see here https://texdoc.org/serve/geometry.pdf/0
+%% You can change page layout mid-document by using the commands \geometry OR \newgeometry (disables all options specified in pre-amble and skips papersize-related options, such as "landscape" and "paper=a4paper")
 
 	%%%%% END document class, language, geometry, and other basic things %%%%%
 	
@@ -365,7 +366,7 @@
 \RequirePackage[noindentafter]{titlesec} %% A package providing an interface to sectioning commands for selection from various title styles. E.g., marginal titles and to change the font of all headings with a single command, also providing simple one-step page styles. %% the option [noindentafter} removes indent of paragraph after titles (still needed when using package parskip??)
 \RequirePackage{titletoc} %% A companion for titlesec handling toc/lof/lot entries.
 \RequirePackage[nottoc]{tocbibind} %% Automatically adds the bibliography and/or the index and/or the contents, etc., to the Table of Contents listing %% argument [nottoc] excludes the TOC itself
-\RequirePackage[flushmargin,hang]{footmisc} %% A collection of ways to change the typesetting of footnotes.
+\RequirePackage[flushmargin,hang]{footmisc} %% A collection of ways to change the typesetting of footnotes. %% flushmargin (and hang) make footnotetext start without an indent
 %\RequirePackage{setspace} %% provides options for linespacing (between linespace within a paragraph)
 %\RequirePackage{fnpos} %% to control position of footnotes in certain circumstances where the default is undesired
 %\RequirePackage[skip=6pt plus 1pt,tocskip=2pt plus .1pt]{parskip} %% offers paragraph spacing options: [skip] specifies \parskip: the vspace between paragraphs; [tocskip] for \parskip in toc (it's not working...); [indent] specifies \parindent: the paragraph indentation; [parfill] adjusts value of \parfillskip 
@@ -376,13 +377,13 @@
 
 \RequirePackage[shortcuts]{extdash} %% provides commands to allow hyphenation of words with dashes in them (\-/)
 \RequirePackage{etaremune} %% package for reverse-counting (enumerate reversed). Used for List of Publications
-\RequirePackage{enumitem} %% options for enumerate
+\RequirePackage{enumitem} %% options for list environments enumerate, itemize, and description
 
 \RequirePackage[final]{pdfpages} %% add pdf pages
 \RequirePackage{afterpage} %% page selection and control %% allows afterpage{\clearpage} %% see for instructions: https://www.ctan.org/pkg/afterpage
 \RequirePackage[strict]{changepage} %% safe way of detecting whether a page is even or odd %% see: https://ctan.org/pkg/changepage
 
-\RequirePackage{xcolor} %% colour package; [cmyk] means: use target color model cmyk %% https://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/xcolor/xcolor.pdf
+\RequirePackage[cmyk]{xcolor} %% colour package; [cmyk] means: use target color model cmyk => need it for the self-defined cmyk colours to work everywhere, for example, for the smooth gradient colour footnoterule
 \RequirePackage{tikz} %% TikZ is probably the most complex and powerful tool to create graphic elements in LaTeX. %% required here to make the thumb indices
 
 	%%%%% END importing packages %%%%
@@ -501,9 +502,9 @@
 \newlength\thumbedge
 \setlength\thumbedge{4pt} %Controls rounding of the square box, and it is also the distance of the number to the edge of the box
 \newlength\thumbhspace
-\setlength\thumbhspace{32pt} %Controls width of the box but not intuitively original is 36
+\setlength\thumbhspace{32pt} %% Controls width of the box but not intuitively; original was 36
 \newlength\thumbvspace
-\setlength\thumbvspace{3\thumbheight} %Controls vertical distance between thumbs was 2
+\setlength\thumbvspace{3\thumbheight} %% Controls vertical distance between thumbs; was 2. Tweak this to get the desired positioning of your thumb tabs (for example in the case of many chapters when the last thumb tab can end up too low on the page)
 
 \newlength\thumbwidth
 \setlength\thumbwidth{40pt}
@@ -641,9 +642,8 @@
 	\fancyhead{\cropmarks}
 }
 
-%% Pagestyle default for titlepages of Chapter and TOC is plain.
-%% Can adjust the pagestyle plain here.
-%% This defines titlepage of all chapters including TOC, so it makes them look the same -- if not desired, see below
+%%%%%%%%%%%%%%%% Pagestyle plain: default for titlepages %%%%%%%%%%%%%%%%
+%% Pagestyle "plain" is the default for titlepages of Chapter and TOC.
 %\fancypagestyle{plain}{%
 %	\fancyhf{}
 %	\renewcommand*\headrulewidth{0pt}
@@ -652,7 +652,12 @@
 %%	\fancyfoot[C]{\headerfont\thepage} % turn on/off pagenumber on title page
 %}
 
-%% Pagestyle used for titlepages instead of the default pagestyle plain.
+%% This defines titlepage of all chapters !! including TOC !!, so it makes them look the same 
+%% -- if not desired, see below for definition of chaptertitlepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%% Pagestyles for titlepages of Chapters and TOC %%%%%%%%%%%%%%%%
+%% A pagestyle is defined here to be used for titlepages instead of the default pagestyle plain.
 %% This pagestyle is created in order to be able to have different titlepages for Chapters and the TOC: see main_brownies.tex for implementation.
 \fancypagestyle{chaptertitlepage}{%
 	\fancyhf{}
@@ -671,6 +676,7 @@
 	\renewcommand{\headrulewidth}{0pt}
 }
 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Fancy pagestyle for the front matter
 \fancypagestyle{frontmatter}{%
@@ -750,22 +756,39 @@
 \newcommand*\setheader[1]{\markboth{\color{title}#1}{\color{title}#1}}
 
 %% Change the headrule command (from fancyhdr.sty) to draw the line below the
-	%% header in the title color.
+	%% header in the thumbcolor.
 %\renewcommand*\headrule{%
 %	\if@fancyplain%
 %		\let\headrulewidth\plainheadrulewidth%
 %	\fi%
-%	{\color{title}\hrule\@height\headrulewidth\@width\headwidth}%
+%	{\color{\thumbcolor}\hrule\@height\headrulewidth\@width\headwidth}%
 %	\vskip-\headrulewidth%
 %}
 
-%% Draw the line above a footnote in the title color as well.
+%%%% FOOTNOTERULE STYLE OPTION 1: one colour
+%% Draw the line above a footnote in the thumbcolor as well.
+	%% If colour is not desired: replace "\thumbcolor" by "black", for example
 	%% and can adjust width and height here
+%\renewcommand*\footnoterule{%
+%	\vspace*{-3pt}%
+%	{\color{\thumbcolor}\hrule width \textwidth height 0.4pt} %% it was 0.5\textwidth
+%	\vspace*{2.6pt}%
+%}
+%%%%
+
+%%%% FOOTNOTERULE STYLE OPTION 2: smooth colour gradient
+%% Colour gradient will go from thumbcolor to white, for example
+%% Change colours as desired
 \renewcommand*\footnoterule{%
 	\vspace*{-3pt}%
-	{\color{title}\hrule width \textwidth height 0.4pt} %% it was 0.5\textwidth
+	%	{\color{\thumbcolor}\hrule width \textwidth height 0.4pt} %% it was 0.5\textwidth
+	\hbox{%
+		\tikz \fill[left color=\thumbcolor, right color=white]
+		(0,0) rectangle (\textwidth,0.4pt);%
+	}%
 	\vspace*{2.6pt}%
 }
+%%%%
 
 \setcounter{secnumdepth}{4} %% down to level {#} will be a numbered "section" (sub-/subsub-/subsubsubsection, etc.)
 %\setcounter{tocdepth}{2} %% level {#} will show up in TOC %% not needed when using secnumdepth with higher #

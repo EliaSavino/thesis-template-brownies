@@ -3,6 +3,13 @@
 %\graphicspath{ {Figures/}{Schemes/} } %% graphics path for two folders: \Figures and \Schemes
 \newrefsection[Publications/My_publications] %% begin new reference section with the .bib file for this chapter
 
+%% You can adjust the margins on this page if desired
+\newgeometry{%
+	vmargin = 23mm,%
+%	top = 27mm, bottom = 27mm,%
+	inner = 23mm, outer = 14mm%
+}
+
 \checkoddpage
 \ifoddpage
 	\newpage\thispagestyle{empty}
@@ -13,30 +20,30 @@
 %% want List of Publications to be the last even page
 \enableopenany %% to enable the chapter to start on the left
 
-\chapter*{List of Publications\hfill} %% to make title flush left
+\chapter*{List of Publications\hfill} %% add \hfill after title to make title flush left %% add also \hfill before title to center title
 \addcontentsline{toc}{chapter}{List of Publications}
 \markboth{List of Publications}{}
 
-%% Can also try to use the publist package
-%% https://ctan.org/pkg/biblatex-publist
-
-%% But only for this chapter: need to figure out how to do that
-%\usepackage[bibstyle=publist,sorting=ddnt,plauthorhandling=highlight, nameorder=given-family,boldyear=true,plnumbered=false,maxnames=10]{biblatex} 
-%\plauthorname[Albert]{Einstein} %% author name
+%% Can also try to use the publist package https://ctan.org/pkg/biblatex-publist
+	%% But only for this chapter: need to figure out how to do that
+	%%\usepackage[bibstyle=publist,sorting=ddnt,plauthorhandling=highlight, nameorder=given-family,boldyear=true,plnumbered=false,maxnames=10]{biblatex} 
+	%%\plauthorname[Albert]{Einstein} %% author name
 
 %% We use the 'etaremune' environment (the reverse of 'enumerate') to get a
-%% numbered list of publications in reverse chronological order. If the list of
-%% authors is long, it might be useful to emphasize your own name with \textbf.
+	%% numbered list of publications in reverse chronological order. If the list of
+	%% authors is long, it might be useful to emphasize your own name with \textbf.
 
-\begin{etaremune}{\small
+%% For information on how to align the enumerate/etaremune list to the left margin, see enumitem package documentation and https://tex.stackexchange.com/questions/29322/how-to-make-enumerate-items-align-at-left-margin
+%% It is not straightforward to have the label start on the margin...
 
+\begin{etaremune}[leftmargin=0mm] %% you can adjust where list starts (see above)
+	\small
 	\item \fullcite{Einstein1906}
 	\item \fullcite{Einstein1905}
 	\item \fullcite{Darwin1859}
-
-}
 \end{etaremune}
 
 \disableopenany
+\restoregeometry
 
 \end{document}

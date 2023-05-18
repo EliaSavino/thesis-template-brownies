@@ -63,6 +63,7 @@
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
       <file>dutch.lbx</file>
+      <file>french.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">
@@ -84,8 +85,9 @@
       <file>Stellingen.bcf</file>
     </requires>
     <requires type="editable">
-      <file>Chapter_1/Review_surfaces_20220402.bib</file>
-      <file>Chapter_2/Thioanisole_thiophenol_SERS_20220323.bib</file>
+      <file>Chapter_1/References_Chapter_1.bib</file>
+      <file>Chapter_2/References_Chapter_2.bib</file>
+      <file>Instructions/References_Instructions.bib</file>
       <file>Publications/My_publications.bib</file>
     </requires>
   </external>

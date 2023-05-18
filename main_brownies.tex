@@ -1,6 +1,9 @@
 %\documentclass[print]{dissertation_brownies} %% use option print to add cropmarks and other things (see .cls)
 \documentclass{dissertation_brownies} %% use option print to add cropmarks and other things (see .cls)
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START packages needed for this template %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% these packages are used in this template 
 	%% but can be removed when writing your thesis
 \usepackage{lipsum} %% to use lorem ipsum for example texts
@@ -11,8 +14,12 @@
 %%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END packages needed for this template %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% START BIBLIOGRAPHY SOURCES %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START bibliograpy sources %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% IMPORTANT: in each chapter .tex file indicate the specific .bib file used for that chapter with \newrefsection[<bibofthischapter>]
 
 \addbibresource{Chapter_1/References_Chapter_1.bib} %% a separate .bib file for each chapter
@@ -24,22 +31,26 @@
 
 \addbibresource{Publications/My_publications.bib} %% for final page Publications
 
-	%%% END BIBLIOGRAPHY SOURCES %%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END bibliograpy sources %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% START SUBFILES %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START subfiles %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{subfiles} % Best loaded last in the preamble
 %% could also use the package standalone instead of subfiles -- importantly, with standalone, all subfiles need to have their own preambles, which means you'd need to be really sure that the formatting and everything of all chapters are the same.
 
 %% can comment out \subfile{"chapter"} to not include it -- for if you want to see how just one chapter (or a few) look(s)
 %% https://tex.stackexchange.com/questions/513490/chapter-bibliography-using-subfiles
 
-	%%% END SUBFILES %%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END subfiles %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% START commands and such to fix typesetting issues %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START commands and such to fix typesetting issues %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%% to fix overfull \hbox in TOC due to 3-digit pagenumber:
 %% https://tex.stackexchange.com/questions/49887/overfull-hbox-warning-for-toc-entries-when-using-memoir-documentclass
@@ -53,13 +64,15 @@
 
 \raggedbottom %% remove unwanted spaces between paragraphs: recommended!
 
-	%%% END commands and such to fix typesetting issues %%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END commands and such to fix typesetting issues %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% START possible (re)definitions %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% START optional (re)definitions %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%
+%%%%%%%%%%%%%%%% Change square root symbol %%%%%%%%%%%%%%%%
 %% The regular square root symbol does not have the vertical bar at the end -- this changes the sqrt symbol:
 \let\oldsqrt\sqrt
 \def\sqrt{\mathpalette\DHLhksqrt}
@@ -68,31 +81,39 @@
 		\advance\dimen0-0.2\ht0
 		\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
 		{\box0\lower0.4pt\box2}}
-%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%% Define hyphenation %%%%%%%%%%%%%%%%
 \hyphenation{spi-ro-py-rans} %% allow hyphenation only at the assigned locations
 \hyphenation{nohyphenation} %% if no "-" are inserted in the {"word"}, hyphenation will not be allowed
 \hyphenation{hyphenation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%% Define and renew commands %%%%%%%%%%%%%%%%
 \newcommand{\vs}{\emph{vs}} %% define command vs (versus) in italics % when using: type \vs{}
 \newcommand{\cm}{\unit{cm^{-1}}} %% define command cm-1 superscript % when using: type \cm{}
 
 \renewcommand{\thefootnote}{\fnsymbol{footnote}} %% use \fnsymbol for the footnote symbols
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%
-%% make command to enable \chapter to start on the left page:
-%% used for final page Publications to make it appear as last left page
+%%%%%%%%%%%%%%%% Command to allow start chapter on left page %%%%%%%%%%%%%%%%
+%% Make command to enable \chapter to start on the left page:
+%% Used for final page Publications to make it appear as last left page
 \makeatletter
 \newcommand{\enableopenany}{\@openrightfalse} 
 \newcommand{\disableopenany}{\@openrighttrue} 
 \makeatother
-%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%% Possible redefinition of \chapter that changes the default pagestyle of its titlepage:
-%% Change pagestyle of \chapter titlepage from default plain to self-defined chaptertitlepage (see .cls)
-%% Will change it for both \chapter and \tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% POSSIBLE redefinition of \chapter: affects also TOC %%%%%%%%%%%%%%%%%%%%%%%%%
+%% Use this method when you don't mind that \chapter and TOC titlepages have the same style
+
+%%%%%%%%%%%%%%%%%% !!! %%%%%%%%%%%%%%%%%%%
+%% Will change pagestyle for both \chapter AND \tableofcontents
 %% Do not use in combination with the redefinitions of ps@plain (see below) that are used to distinguish between titlepages of \tableofcontents and \chapter
+%%%%%%%%%%%%%%%%%% !!! %%%%%%%%%%%%%%%%%%%
 
+%%%%% Redefinition of \chapter that changes the default pagestyle of its titlepage from plain to self-defined chaptertitlepage (see .cls)
 %\makeatletter
 %\renewcommand\chapter{
 	%	\if@openright
@@ -106,19 +127,22 @@
 	%	\secdef\@chapter\@schapter}
 %\makeatother
 %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Set pagestyle of chapter title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Let pagestyle plain (used for titlepages of chapters and TOC) be the self-defined chaptertitlepage (see .cls)
 \makeatletter
 \let\ps@plain\ps@chaptertitlepage
 \makeatother
-%%%%%%
-
-	%%% END possible (re)definitions %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END possible (re)definitions %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% DEFINE THE COLOURS USED %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START definition of colours used %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 \definecolor{mycyan}{cmyk}{0.85,0.05,0.15,0.25}
 \definecolor{mygreen}{cmyk}{0.93,0.00,1.00,0.00}
@@ -128,28 +152,39 @@
 \definecolor{mygold}{cmyk}{0.02,0.13,0.91,0.00}
 \definecolor{myorange}{cmyk}{0.00,0.54,0.95,0.00}
 \definecolor{myskyblue}{cmyk}{0.67,0.04,0.00,0.00}
+%\definecolor{mywhite}{cmyk}{0.00,0.00,0.00,0.00}
 %\definecolor{myblack}{cmyk}{0.00,0.00,0.00,1.00} %% defined myblack in .cls already
 
-	%%% END COLOURS %%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END definition of colours used %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%% START DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% START DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+%%%%%%%%%%%%%%%% Define title and author %%%%%%%%%%%%%%%%
 %% Specify the title and author of the thesis. This information will be used on the title page (in title/title.tex) and in the metadata of the final PDF.
 \title[Subtitle]{Title}
 \author{First Second}{Last}
+%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	%%% START frontmatter: titlepage, table of contents %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START frontmatter: titlepage, table of contents %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \frontmatter %% sets pages numbered to lowercase roman; makes chapters not numbered
+
+%%%%%%%%%%%%%%%% Insert titlepage (includes firstpage) %%%%%%%%%%%%%%%%
 \subfileinclude{Titlepage/titlepage}
+%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%% Insert dedication if desired %%%%%%%%%%%%%%%%
 \dedication{To all the wonderful Brownies using this template}
+%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%
 %% Titlepage of \tableofcontents uses the pagestyle plain by default! The same goes for chapter titlepages.
 	%% Let pagestyle plain be the self-defined pagestyle frontmatterTOCfirstpage (see .cls)
 	%% This will only make the titlepage of the TOC in the style of frontmatterTOCfirstpage (see .cls)
@@ -157,24 +192,33 @@
 \makeatletter
 \let\ps@plain\ps@frontmatterTOCfirstpage
 \makeatother
+%%%%%%%%%%%%%%%%
 
-%% Insert table of contents
+%%%%%%%%%%%%%%%% Insert table of contents %%%%%%%%%%%%%%%%
 \tableofcontents
+%%%%%%%%%%%%%%%%
 
-%% Reset pagestyle plain to style of chaptertitlepage (see .cls)
+%%%%%%%%%%%%%%%% Reset pagestyle plain to style of chaptertitlepage (see .cls)
 \makeatletter
 \let\ps@plain\ps@chaptertitlepage
 \makeatother
+%%%%%%%%%%%%%%%%
 
-	%%% END frontmatter %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END frontmatter %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
-
-	%%% START mainmatter: chapters %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START mainmatter %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \mainmatter % numbers chapters and sets pagenumber to normal numbers
 
 \thumbtrue % turn on thumb indices
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START Chapters %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \renewcommand{\thumbcolor}{mycyan} % set chaptercolor for every chapter specifically. % can just add name of colour here as well
 \subfileinclude{Chapter_1/Chapter_1_examplesubfile}
@@ -185,13 +229,19 @@
 \renewcommand{\thumbcolor}{myblack} % set chaptercolor for every chapter specifically. % can just add name of colour here as well
 \subfileinclude{Instructions/Style and printing considerations}
 
-\thumbfalse % turn off thumb indices
-
-	%%% END mainmatter %%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END Chapters %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% START backmatter: summaries, acknowledgments, etc. %%%
+\thumbfalse % turn off thumb indices
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END mainmatter %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START backmatter: summaries, acknowledgments, etc. %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \backmatter %% pagestyle different from mainmatter. Can adjust it: see .cls file
 
@@ -200,24 +250,39 @@
 	%% can do either without chapter number, 
 	%% or with self-defined acronym/abbreviation using \myacronym{}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START summaries and acknowledgements %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \renewcommand{\thumbcolor}{myorange} %% same colour for all summaries. %% Can change it in the Summary.tex file if desired
 \subfileinclude{Summary/Summary}
 
 \renewcommand{\thumbcolor}{myskyblue}
 \subfileinclude{Acknowledgements/Acknowledgements}
 
-\thumbbackfalse % turn off thumbback indices
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END summaries and acknowledgements %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% START Publications %%%
+\thumbbackfalse %% turn off thumbback indices
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% START Publications %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \renewcommand{\thumbcolor}{myblack}
 \subfileinclude{Publications/Publications}
 
-	%%% END Publications %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END Publications %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% END backmatter %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% END backmatter %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%% END DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%% END DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
