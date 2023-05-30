@@ -85,8 +85,8 @@
 
 %%%%%%%%%%%%%%%% Define hyphenation %%%%%%%%%%%%%%%%
 \hyphenation{spi-ro-py-rans} %% allow hyphenation only at the assigned locations
-\hyphenation{nohyphenation} %% if no "-" are inserted in the {"word"}, hyphenation will not be allowed
-\hyphenation{hyphenation}
+%\hyphenation{nohyphenation} %% if no "-" are inserted in the {"word"}, hyphenation will not be allowed
+%\hyphenation{hyphenation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%% Define and renew commands %%%%%%%%%%%%%%%%
@@ -180,6 +180,13 @@
 
 %%%%%%%%%%%%%%%% Insert dedication if desired %%%%%%%%%%%%%%%%
 \dedication{To all the wonderful Brownies using this template}
+
+%%%% Need to add an empty page otherwise TOC starts on an even page
+\newpage\thispagestyle{empty}
+\mbox{}
+\newpage
+%%%%
+
 %%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.12) (preloaded format=xelatex 2022.12.15)  30 MAY 2023 08:20
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.12) (preloaded format=xelatex 2022.12.15)  30 MAY 2023 21:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2304,29 +2304,30 @@ File: Titlepage//Titelblad_example/Titelblad_example.pdf Graphic file (type pdf
  [4]) [5
 
 
+] [6
+
 ]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cour.ttf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (main_brownies.toc [6
-
-
-]
-Overfull \hbox (1.00388pt too wide) detected at line 43
+ (main_brownies.toc
+Overfull \hbox (1.00388pt too wide) detected at line 41
 \TU/cour.ttf(0)/m/n/10 3.10 
  []
 
-)
+[7
+
+])
 \tf@toc=\write10
 \openout10 = `main_brownies.toc'.
 
 
 
 LaTeX Font Warning: Font shape `TU/cour.ttf(0)/m/sc' undefined
-(Font)              using `TU/cour.ttf(0)/m/n' instead on input line 205.
+(Font)              using `TU/cour.ttf(0)/m/n' instead on input line 212.
 
-[7]
+[8]
 \openout2 = `Preface/Preface.aux'.
 
  (Preface/Preface.tex
@@ -2334,35 +2335,31 @@ LaTeX Font Warning: Font shape `TU/cour.ttf(0)/m/sc' undefined
 \blx@sectionciteorder@1=\count598
 Package biblatex Info: Reference section=1 on input line 4.
 Package biblatex Info: Setting label 'refsection:1' on input line 4.
- [8
-
-]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `texgyrebonum-math.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 43.
+(Font)              scaled to size 10.00107pt on input line 46.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.7008pt on input line 43.
+(Font)              scaled to size 7.7008pt on input line 46.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 43.
+(Font)              scaled to size 6.00064pt on input line 46.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 43.
+(Font)              scaled to size 9.99893pt on input line 46.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.69917pt on input line 43.
+(Font)              scaled to size 7.69917pt on input line 46.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 43.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+(Font)              scaled to size 5.99936pt on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (C:\Program Files\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -2372,13 +2369,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for TS1+texgyrebonum-regula
-r.otf(0) on input line 43.
-LaTeX Font Info:    No file TS1texgyrebonum-regular.otf(0).fd. on input line 43
+r.otf(0) on input line 46.
+LaTeX Font Info:    No file TS1texgyrebonum-regular.otf(0).fd. on input line 46
 .
 
 
 LaTeX Font Warning: Font shape `TS1/texgyrebonum-regular.otf(0)/m/n' undefined
-(Font)              using `TS1/cmr/m/n' instead on input line 43.
+(Font)              using `TS1/cmr/m/n' instead on input line 46.
 
 (C:\Program Files\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -2389,15 +2386,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00085pt on input line 43.
+(Font)              scaled to size 8.00085pt on input line 46.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 43.
+(Font)              scaled to size 5.00053pt on input line 46.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 43.
+(Font)              scaled to size 7.99915pt on input line 46.
 LaTeX Font Info:    Font shape `TU/texgyrebonum-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 43.
- [9] [10] [11])
-[12]
+(Font)              scaled to size 4.99947pt on input line 46.
+ [9
+
+
+] [10] [11] [12])
+[13]
 \openout2 = `Chapter_1/Chapter_1_examplesubfile.aux'.
 
  (Chapter_1/Chapter_1_examplesubfile.tex
@@ -2406,45 +2406,44 @@ Package biblatex Info: Reference section=0 on input line 4.
 \blx@sectionciteorder@2=\count600
 Package biblatex Info: Reference section=2 on input line 4.
 Package biblatex Info: Setting label 'refsection:2' on input line 4.
- [1
+File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
+<use Chapter_1//chapterimagepage_1.pdf>
+File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
+<use Chapter_1//chapterimagepage_1.pdf>
+File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
+<use Chapter_1//chapterimagepage_1.pdf, page 1>
+File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
+<use Chapter_1//chapterimagepage_1.pdf, page 1>
+File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
+<use Chapter_1//chapterimagepage_1.pdf, page 1>
+File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
+<use Chapter_1//chapterimagepage_1.pdf, page 1>
+File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
+<use Chapter_1//chapterimagepage_1.pdf, page 1>
+ [0
 
 
 
 
 ]
-File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
-<use Chapter_1//chapterimagepage_1.pdf>
-File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
-<use Chapter_1//chapterimagepage_1.pdf>
-File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
-<use Chapter_1//chapterimagepage_1.pdf, page 1>
-File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
-<use Chapter_1//chapterimagepage_1.pdf, page 1>
-File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
-<use Chapter_1//chapterimagepage_1.pdf, page 1>
-File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
-<use Chapter_1//chapterimagepage_1.pdf, page 1>
-File: Chapter_1//chapterimagepage_1.pdf Graphic file (type pdf)
-<use Chapter_1//chapterimagepage_1.pdf, page 1>
- [2]
 Chapter 1.
 Package newfloat Info: Setting Plan B file extension to `lof'... on input line 
-22.
-[3
+23.
+[1
 
 ]
 LaTeX Font Info:    Font shape `TU/texgyrebonum-regular.otf(0)/m/sl' in size <1
 0> not available
 (Font)              Font shape `TU/texgyrebonum-regular.otf(0)/m/it' tried inst
-ead on input line 24.
+ead on input line 25.
 Package hyperref Info: bookmark level for unknown scheme defaults to 0 on input
- line 39.
- [4
+ line 40.
+ [2
 
 ]
 File: Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf Graphic file (type pdf)
 <use Chapter_1/Figures_Schemes//Figure_1/Figure_1.pdf>
- [5]
+ [3]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `texgyreadventor-regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -2452,7 +2451,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 Missing character: There is no 𝜆 in font [texgyreadventor-regular.otf]/OT:scrip
 t=latn;language=dflt;mapping=tex-text;!
-[6]) [7]
+[4]) [5]
 \openout2 = `Chapter_2/Chapter_2_examplesubfile.aux'.
 
  (Chapter_2/Chapter_2_examplesubfile.tex
@@ -2475,7 +2474,7 @@ File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf, page 1>
 File: Chapter_2//chapterimagepage_2.pdf Graphic file (type pdf)
 <use Chapter_2//chapterimagepage_2.pdf, page 1>
- [8
+ [6
 
 
 
@@ -2484,11 +2483,14 @@ Chapter 2.
 File: Chapter_2/Figures//titlepageimage/Chapter_2_titlepageimage.pdf Graphic fi
 le (type pdf)
 <use Chapter_2/Figures//titlepageimage/Chapter_2_titlepageimage.pdf>
-[9
+[7
 
-] [10
+] [8
 
-] [11] [12]
+] [9] [10]
+
+LaTeX Warning: Empty bibliography on input line 75.
+
 File: Chapter_2/Figures//Molecules/Spiropyran-1.png Graphic file (type bmp)
 <Chapter_2/Figures//Molecules/Spiropyran-1.png>
 
@@ -2510,7 +2512,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--93
 
  []
 
-[13]
+[11]
 File: Chapter_2/Figures//Molecules/Merocyanine-1.png Graphic file (type bmp)
 <Chapter_2/Figures//Molecules/Merocyanine-1.png>
 
@@ -2528,7 +2530,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--100
 
  []
 
-[14]
+[12]
 File: Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf Graphic file (type p
 df)
 <use Chapter_2/Figures//Figure_S1/Chapter_2_Figure_S1.pdf>
@@ -2536,9 +2538,25 @@ Package hyperref Info: bookmark level for unknown figureSI defaults to 0 on inp
 ut line 113.
 Package hyperref Info: bookmark level for unknown tableSI defaults to 0 on inpu
 t line 121.
- [15
 
-] [16] [17]) [18
+
+LaTeX Warning: Citation 'Einstein1905' on page 13 undefined on input line 126.
+
+
+LaTeX Warning: Citation 'Einstein1906' on page 13 undefined on input line 126.
+
+
+LaTeX Warning: Citation 'Einstein1905' on page 13 undefined on input line 127.
+
+
+LaTeX Warning: Citation 'Einstein1906' on page 13 undefined on input line 127.
+
+
+LaTeX Warning: Citation 'Einstein1905' on page 13 undefined on input line 127.
+
+[13
+
+] [14]) [15
 
 ]
 \openout2 = `"Instructions/Style and printing considerations.aux"'.
@@ -2549,29 +2567,27 @@ Package biblatex Info: Reference section=0 on input line 4.
 \blx@sectionciteorder@4=\count604
 Package biblatex Info: Reference section=4 on input line 4.
 Package biblatex Info: Setting label 'refsection:4' on input line 4.
-
-[19
+File: Instructions//Image_notepad.pdf Graphic file (type pdf)
+<use Instructions//Image_notepad.pdf>
+File: Instructions//Image_notepad.pdf Graphic file (type pdf)
+<use Instructions//Image_notepad.pdf>
+File: Instructions//Image_notepad.pdf Graphic file (type pdf)
+<use Instructions//Image_notepad.pdf, page 1>
+File: Instructions//Image_notepad.pdf Graphic file (type pdf)
+<use Instructions//Image_notepad.pdf, page 1>
+File: Instructions//Image_notepad.pdf Graphic file (type pdf)
+<use Instructions//Image_notepad.pdf, page 1>
+File: Instructions//Image_notepad.pdf Graphic file (type pdf)
+<use Instructions//Image_notepad.pdf, page 1>
+File: Instructions//Image_notepad.pdf Graphic file (type pdf)
+<use Instructions//Image_notepad.pdf, page 1>
+ [16
 
 
 
 ]
-File: Instructions//Image_notepad.pdf Graphic file (type pdf)
-<use Instructions//Image_notepad.pdf>
-File: Instructions//Image_notepad.pdf Graphic file (type pdf)
-<use Instructions//Image_notepad.pdf>
-File: Instructions//Image_notepad.pdf Graphic file (type pdf)
-<use Instructions//Image_notepad.pdf, page 1>
-File: Instructions//Image_notepad.pdf Graphic file (type pdf)
-<use Instructions//Image_notepad.pdf, page 1>
-File: Instructions//Image_notepad.pdf Graphic file (type pdf)
-<use Instructions//Image_notepad.pdf, page 1>
-File: Instructions//Image_notepad.pdf Graphic file (type pdf)
-<use Instructions//Image_notepad.pdf, page 1>
-File: Instructions//Image_notepad.pdf Graphic file (type pdf)
-<use Instructions//Image_notepad.pdf, page 1>
- [20]
 Chapter 3.
-[21
+[17
 
 ] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -2636,14 +2652,29 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [22
+ [18
 
-] [23]
+]
+
+LaTeX Warning: Citation 'GraphicsPathSubfiles' on page 19 undefined on input li
+ne 67.
+
+[19]
+
+LaTeX Warning: Citation 'Hyndsight' on page 20 undefined on input line 99.
+
+
+Overfull \hbox (18.38365pt too wide) in paragraph at lines 99--100
+\TU/texgyrebonum-regular.otf(1)/m/n/10 Everything we want to say about this is 
+described well by Rob J. Hyndman.$[]$ 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[24]
+[20]
 Overfull \hbox (9.52498pt too wide) in paragraph at lines 137--138
 \TU/texgyrebonum-regular.otf(1)/m/n/10 ternative is to use the [][]\TU/lmtt/m/n
 /10 afterpage []\TU/texgyrebonum-regular.otf(1)/m/n/10 package, and then insert
@@ -2666,18 +2697,18 @@ File: Instructions/Figures//6colors.pdf Graphic file (type pdf)
 <use Instructions/Figures//6colors.pdf>
 File: Instructions/Figures//test3.pdf Graphic file (type pdf)
 <use Instructions/Figures//test3.pdf>
-[25]
+[21]
 File: Instructions/Figures//Subfigures/Subfigure_a.pdf Graphic file (type pdf)
 <use Instructions/Figures//Subfigures/Subfigure_a.pdf>
 File: Instructions/Figures//Subfigures/Subfigure_b.pdf Graphic file (type pdf)
 <use Instructions/Figures//Subfigures/Subfigure_b.pdf>
- [26]
+ [22]
 Overfull \hbox (41.57834pt too wide) in paragraph at lines 199--199
 \TU/lmtt/m/n/10 https://tex.stackexchange.com/questions/314882/tabular-thicker-
 lines|  
  []
 
-[27]
+[23]
 Overfull \hbox (55.725pt too wide) in paragraph at lines 231--233
 [][]\TU/lmtt/m/n/10 noindentafter []\TU/texgyrebonum-regular.otf(1)/m/n/10 in t
 he package [][]\TU/lmtt/m/n/10 titlesec[]\TU/texgyrebonum-regular.otf(1)/m/n/10
@@ -2690,13 +2721,28 @@ Overfull \hbox (55.55164pt too wide) in paragraph at lines 252--253
 s included with [][]\TU/lmtt/m/n/10 \includegraphics[scale=<value>] 
  []
 
-[28]
+[24]
 Overfull \hbox (46.35143pt too wide) in paragraph at lines 266--266
 []\TU/lmtt/m/n/9 \begin{wrapfigure}{l}{0.20\textwidth}% -- Change the value of 
 the number before \textwidth[] 
  []
 
-) [29]
+
+LaTeX Warning: Citation 'BiblatexCheatSheet' on page 25 undefined on input line
+ 270.
+
+
+LaTeX Warning: Citation 'BibTwowordlastname' on page 25 undefined on input line
+ 272.
+
+
+LaTeX Warning: Citation 'BiblatexDocumentation' on page 25 undefined on input l
+ine 278.
+
+
+LaTeX Warning: Empty bibliography on input line 283.
+
+) [25]
 \openout2 = `Summary/Summary.aux'.
 
  (Summary/Summary.tex
@@ -2705,16 +2751,16 @@ Package biblatex Info: Reference section=0 on input line 4.
 \blx@sectionciteorder@5=\count606
 Package biblatex Info: Reference section=5 on input line 4.
 Package biblatex Info: Setting label 'refsection:5' on input line 4.
- [30
+ [26
 
 
 
 
-] [31
+] [27
 
-] [32] [33] [34] [35
+] [28] [29] [30] [31
 
-] [36]) [37]
+] [32]) [33]
 \openout2 = `Acknowledgements/Acknowledgements.aux'.
 
 
@@ -2724,13 +2770,13 @@ Package biblatex Info: Reference section=0 on input line 4.
 \blx@sectionciteorder@6=\count608
 Package biblatex Info: Reference section=6 on input line 4.
 Package biblatex Info: Setting label 'refsection:6' on input line 4.
- [38
+ [34
 
 
 
-] [39
+] [35
 
-] [40] [41]) [42]
+] [36] [37]) [38]
 \openout2 = `Publications/Publications.aux'.
 
 
@@ -2772,18 +2818,22 @@ Package biblatex Info: Setting label 'refsection:7' on input line 4.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [43
+ [39
 
 
 
 
 ]
-Overfull \hbox (3.92743pt too wide) in paragraph at lines 42--43
-[]\TU/texgyrebonum-regular.otf(1)/m/n/9 Einstein, A. Über einen die Erzeugung u
-nd Verwandlung des Lichtes betreffenden heuris-
- []
 
-[44
+LaTeX Warning: Citation 'Einstein1906' on page 40 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'Einstein1905' on page 40 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Darwin1859' on page 40 undefined on input line 43.
+
+[40
 
 ]) (main_brownies.aux (Titlepage/titlepage.aux) (Preface/Preface.aux)
 (Chapter_1/Chapter_1_examplesubfile.aux)
@@ -2793,19 +2843,33 @@ nd Verwandlung des Lichtes betreffenden heuris-
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `main_brownies.out' has not changed.
-(rerunfilecheck)             Checksum: 770A032F3ECF32F1DB95ACBA58B21977;5751.
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `main_brownies.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main_brownies.out':
+(rerunfilecheck)             Before: A0ADBA5FC605B20C8A3754F8DDCADA1C;5440
+(rerunfilecheck)             After:  FBF1B4444A01E4E8C12DA5540FCE1FDD;5520.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main_brownies
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main_brownies.run.xml'.
 \openout1 = `main_brownies.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56979 strings out of 410429
- 1165686 string characters out of 2814734
- 2205150 words of memory out of 3000000
- 77273 multiletter control sequences out of 15000+600000
- 477873 words of font info for 133 fonts, out of 8000000 for 9000
- 1351 hyphenation exceptions out of 8191
+ 56944 strings out of 410429
+ 1164424 string characters out of 2814734
+ 2203597 words of memory out of 3000000
+ 77239 multiletter control sequences out of 15000+600000
+ 477881 words of font info for 134 fonts, out of 8000000 for 9000
+ 1349 hyphenation exceptions out of 8191
  94i,21n,156p,1140b,6055s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on main_brownies.pdf (56 pages).
+Output written on main_brownies.pdf (54 pages).

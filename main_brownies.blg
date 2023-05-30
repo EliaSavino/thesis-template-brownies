@@ -1,53 +1,33 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'main_brownies.blg'
-[207] biber-MSWIN64:340> INFO - === 
-[264] Biber.pm:418> INFO - Reading 'main_brownies.bcf'
-[442] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[442] Biber.pm:978> INFO - Found 0 citekeys in bib section 1
-[443] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[443] Biber.pm:978> INFO - Found 1 citekeys in bib section 2
-[443] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[444] Biber.pm:978> INFO - Found 2 citekeys in bib section 3
-[444] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[444] Biber.pm:978> INFO - Found 5 citekeys in bib section 4
-[444] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[444] Biber.pm:978> INFO - Found 0 citekeys in bib section 5
-[444] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[444] Biber.pm:978> INFO - Found 0 citekeys in bib section 6
-[445] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[445] Biber.pm:978> INFO - Found 3 citekeys in bib section 7
-[445] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[533] Biber.pm:4401> INFO - Processing section 2
-[552] Biber.pm:4592> INFO - Looking for bibtex file 'Chapter_1/References_Chapter_1.bib' for section 2
-[629] bibtex.pm:1713> INFO - LaTeX decoding ...
-[642] bibtex.pm:1518> INFO - Found BibTeX data source 'Chapter_1/References_Chapter_1.bib'
-[706] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[706] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[707] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[707] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[710] Biber.pm:4401> INFO - Processing section 3
-[711] Biber.pm:4592> INFO - Looking for bibtex file 'Chapter_2/References_Chapter_2.bib' for section 3
-[792] bibtex.pm:1713> INFO - LaTeX decoding ...
-[811] bibtex.pm:1518> INFO - Found BibTeX data source 'Chapter_2/References_Chapter_2.bib'
-[847] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[847] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[847] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[847] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[850] Biber.pm:4401> INFO - Processing section 4
-[850] Biber.pm:4592> INFO - Looking for bibtex file 'Instructions/References_Instructions.bib' for section 4
-[938] bibtex.pm:1713> INFO - LaTeX decoding ...
-[952] bibtex.pm:1518> INFO - Found BibTeX data source 'Instructions/References_Instructions.bib'
-[987] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[987] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[987] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[987] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[1001] Biber.pm:4401> INFO - Processing section 7
-[1002] Biber.pm:4592> INFO - Looking for bibtex file 'Publications/My_publications.bib' for section 7
-[1084] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1101] bibtex.pm:1518> INFO - Found BibTeX data source 'Publications/My_publications.bib'
-[1131] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1131] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1132] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1132] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[1136] bbl.pm:654> INFO - Writing 'main_brownies.bbl' with encoding 'UTF-8'
-[1141] bbl.pm:757> INFO - Output to main_brownies.bbl
+[216] biber-MSWIN64:340> INFO - === 
+[283] Biber.pm:418> INFO - Reading 'main_brownies.bcf'
+[463] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[463] Biber.pm:978> INFO - Found 0 citekeys in bib section 1
+[463] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[463] Biber.pm:978> INFO - Found 1 citekeys in bib section 2
+[463] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[464] Biber.pm:978> INFO - Found 0 citekeys in bib section 3
+[464] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[464] Biber.pm:978> INFO - Found 0 citekeys in bib section 4
+[464] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[464] Biber.pm:978> INFO - Found 3 citekeys in bib section 5
+[464] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[526] Biber.pm:4401> INFO - Processing section 2
+[563] Biber.pm:4592> INFO - Looking for bibtex file 'Chapter_1/References_Chapter_1.bib' for section 2
+[642] bibtex.pm:1713> INFO - LaTeX decoding ...
+[659] bibtex.pm:1518> INFO - Found BibTeX data source 'Chapter_1/References_Chapter_1.bib'
+[778] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[778] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[778] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[778] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[781] Biber.pm:4401> INFO - Processing section 5
+[781] Biber.pm:4592> INFO - Looking for bibtex file 'Publications/My_publications.bib' for section 5
+[867] bibtex.pm:1713> INFO - LaTeX decoding ...
+[886] bibtex.pm:1518> INFO - Found BibTeX data source 'Publications/My_publications.bib'
+[911] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[912] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[912] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[912] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[916] bbl.pm:654> INFO - Writing 'main_brownies.bbl' with encoding 'UTF-8'
+[919] bbl.pm:757> INFO - Output to main_brownies.bbl

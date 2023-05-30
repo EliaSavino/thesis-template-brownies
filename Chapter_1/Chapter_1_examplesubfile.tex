@@ -3,6 +3,9 @@
 \graphicspath{ {Figures_Schemes/} } % define graphics path
 \newrefsection[Chapter_1/References_Chapter_1] %% begin new reference section with the .bib file for this chapter
 
+%%% Do this to get the chapterimagepage directly after TOC (so no 2 blank pages):
+\setcounter{page}{0} %% make chapterimagepage pagenumber 0 lol
+
 %% an if-else statement for inserting an empty page when necessary
 	%% to make sure chapter image page is to the left of the chapter title page
 \checkoddpage
@@ -14,8 +17,6 @@
 \else
 	\includepdf[pages={-}]{chapterimagepage_1.pdf}
 \fi
-
-	%%% try to get the chapterimagepage directly after TOC (so no 2 blank pages)
 
 %%%TITLE AND ABSTRACT%%%
 

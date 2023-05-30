@@ -7,6 +7,9 @@
 %% an if-else statement for inserting an empty page when necessary
 	%% to make sure Preface does not start on an even page
 	%% if desired of course
+%% Alternatively: just add an empty page manually if the method with \checkoddpage does not work properly
+	%% then uncomment only: \newpage\thispagestyle{empty}	\mbox{}	\newpage
+
 \checkoddpage
 \ifoddpage
 \else
@@ -19,7 +22,7 @@
 %%%%%%%%%%%%%%%%%%%%%
 
 	%%%%% START Preface %%%%
-%\chapter*{Preface}
+\chapter*{}
 \addcontentsline{toc}{chapter}{Preface}
 \markboth{Preface}{}
 
@@ -42,9 +45,23 @@
 
 Start of the Preface.\footnote{A footnote here (e.g., a reference)}
 
-\Blindtext[5][3]
+\Blindtext[7][3]
 
 	%%%%% END Preface %%%%
+
+%%%%%%%
+
+%% Add a final blank page in frontmatter to make Chapter 1 start on the right (needed in combination with the chapterimagepage code)
+%% This will result in two blank pages between frontmatter and mainmatter
+%% DO NOT USE IN COMBINATION WITH RESETTING THE COUNTER IN Chapter_1.tex
+
+%\checkoddpage
+%\ifoddpage
+%	\newpage\thispagestyle{empty}
+%	\mbox{}
+%	\newpage
+%\else
+%\fi
 
 %%%%%%%
 

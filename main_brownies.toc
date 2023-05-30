@@ -1,51 +1,49 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Preface}{ix}{chapter*.3}%
-\contentsline {chapter}{\numberline {1}Example Introduction Chapter}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{4}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Subsection of Introduction}{5}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}Section 2}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Section 3}{7}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Section 3.1}{7}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Section 3.2}{7}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Conclusions}{7}{section.1.4}%
-\contentsline {section}{Acknowledgements}{7}{section.1.4}%
-\contentsline {section}{Thesis Outline}{7}{section.1.4}%
-\contentsline {section}{Bibliography}{7}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Example Experimental Chapter}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Short R\&D}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}R\&D 1}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}R\&D 2}{12}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Conclusions}{12}{section.2.3}%
-\contentsline {section}{Acknowledgements}{13}{section.2.3}%
-\contentsline {section}{Bibliography}{13}{section.2.3}%
-\contentsline {section}{Experimental Details}{13}{section.2.3}%
-\contentsline {section}{Appendix}{15}{figure.caption.7}%
-\contentsline {chapter}{\numberline {3}Instructions}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}To do}{22}{section.3.1}%
-\contentsline {section}{\numberline {3.2}General}{22}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Making Macros}{23}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Headers and Footers}{23}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Figures}{23}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Figures from python}{23}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}How to make new floats}{24}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Align figures}{24}{subsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.3.1}Location on page}{24}{subsubsection.3.5.3.1}%
-\contentsline {subsubsection}{\numberline {3.5.3.2}Minipage}{26}{subsubsection.3.5.3.2}%
-\contentsline {subsubsection}{\numberline {3.5.3.3}Subfigures}{26}{subsubsection.3.5.3.3}%
-\contentsline {section}{\numberline {3.6}Tables}{27}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Captions}{27}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Layout of captions}{27}{subsection.3.7.1}%
-\contentsline {section}{\numberline {3.8}Indentation of text}{28}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Paragraph spacing}{28}{subsection.3.8.1}%
-\contentsline {section}{\numberline {3.9}Miscellaneous Environments and Commands}{28}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}A Command for an Experimental Procedure: synth}{28}{subsection.3.9.1}%
-\contentsline {section}{\numberline {3.10}Referencing}{29}{section.3.10}%
-\contentsline {section}{Bibliography}{29}{section.3.10}%
-\contentsline {chapter}{Samenvatting}{31}{chapter*.13}%
+\contentsline {chapter}{Preface}{ix}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Example Introduction Chapter}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Subsection of Introduction}{3}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Section 2}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Section 3}{5}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Section 3.1}{5}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Section 3.2}{5}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Conclusions}{5}{section.1.4}%
+\contentsline {section}{Acknowledgements}{5}{section.1.4}%
+\contentsline {section}{Thesis Outline}{5}{section.1.4}%
+\contentsline {section}{Bibliography}{5}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Example Experimental Chapter}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Short R\&D}{9}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}R\&D 1}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}R\&D 2}{10}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Conclusions}{10}{section.2.3}%
+\contentsline {section}{Acknowledgements}{11}{section.2.3}%
+\contentsline {section}{Experimental Details}{11}{section.2.3}%
+\contentsline {section}{Appendix}{13}{figure.caption.8}%
+\contentsline {chapter}{\numberline {3}Instructions}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}To do}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}General}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Making Macros}{19}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Headers and Footers}{19}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Figures}{19}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Figures from python}{19}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}How to make new floats}{20}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Align figures}{20}{subsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.3.1}Location on page}{20}{subsubsection.3.5.3.1}%
+\contentsline {subsubsection}{\numberline {3.5.3.2}Minipage}{22}{subsubsection.3.5.3.2}%
+\contentsline {subsubsection}{\numberline {3.5.3.3}Subfigures}{22}{subsubsection.3.5.3.3}%
+\contentsline {section}{\numberline {3.6}Tables}{23}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Captions}{23}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Layout of captions}{23}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}Indentation of text}{24}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Paragraph spacing}{24}{subsection.3.8.1}%
+\contentsline {section}{\numberline {3.9}Miscellaneous Environments and Commands}{24}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}A Command for an Experimental Procedure: synth}{24}{subsection.3.9.1}%
+\contentsline {section}{\numberline {3.10}Referencing}{25}{section.3.10}%
+\contentsline {chapter}{Samenvatting}{27}{chapter*.14}%
 \babel@toc {french}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Summary}{35}{chapter*.14}%
-\contentsline {chapter}{Acknowledgements}{39}{chapter*.15}%
-\contentsline {chapter}{List of Publications}{44}{chapter*.16}%
+\contentsline {chapter}{Summary}{31}{chapter*.15}%
+\contentsline {chapter}{Acknowledgements}{35}{chapter*.16}%
+\contentsline {chapter}{List of Publications}{40}{chapter*.17}%
 \contentsfinish 
