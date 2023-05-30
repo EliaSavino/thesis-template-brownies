@@ -17,7 +17,7 @@
 \endgroup
 
 
-\refsection{1}
+\refsection{2}
   \datalist[entry]{none/global//global/global}
     \entry{Darwin1859}{book}{}
       \name{author}{1}{}{%
@@ -51,7 +51,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{2}
+\refsection{3}
   \datalist[entry]{none/global//global/global}
     \entry{Einstein1905}{article}{}
       \name{author}{1}{}{%
@@ -115,7 +115,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{3}
+\refsection{4}
   \datalist[entry]{none/global//global/global}
     \entry{GraphicsPathSubfiles}{online}{}
       \field{sortinit}{1}
@@ -214,7 +214,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{6}
+\refsection{7}
   \datalist[entry]{none/global//global/global}
     \entry{Einstein1906}{article}{}
       \name{author}{1}{}{%

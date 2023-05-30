@@ -4,6 +4,19 @@
 \newrefsection %% begin new reference section for each chapter
 %\newrefsection[Acknowledgements/] %% begin new reference section with the .bib file for this chapter
 
+%% an if-else statement for inserting an empty page when necessary
+	%% to make sure Samenvatting/Summary does not start immediately after the final page of the previous chapter
+	%% if desired of course
+	%% Can add the same command before Summary, Acknowledgements, etcetera, if desired
+\checkoddpage
+\ifoddpage
+\else
+	\newpage\thispagestyle{empty}
+	\mbox{}
+	\newpage
+\fi
+%%
+
 \chapter*{Acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
 \markboth{Acknowledgements}{}

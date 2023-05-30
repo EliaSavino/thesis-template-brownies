@@ -92,8 +92,6 @@
 %%%%%%%%%%%%%%%% Define and renew commands %%%%%%%%%%%%%%%%
 \newcommand{\vs}{\emph{vs}} %% define command vs (versus) in italics % when using: type \vs{}
 \newcommand{\cm}{\unit{cm^{-1}}} %% define command cm-1 superscript % when using: type \cm{}
-
-\renewcommand{\thefootnote}{\fnsymbol{footnote}} %% use \fnsymbol for the footnote symbols
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%% Command to allow start chapter on left page %%%%%%%%%%%%%%%%
@@ -203,6 +201,8 @@
 \let\ps@plain\ps@chaptertitlepage
 \makeatother
 %%%%%%%%%%%%%%%%
+
+\subfileinclude{Preface/Preface}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% END frontmatter %%%

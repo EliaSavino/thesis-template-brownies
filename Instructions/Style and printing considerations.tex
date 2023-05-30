@@ -7,12 +7,12 @@
 %% to make sure chapter image page is to the left of the chapter title page
 \checkoddpage
 \ifoddpage
-\newpage\thispagestyle{empty}
-\mbox{}
-\newpage
-\includepdf[pages={-}]{Image_notepad.pdf} % can change to a different image
+	\newpage\thispagestyle{empty}
+	\mbox{}
+	\newpage
+	\includepdf[pages={-}]{Image_notepad.pdf} % can change to a different image
 \else
-\includepdf[pages={-}]{Image_notepad.pdf} % can change to a different image
+	\includepdf[pages={-}]{Image_notepad.pdf} % can change to a different image
 \fi
 
 \chapter[Instructions]{Style and Printing Considerations} %% the [short title] will end up in the TOC as well

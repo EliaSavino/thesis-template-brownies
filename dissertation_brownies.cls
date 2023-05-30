@@ -189,6 +189,7 @@
 %		ItalicFont = texgyrecursor-italic.otf,%
 %		BoldItalicFont = texgyrecursor-bolditalic.otf]
 	\setmathfont[Mapping = tex-text]{texgyrebonum-math.otf} %% if none specified: Latin Modern Math will be loaded automatically
+%	\setmathfont[range={"2032}]{XITSMath-Regular.otf} %% Should work to define one character from a mathfont, but I haven't managed to use it yet
 	% Define here also other fonts only used, for example, for titles, headers, etc.
 	\newfontfamily\yourfont{cour.ttf}[% %% call \yourfont anything you like (change its name at other points in this .cls file then as well)
 		Mapping = tex-text,%
@@ -692,6 +693,17 @@
 	\fancyhead[RO]{\headerfont\headershape\nouppercase{\leftmark}} %% on odd pages on the right [RO]
 }
 
+%% Pagestyle of the frontmatter titlepages that excludes fancyhead and headrule.
+%% Requires additional commands in the corresponding .tex files of the subfiles in the frontmatter: see, for example, Preface
+\fancypagestyle{frontmattertitle}{%
+	\fancyhf{}
+	%% Page numbers on the bottom left (even) and bottom right (odd).
+	\fancyfoot[LE]{\cropmarks\lthumb\headerfont\thepage}
+	\fancyfoot[RO]{\cropmarks\rthumb\headerfont\thepage}
+	\renewcommand{\footrulewidth}{0.4pt} %% to add footrule in mainmatter. headrulewidth is defined in the package fancyhdr: default is 0.4pt
+	\renewcommand*\headrulewidth{0pt} %% headrulewidth set to 0pt to remove it
+}
+
 %% Fancy style for the main matter.
 \fancypagestyle{mainmatter}{%
 	\fancyhf{}
@@ -734,7 +746,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	%%% START HEADER STYLES AND CONTENT %%%
+	%%% START HEADER AND FOOTER STYLES AND CONTENT %%%
 
 %% Change name of TOC
 \addto\captionsenglish{%% Use here the main language you use with the package babel
@@ -790,6 +802,11 @@
 }
 %%%%
 
+%%%% Change character used for footnotes (for example to symbols)
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}} %% use \fnsymbol for the footnote symbols
+%%%%
+
+
 \setcounter{secnumdepth}{4} %% down to level {#} will be a numbered "section" (sub-/subsub-/subsubsubsection, etc.)
 %\setcounter{tocdepth}{2} %% level {#} will show up in TOC %% not needed when using secnumdepth with higher #
 
@@ -817,6 +834,17 @@
 \titlespacing{\chapter}{0pt}{0pt}{2\baselineskip}
 %% In the table of contents, a chapter is similar to a part, except that it is
 	%% preceded by half an empty line.
+\dottedcontents{chapter}[1.5em]{\vspace{0.5\baselineskip}\titlefont\bfseries}{1.5em}{0pc}
+
+\titleformat{\chapter}[display]
+{\flushright\titlestyle}
+{\fontsize{96pt}{96pt}\selectfont\bfseries\color{\thumbcolor}\thechapter} %% color = thumbcolor to get the chapter number in the same colors as the thumbs
+{0pt}
+%{\Huge\color{title}} %% print title in color "title" defined above
+{\Huge\color{\thumbcolor}} %% print title in color defined by \thumbcolor in main_brownies.tex
+\titlespacing{\chapter}{0pt}{0pt}{2\baselineskip}
+%% In the table of contents, a chapter is similar to a part, except that it is
+%% preceded by half an empty line.
 \dottedcontents{chapter}[1.5em]{\vspace{0.5\baselineskip}\titlefont\bfseries}{1.5em}{0pc}
 
 %% Section titles start with the number in bold, followed by the name printed
@@ -896,6 +924,8 @@
 \makeatletter
 \def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
 \makeatother
+
+
 
 %% The authors environment is used to display the authors of a chapter on the
 	%% title page. This is only necessary if multiple people contributed
@@ -989,6 +1019,8 @@
 
 %% An if-else--fi statement to include these unicode characters only when xelatex is not used
 \ifxetex
+%	\RequirePackage{newunicodechar}
+%	\AtBeginDocument{\newunicodechar{`}{\ensuremath{\textsf{'}}}} %% possible code to define characters (have not managed to use it properly)
 \else
 	\DeclareUnicodeCharacter{2212}{-}
 	\DeclareUnicodeCharacter{2032}{'}

@@ -1,0 +1,51 @@
+\documentclass[main_brownies.tex]{subfiles}
+\begin{document}
+%\graphicspath{ {Figures/}{Schemes/} } %% graphics path for two folders: /Figures and /Schemes
+\newrefsection %% begin new reference section for each chapter
+%\newrefsection[Preface/] %% begin new reference section with the .bib file for this chapter
+
+%% an if-else statement for inserting an empty page when necessary
+	%% to make sure Preface does not start on an even page
+	%% if desired of course
+\checkoddpage
+\ifoddpage
+\else
+	\newpage\thispagestyle{empty}
+	\mbox{}
+	\newpage
+\fi
+%%
+
+%%%%%%%%%%%%%%%%%%%%%
+
+	%%%%% START Preface %%%%
+%\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+\markboth{Preface}{}
+
+%\addtocounter{chapter}{1} %% increment chapter counter value for this starred chapter (chapter*) to make thumb indices move
+%\renewcommand{\myacronym}{Pf} %% Define acronym for chapter name to use in \ifthumbback command for thumb indices
+
+\thispagestyle{frontmattertitle}
+\pagestyle{frontmatter} %% to have the subsequent pages again in frontmatter style
+
+\vspace*{5cm} %% adjust whitespace above title here
+
+\begin{flushright}
+\titlestyle\Huge
+	Preface
+\end{flushright}
+
+%\vspace*{5cm} %% add whitespace here if desired
+
+%%%
+
+Start of the Preface.\footnote{A footnote here (e.g., a reference)}
+
+\Blindtext[5][3]
+
+	%%%%% END Preface %%%%
+
+%%%%%%%
+
+\end{document}
