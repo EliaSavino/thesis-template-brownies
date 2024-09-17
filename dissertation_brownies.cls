@@ -795,11 +795,14 @@
 	\vspace*{-3pt}%
 	%	{\color{\thumbcolor}\hrule width \textwidth height 0.4pt} %% it was 0.5\textwidth
 	\hbox{%
-		\tikz \fill[left color=\thumbcolor, right color=white]
+		\tikz \shade[left color=\thumbcolor, right color=white]
 		(0,0) rectangle (\textwidth,0.4pt);%
 	}%
 	\vspace*{2.6pt}%
 }
+
+%% Using \shade instead of \fill to make the colour gradient box seems to remove problems with an outline (or solid coloured line) appearing in the pdf and on printed paper
+
 %%%%
 
 %%%% Change character used for footnotes (for example to symbols)
